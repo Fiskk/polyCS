@@ -1,0 +1,68 @@
+ /*
+    This sheet is comprised of carousel styles, but the carousel image
+    attributions are in general.css
+*/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+}
+.carousel {
+  background-color: black;
+}
+.displayNone {
+  display:none;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+#myCarousel, .carousel-fade .carousel-control {
+  z-index: 2;
+}
+html, body, .carousel, .carousel-inner, .carousel-inner .item {
+  height: 100%;
+}
+/*two rule-sets below override default carousel gradient*/
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: none;
+}
+/*three rule-sets below position the carousel controls*/
+.carousel-control .icon-prev, .carousel-control .icon-next,
+.carousel-control .glyphicon-hand-left,
+.carousel-control .glyphicon-hand-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev, .carousel-control .glyphicon-hand-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-hand-right {
+  right: 50%;
+  margin-right: -10px;
+}

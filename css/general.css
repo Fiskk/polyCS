@@ -1,0 +1,155 @@
+/*
+  NOTE: I attempted to strucure this sheet in a way that mimics the flow of the page
+        but was not entirely successful due to the queries
+*/
+
+/* request for the background image is not made when screenWidth < 769px */
+@media screen and (min-width:769px) {
+  body {
+    background: url(../img/backgroundTEST2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-color: black;*/
+  }
+}
+a,p,h1,h2,h3,h4,h5,h6 {
+  /* jQueryReady.js will override this rule on Windows platforms */
+  font-family: 'Audiowide', cursive;
+}
+/*this rule was used to prevent bleeding from background*/
+body div {
+  background-color: white;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav-pills a {
+  color:white;
+}
+.nav-tabs a {
+  color:black;
+}
+.nav-tabs li {
+  border:1px solid white;
+}
+
+@media screen and (max-width:500px) {
+  #blueNav {
+    padding:0px;
+  }
+  #blueNav nav ul li {
+    margin:0px;
+  }
+  #blueNav nav ul li a {
+    font-size:8px;
+  }
+} /* end of query */
+
+@media screen and (max-width:768px) {
+  #myCarousel p {
+    font-size: 8px;
+    }
+  #logoImg {
+    margin:auto;
+    padding-top: 4%;
+  }
+  .jumbotron {
+    /*margin:20px;*/
+    /*margin-bottom: 10px;*/
+    /*margin: 0px;*/
+    margin-left: 3%;
+    margin-right: 3%;
+    padding:0px;
+  }
+  p {
+    font-size: 11px;
+    /*margin: 0px;*/
+  }
+  footer p {
+    font-size: 8px;
+  }
+  .header, .content {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+} /* end of query */
+
+@media screen and (min-width:769px) {
+  .container {
+    max-width: 730px;
+  }
+  #myCarousel  p {
+    font-size: 10px;
+  }
+  #logoImg {
+    padding: 20px;
+  }
+  .jumbotron {
+    z-index:3;
+    padding:5px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .header, .content, .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+} /* end of query */
+
+.footer {
+  padding-top: 15px;
+}
+.shadow{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.roundedCorners {
+  border-radius: 10px;
+}
+.roundedTopCorners {
+  border-radius: 10px 10px 0px 0px;
+}
+.roundedBottomCorners {
+  border-radius: 0px 0px 10px 10px;
+}
+.oneSixth {
+  width:16.666666666666667%
+}
+.links a {
+  color:black;
+  border:1px solid white;
+}
+.padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.positioning {
+  margin-top:-4%;
+  padding-bottom:2%;
+}
+.marginLeft {
+  margin-left: 2%;
+}
+.blueGradient {
+  color:white;
+  background: #00264d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0059b3, #00264d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0059b3, #00264d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0059b3, #00264d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0059b3, #00264d); /* Standard syntax */
+}
+.yellowGradient {
+  color:white;
+  background: #ffcc00; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ffff00, #ff9900); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffff00, #ff9900); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffff00, #ff9900); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffff00, #ff9900); /* Standard syntax */
+}
+#linkToHome {
+  color: white;
+}
