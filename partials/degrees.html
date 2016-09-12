@@ -1,0 +1,128 @@
+<div class="container-fluid text-center positioning hidden-xs ">
+  <h3 class="text-center">Degree Programs</h3>
+</div>
+
+<div class="row content padding">
+
+  <div id="myCarousel" class="carousel slide carousel-fade col-sm-6 shadow roundedCorners"
+                       data-ride="carousel">
+    <!-- Indicators for carousel slides below are not displayed -->
+    <ol class="carousel-indicators displayNone">
+      <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="myCarousel" data-slide-to="1"></li>
+      <li data-target="myCarousel" data-slide-to="2"></li>
+      <li data-target="myCarousel" data-slide-to="3"></li>
+      <li data-target="myCarousel" data-slide-to="4"></li>
+      <li data-target="myCarousel" data-slide-to="5"></li>
+      <li data-target="myCarousel" data-slide-to="6"></li>
+      <!-- removed '#' symbols that normally prepend the data-target's attribute so
+      that it wouldn't trigger Angular's routing -->
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+          <img src="img/degrees/csbook.png" alt="Computer Science" />
+      </div>
+
+      <div class="item">
+        <img src="img/degrees/cis.png" alt="Computer Information Systems" />
+      </div>
+
+      <div class="item">
+        <img src="img/degrees/ncs.png" alt="Network and Computer Security" />
+      </div>
+
+      <div class="item">
+          <img src="img/degrees/appcs.png" alt="Applied Computing" />
+      </div>
+
+      <div class="item">
+          <img src="img/degrees/mscis.png" alt="Master's in Computer Science" />
+      </div>
+
+      <div class="item">
+        <img src="img/degrees/msncs.png" alt="Master's in Network &amp; Computer Security" />
+      </div>
+
+      <div class="item">
+        <img src="img/degrees/mstele.png" alt="Master's in Telecommunications" />
+      </div>
+
+    </div> <!-- end wrapper -->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <!-- changed href attribute to data-target so
+    that it wouldn't trigger Angular's routing -->
+    <a class="right carousel-control" data-target="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> <!-- end carousel -->
+
+  <br>
+  <br>
+  <br class="hidden-md hidden-lg">
+  <div class="col-sm-6">
+    <p id="firstP" class="marginLeft">
+      The field of computing enables much of the on-going revolution in information
+      technology and communications. Its techniques, tools and problem-solving approaches
+      have proven most powerful and effective. Computing professionals define and provide
+      the new information infrastructure thereby changing society and culture by extending
+      and enhancing everyone's abilities.
+    </p>
+    <br>
+    <p>
+     The SUNY Polytechnic Institute of Technology recognizes the need for
+     trained professionals in the computer field. Two undergraduate programs
+     provide the flexibility that allows students to position
+     themselves in the field according to their own strengths and interests.
+    </p>
+  </div>
+
+</div><!-- end row -->
+
+<div class="container-fluid text-center">
+  <hr>
+
+  <h4><strong>Undergraduate Programs</strong></h4>
+  <ul>
+    <li ng-repeat="x in bsdegrees">
+      <a href="{{ x.url }}">{{ x.degree }}</a>
+    </li>
+  </ul>
+
+  <h4><strong>Master's Degree Programs</strong></h4>
+  <ul>
+    <li ng-repeat="y in msdegrees">
+      <a href="{{ y.url }}">{{ y.subject }}</a>
+    </li>
+  </ul>
+
+  <h4><strong>Minors</strong></h4>
+  <ul>
+    <li ng-repeat="a in minors">
+      <a href="{{ a.url }}">{{ a.minor }}</a>
+    </li>
+  </ul>
+
+  <h4><strong>Joint BS/MS Fast-Track Program</strong></h4>
+  <ul>
+    <li ng-repeat="z in xcel">
+      <a href="{{ z.url }}">{{ z.combo }}</a>
+    </li>
+  </ul>
+
+  <hr>
+  <!-- right-align the stuff below -->
+  <h4>Additional Resources</h4>
+
+  <p class="format"></p>
+  <!-- <hr> -->
+  <p class="format"></p>
+  <br>
+</div>

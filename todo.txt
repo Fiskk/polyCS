@@ -1,0 +1,20 @@
+- I would like to have the directory in the terminal change for each view, but I
+  wasn't planning on making the "terminal" a part of the view
+
+- can I use angular to set a var that I can then check with typed.js?
+
+- get bigger images of pamphlets
+
+
+- ask if we still offer a Telecommunications major?
+- also ask if we no longer offer the NCS Accelerated master
+
+-------------------------------
+notes on 'Additional Resources' on Degree Programs page
+-------------------------------
+- make a partial for 'Class Schedules' and link it to the scripts that do the banner thing
+- Keep the meet the Faculty thing
+- Give the Request page a facelift and wire up to Mailer Scripts
+- Find Undergrad and Grad course listings and link to them
+- Create View 'Undergrad & Graduate Link'
+- Create "view capstones page" and link to wherever that goes
