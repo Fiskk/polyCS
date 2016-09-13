@@ -5,9 +5,14 @@
 
 - get bigger images of pamphlets
 
+- fix footerYear
+
+- consider using the SUNY_logo.png file as a footer on some pages
 
 - ask if we still offer a Telecommunications major?
 - also ask if we no longer offer the NCS Accelerated master
+- ask if Mike Pittarelli is still here and remove from contact controller if not
+- consider adding more recipes to the mailer that is found on the contact branch
 
 - test the 'request form' script on 'Contact' page
 - test the 'report an issue link' on 'Contact' page

@@ -12,10 +12,14 @@ app.controller('contactCTRL', function($scope) {
     {name: 'John Marsh', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=fjam"},
     {name: 'Rosemary Mullick', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=rosemary"},
     {name: 'Jorge Novillo', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=jorge"},
-    {name: 'Mike Pittarelli', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=mike"},
+    // {name: 'Mike Pittarelli', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=mike"},
     {name: 'Ron Sarner', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=ron"},
     {name: 'Sam Sengupta', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=sengupta"},
     {name: 'Scott Spetka', url: "http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=scott"}
   ];
+
+  $scope.$on('$viewContentLoaded', function() {
+    // I wanted to try to use this to 'type'
+  });
 
 });

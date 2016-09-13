@@ -11,7 +11,8 @@ app.config(function($routeProvider) {
         controller  : "listCTRL"
     })
     .when("/faculty", {
-        templateUrl : "partials/faculty.html"
+        templateUrl : "partials/faculty.html",
+        controller  : "facultyCTRL"
     })
     .when("/network", {
         templateUrl : "partials/network.html"
@@ -23,5 +24,5 @@ app.config(function($routeProvider) {
         templateUrl : "partials/contact.html",
         controller  : "contactCTRL"
     });
-    
+
 });

@@ -1,3 +1,5 @@
+<!-- this file is injected into the div in index.html that has a class of: 'ng-view'
+     once an AJAX request is implicitly made by the user -->
 <div class="container-fluid text-center positioning hidden-xs ">
   <h3 class="text-center">Contact</h3>
   <hr>
@@ -14,9 +16,10 @@
       <!-- spacer is a custom element created in contact.controller.js -->
 
       <p>
-        To receive more information about our campus and degree programs, please fill
-        out our
+        To receive more information about our campus and degree programs,
+        please fill out our
         <a href="/degree/getapp.php">request form.</a>
+        <!-- TODO: test this!!!!!!!!!!!!!! -->
         Alternatively, you can contact one of our staff members.
       </p>
     </div>
@@ -25,7 +28,7 @@
   <div id="contactInfo" class="col-sm-6">
     <h5>Contact Information</h5>
     <hr class="visible-xs">
-    <ul class="">
+    <ul>
       <li ng-repeat="x in contactList">
         <a href="{{ x.url }}">{{ x.name }}</a>
       </li>
