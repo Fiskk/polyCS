@@ -7,6 +7,18 @@
 
 - fix footerYear
 
+FACULTY.HTMl
+-------------------------------------
+- center faculty images on xs and sm
+- make the hint on the 'faculty page a bit smaller'
+- push down the container-fluid div that has the bio in it
+- link the emails on the faculty page up with the mailer PHP-script
+- standardize the image sizes on faculty headshots
+- get escaped quotes and format Confifer's text
+------------------------------------------------------------------
+
+- figure out whether the presentation attributes in index.html do anything
+
 - consider using the SUNY_logo.png file as a footer on some pages
 
 - ask if we still offer a Telecommunications major?

@@ -5,7 +5,7 @@
   <hr>
 
   <p>
-    Hint: Check the boxes to display a professor's information.
+    (Hint: Click a box to display a professor's information.)
   </p>
 
   <ul>
@@ -15,6 +15,7 @@
       <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
       <div>
         <div class="check-element animate-show" ng-show="checked">
+          <hr>
           <div class="row">
             <div class="col-sm-6">
               <p>Phone: {{ x.phone }}</p>
@@ -23,8 +24,10 @@
               <p>{{ x.site }}</p>
             </div>
             <div class="col-sm-6">
-              <img class="img-responsive img-rounded" src="{{ x.image }}"
+              <img class="img-responsive img-rounded shadow" src="{{ x.img }}"
                    alt="Image of: {{ x.name }}" />
+              <br>
+
             </div>
             <div class="container-fluid">
               <h4>{{ x.school }}</h4>
