@@ -1,0 +1,45 @@
+<div class="container-fluid text-center positioning hidden-xs ">
+  <h3 class="text-center">Contact</h3>
+  <hr>
+</div>
+
+<div class="row content padding">
+
+  <div class="col-sm-6 ">
+    <div class="container-fluid text-center">
+
+      <spacer></spacer>
+      <spacer></spacer>
+      <spacer></spacer>
+      <!-- spacer is a custom element created in contact.controller.js -->
+
+      <p>
+        To receive more information about our campus and degree programs, please fill
+        out our
+        <a href="/degree/getapp.php">request form.</a>
+        Alternatively, you can contact one of our staff members.
+      </p>
+    </div>
+  </div>
+
+  <div id="contactInfo" class="col-sm-6">
+    <h5>Contact Information</h5>
+    <hr class="visible-xs">
+    <ul class="">
+      <li ng-repeat="x in contactList">
+        <a href="{{ x.url }}">{{ x.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="container-fluid text-center">
+  <hr>
+  <p>
+    <a href="/php-bin/form-mail.php?recip=admins">Report an issue with the DogNET</a>
+    <!-- TODO: test this link once it's the site is in production -->
+  </p>
+</div>
+
+<br>

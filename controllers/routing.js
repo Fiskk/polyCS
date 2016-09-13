@@ -11,15 +11,17 @@ app.config(function($routeProvider) {
         controller  : "listCTRL"
     })
     .when("/faculty", {
-        templateUrl : "partials/home.html"
+        templateUrl : "partials/faculty.html"
     })
     .when("/network", {
-        templateUrl : "partials/home.html"
+        templateUrl : "partials/network.html"
     })
     .when("/labs", {
-        templateUrl : "partials/home.html"
+        templateUrl : "partials/labs.html"
     })
     .when("/contact", {
-        templateUrl : "partials/home.html"
+        templateUrl : "partials/contact.html",
+        controller  : "contactCTRL"
     });
+    
 });

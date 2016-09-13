@@ -1,4 +1,3 @@
-
 // sniff the OS so that we can increase readability of the font on m$ platforms
 var osName = "Unknown OS";
 
@@ -43,6 +42,7 @@ $(document).ready(function() {
     $("#blueNav").removeClass("roundedTopCorners");
     $(".format").addClass("text-left");
     $(".jumbotron").addClass("shadow");
+    $("#contactInfo").addClass("text-center");
   }
   else {
     $("#logoDiv").addClass("header");
@@ -54,6 +54,7 @@ $(document).ready(function() {
     $("#blueNav").addClass("roundedTopCorners");
     $(".format").removeClass("text-left");
     $(".jumbotron").removeClass("shadow");
+    $("#contactInfo").removeClass("text-center");
   }
 
   // when resize events are occurring, apply or remove styles at breakpoints
@@ -68,6 +69,7 @@ $(document).ready(function() {
       $("#blueNav").removeClass("roundedTopCorners");
       $(".format").addClass("text-left");
       $(".jumbotron").addClass("shadow");
+      $("#contactInfo").addClass("text-center");
     }
     else {
       $("#logoDiv").addClass("header");
@@ -79,6 +81,7 @@ $(document).ready(function() {
       $("#blueNav").addClass("roundedTopCorners");
       $(".format").removeClass("text-left");
       $(".jumbotron").removeClass("shadow");
+      $("#contactInfo").removeClass("text-center");
     }
   });
 });
