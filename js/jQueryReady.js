@@ -1,3 +1,7 @@
+/*
+The majority of this script runs once the HTML has rendered and requires jQuery
+*/
+
 // sniff the OS so that we can increase readability of the font on m$ platforms
 var osName = "Unknown OS";
 

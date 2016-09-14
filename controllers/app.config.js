@@ -16,9 +16,11 @@ app.config(function($routeProvider) {
     })
     .when("/network", {
         templateUrl : "partials/network.html"
+        // controller  : "networkCTRL"
     })
     .when("/labs", {
-        templateUrl : "partials/labs.html"
+        templateUrl : "partials/labs.html",
+        controller  : "labsCTRL"
     })
     .when("/contact", {
         templateUrl : "partials/contact.html",

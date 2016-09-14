@@ -1,17 +1,3 @@
-// angular.module("myApp").component('list', {
-//   template:
-//   '<ul>'+
-//     '<li ng-repeat="x in facultyMembers">'+
-//       '<a href="{{ x.url }}">{{ x.name }}</a>'+
-//       '<input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">'+
-//       '<div>'+
-//         '<div class="check-element animate-show" ng-show="checked">'+
-//           '<p>I show up when your checkbox is checked.</p>'+
-//         '</div>'+
-//       '</div>'+
-//     '</li>'+
-//   '</ul>',
-// }),
 app.controller('facultyCTRL', function($scope) {
   $scope.facultyMembers = [
     {
@@ -53,7 +39,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7379",
       office: "Kunsela C225",
       email: "chiangc@sunyit.edu",
-      site: "Web: http://www.cs.sunyit.edu/~chiangc/",
+      site: "http://www.cs.sunyit.edu/~chiangc/",
       school: "University of Central Florida",
       bio: "Dr. Chen-Fu Chiang (first name:振富last name:江) will join the department \
             of Computer and Information Science at the State University of New York \
@@ -75,12 +61,12 @@ app.controller('facultyCTRL', function($scope) {
     {
       name: "Amos Confer, Assistant Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
+      img: "img/faculty/amos.png",
       phone: "792-7544",
       office: "Kunsela C218",
       email: "amos@sunyit.edu",
-      site: "Web: http://www.cs.sunyit.edu/~conferw/",
-      school: "",
+      site: "http://www.cs.sunyit.edu/~conferw/",
+      school: "Auburn University",
       bio: "Amos Confer's current interests include embedded and mobile systems, \
             architecture and organization, generative design, interactive multimedia \
             and data visualization, and software engineering. Dr. Confer recently \
@@ -89,10 +75,10 @@ app.controller('facultyCTRL', function($scope) {
             Mobile Network Operator (MNO) Patent Group reporting directly to the SVP of \
             all North American MNO operations. He consults as a fiber optics test \
             equipment developer, has received a US Patent for a low cost character \
-            recognition algorithm designed for the most resource limited devices, and \
+            recognition algorithm designed for resource-limited devices, and \
             has four patents pending based on his work at Samsung Mobile. He has \
             additionally assisted with the translation and technical editing of the \
-            English edition of the German generative design text, Generative Gestaltung, \
+            English edition of the German generative design text, \"Generative Gestaltun\", \
             distributed in the US by Princeton Architectural Press. \
             In the classroom, Dr. Confer emphasizes a comprehensive understanding of \
             computer/software systems so that students not only understand the high-level \
@@ -109,101 +95,151 @@ app.controller('facultyCTRL', function($scope) {
     {
       name: "John Marsh, Associate Professor",
       url: "#faculty",
-      img: "img/faculty/roger.png",
+      img: "img/faculty/marsh.jpg",
       phone: "792-7125",
       office: "Kunsela C225",
       email: "fjam@sunyit.edu",
-      site: "Web: http://people.sunyit.edu/~fjam/",
-      school: "Auburn University",
-      bio: ""
+      site: "http://people.sunyit.edu/~fjam/",
+      school: "Carnegie Mellon University",
+      bio: "John Marsh has interests in networking and information theory. "
     },
     {
       name: "Rosemary Mullick, Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
+      img: "img/faculty/rosemary.png",
       phone: "792-7239",
       office: "Kunsela C134",
       email: "rosemary@sunyit.edu",
       site: "",
-      school: "",
-      bio: ""
+      school: "Wayne State University",
+      bio: "Rosemary Mullick is a specialist in the field of psychology with a broad \
+            background of research in the field. Her subsequent graduate degree in \
+            computer science led to interests in operating systems and artificial \
+            intelligence. Her current research interests include computer networks, \
+            parallels between human cognition and artificial intelligence, \
+            and human engineering. "
     },
     {
       name: "Jorge Novillo, Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
-      school: "",
+      img: "img/faculty/jorge.png",
+      phone: "792-7352",
+      office: "Kunsela C220",
+      email: "jorge@sunyit.edu",
+      site: "http://jorge.sunyit.edu/",
+      school: "Lehigh University",
       bio: ""
     },
     {
       name: "Michael Reale, Assistant Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
-      school: "",
-      bio: ""
+      img: "img/faculty/reale.jpg",
+      phone: "792-7227",
+      office: "Kunsela C224",
+      email: "realemj@cs.sunyit.edu",
+      site: "http://www.cs.sunyit.edu/~realemj/",
+      school: "State University of New York at Binghamton",
+      bio: "Michael J. Reale received the B.S. degree in computer science from the \
+            State University of New York College at Oneonta, NY, USA, in 2007, and \
+            the M.S. and Ph.D. degrees in computer science from the State University \
+            of New York at Binghamton, NY, USA, in 2009 and 2014, respectively. His \
+            current research interests include automatic multimodal facial activity \
+            analysis, affective state recognition, eye gaze estimation, gesture recognition \
+             / animation, multimodal data creation, social signal processing, game \
+             design/development, computer vision, computer graphics, human-machine \
+             interaction, and GPGPU programming for computer vision. "
     },
     {
       name: "Ronald Sarner, Distinguished Service Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
-      school: "",
-      bio: ""
+      img: "img/faculty/ron.png",
+      phone: "792-7327",
+      office: "Kunsela C123",
+      email: "ron@sunyit.edu",
+      site: "http://people/sunyit.edu/~sarnerr/",
+      school: "SUNY-Binghamton",
+      bio: "Ron Sarner has research and teaching interests in comparative programming \
+            languages, applications of computing in the social sciences, and instructional \
+            computing. His degrees are in political science (B.A. SUNY-Stony Brook; M.A., \
+            Ph.D. SUNY-Binghamton) and his doctoral dissertation was a quantitative model \
+            of the New York State legislative process. He has taught a variety of introductory \
+            programming and applications courses as well as courses in decision support and \
+            programming languages on the undergraduate level and data analysis on the graduate \
+            level. Ron has held a number of administrative positions at SUNYIT including Director \
+            of Information Services, Interim Dean of ISET, and \
+            Executive Vice President for Academic Affairs. "
     },
     {
       name: "Saumendra Sengupta, Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
+      img: "img/faculty/sam.png",
+      phone: "792-7353",
+      office: "Kunsela C129",
+      email: "sengupta@sunyit.edu",
       site: "",
-      school: "",
-      bio: ""
+      school: "University of Waterloo",
+      bio: "Sam Sengupta's work spans various topics in applied mathematics and computer \
+            science. He taught for six years at the University of Guelph in Canada before joining \
+            SUNYIT in the eighties. His current research interests include modeling of computer \
+            systems, computer networks, and distributed and real-time systems. During the last \
+            five years, his research endeavors have been confined mostly to the following topics: \
+            Intrusion-detection, Generalized Resource Reservation Protocol, Autonomous Systems, \
+            Peer-to-peer systems and attendant security issues."
     },
     {
       name: "Scott Spetka, Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
-      school: "",
-      bio: ""
+      img: "img/faculty/scott.jpg",
+      phone: "792-7537",
+      office: "Kunsela C133",
+      email: "scott@sunyit.edu",
+      site: "http://www.cs.sunyit.edu/~scott/",
+      school: "University of California, Los Angeles",
+      bio: "Scott Spetka came to the college in 1989 after earning his Ph.D. in computer \
+            science. The focus of his research at UCLA was on distributed database systems \
+            and distributed operating systems. He also worked at UCLA for one year as a \
+            teaching assistant. Scott was technical advisor to the computer center and head \
+            of programming and analysis at the National Telecommunications Administration in \
+            San Salvador, El Salvador. He was also a professor of mathematics and computer \
+            science at the Universidad Centroamericana, Jose Sime�n Ca�as during his three \
+            years in El Salvador."
     },
     {
       name: "Chris Urban, Lecturer, Dept. Chair",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
-      school: "",
-      bio: ""
+      img: "img/faculty/chris.png",
+      phone: "792-7229",
+      office: "Kunsela C120",
+      email: "urbanc@sunyit.edu",
+      site: "http://www.sunyit.edu/~urbanc/",
+      school: "Naval War College",
+      bio: "Chris Urban's primary focus is the practical application of computer \
+            information systems (CIS) technology to satisfy real-world requirements. \
+            He believes that Tom Magliozzi's quote: \"happiness equals reality minus expectations\" \
+            is the most useful heuristic for determining quality and stakeholder satisfaction. \
+            He holds an M.S. in Information Systems and an M.A. in National Security and \
+            Strategic Studies. He is a retired career Naval Officer with significant leadership, \
+            management, and project management experience, and he has served as a chief information \
+            officer (CIO). He has taught at the United States Naval Academy in Annapolis, MD and \
+            the United States Naval War College in Newport, RI. "
     },
     {
       name: "Roopa Vishwanathan, Assistant Professor",
       url: "#faculty",
-      img: "img/faculty/bruno.png",
-      phone: "792-",
-      office: "Kunsela",
-      email: "@sunyit.edu",
-      site: "",
+      img: "img/faculty/roopa.png",
+      phone: "792-7538",
+      office: "Kunsela C227",
+      email: "vishwar@sunyit.edu",
+      site: "http://www.cs.sunyit.edu/~vishwar",
       school: "",
-      bio: ""
+      bio: "Before coming to SUNY Poly I was a postdoc at UNC Greensboro from 2011 to \
+            2014. Prior to that, I received my PhD and MS from the University of North \
+            Texas in 2011, and 2006 respectively, and my BE degree from the University of \
+            Bombay (Mumbai) in 2003. My research is mainly in applied cryptography and \
+            theoretical crypto. My work includes hardware-assisted security, cryptographic \
+            protocol design, security in location-based services using cryptographic protocols, \
+            and secure data outsourcing. You can find more info about my work and research \
+            from my publications page."
     }
     ];
   // $scope.$onLoad('$viewContentLoaded', function() {

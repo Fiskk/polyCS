@@ -3,19 +3,45 @@
 
 - can I use angular to set a var that I can then check with typed.js?
 
-- get bigger images of pamphlets
+- look around for places to put Glyphicons
 
-- fix footerYear
+- why does the site make GET for {{ x.img ?}} ?
 
-FACULTY.HTMl
+- consider changing the on:hover color for everything
+
+                 FACULTY.HTMl
 -------------------------------------
-- center faculty images on xs and sm
-- make the hint on the 'faculty page a bit smaller'
-- push down the container-fluid div that has the bio in it
 - link the emails on the faculty page up with the mailer PHP-script
-- standardize the image sizes on faculty headshots
-- get escaped quotes and format Confifer's text
 ------------------------------------------------------------------
+
+
+                 CONTACT.HTML
+--------------------------------------------------
+- test the 'request form' script on 'Contact' page
+- test the 'report an issue link' on 'Contact' page
+---------------------------------------------------
+
+
+              DEGREE.HTML 'Additional Resources'
+-------------------------------------------------------
+- make a partial for 'Class Schedules' and link it to the scripts that do the banner thing
+- Keep the meet the Faculty thing
+- Give the Request page a facelift and wire up to Mailer Scripts
+- Find Undergrad and Grad course listings and link to them
+- Create View 'Undergrad & Graduate Link'
+- Create "view capstones page" and link to wherever that goes
+--------------------------------------------------------------
+
+             LABS.html
+-----------------------------------------------------------------
+- get better pic of c122a
+- get pic of macs in b118
+- get pics of the linux machines in b118
+- make modal header and footer blue gradient
+
+- should I make the footer sticky?
+
+- get bigger images of pamphlets
 
 - figure out whether the presentation attributes in index.html do anything
 
@@ -25,18 +51,3 @@ FACULTY.HTMl
 - also ask if we no longer offer the NCS Accelerated master
 - ask if Mike Pittarelli is still here and remove from contact controller if not
 - consider adding more recipes to the mailer that is found on the contact branch
-
-- test the 'request form' script on 'Contact' page
-- test the 'report an issue link' on 'Contact' page
-
-- should I make the footer sticky?
-
--------------------------------
-notes on 'Additional Resources' on Degree Programs page
--------------------------------
-- make a partial for 'Class Schedules' and link it to the scripts that do the banner thing
-- Keep the meet the Faculty thing
-- Give the Request page a facelift and wire up to Mailer Scripts
-- Find Undergrad and Grad course listings and link to them
-- Create View 'Undergrad & Graduate Link'
-- Create "view capstones page" and link to wherever that goes

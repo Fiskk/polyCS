@@ -4,14 +4,14 @@
   <h3 class="text-center">Faculty</h3>
   <hr>
 
-  <p>
+  <p id="hint">
     (Hint: Click a box to display a professor's information.)
   </p>
 
   <ul>
     <li ng-repeat="x in facultyMembers">
-      <a href="{{ x.url }}">{{ x.name }}</a>
-      <!-- <p>{{ x.name }}</p> -->
+      <!-- The <a> below was used for styling purposes and doesn't go anywhere -->
+      <a class="biggerText" href="{{ x.url }}">{{ x.name }}</a>
       <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
       <div>
         <div class="check-element animate-show" ng-show="checked">
@@ -21,17 +21,19 @@
               <p>Phone: {{ x.phone }}</p>
               <p>Office: {{ x.office }}</p>
               <p>Email: {{ x.email }}</p>
-              <p>{{ x.site }}</p>
+              <a href="{{ x.site }}">{{ x.site }}</a>
             </div>
-            <div class="col-sm-6">
-              <img class="img-responsive img-rounded shadow" src="{{ x.img }}"
-                   alt="Image of: {{ x.name }}" />
+            <div class="col-sm-6 text-center">
+              <img class="img-responsive img-rounded shadow facultyImg"
+                   src="{{ x.img }}" alt="Image of: {{ x.name }}" />
+              <br>
               <br>
 
             </div>
             <div class="container-fluid">
-              <h4>{{ x.school }}</h4>
+              <h5 class="biggerText">{{ x.school }}</h5>
               <p>{{ x.bio }}</p>
+              <hr>
             </div>
           </div>
         </div>

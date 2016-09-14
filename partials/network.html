@@ -1,5 +1,72 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
-<p>
-  network is a work in progress
-</p>
+<div class="row container-fluid">
+  <div class="col-sm-5">
+    <br>
+    <br>
+    <br>
+    <img style="width:95%;height:auto;" class="img-rounded shadow"src="img/network/lab.jpg" alt="Image of students using computers"/>
+  </div>
+  <div class="col-sm-7">
+    <br class="hidden-md hidden-lg">
+    <p>
+      The Computer Science programs are supported by modern facilities and equipment.
+      The department's computer systems utilize the UNIX operating system and Microsoft
+      Windows 7 on its workstations and are interconnected on a 1Gbps high speed network.
+      Multiple file servers that are accessible both on and off campus support the central
+      disk storage of user files. In addition to providing disk storage to Computer
+      Science and Information Systems Majors, additional servers support the Computer
+      Science department website (www.cs.sunyit.edu), databases (MariaDB and Oracle),
+      VOIP connections, and many other services.
+    </p>
+  </div>
+</div>
+
+<!-- bootstrap accordion -->
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion"
+           data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <span class="glyphicon glyphicon-eye-open"></span> Read More.
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <p>
+          The Computer Science department maintains many labs which contain a mix of operating
+          systems and software. All Departmental labs are equipped with the latest software to
+          support instruction and experimentation in programming, data processing, client-server
+          and distributed computing (networking, system administration and interoperability with
+          other platforms), and collaborative computing (web development, videoconferencing,
+          multimedia). High-speed Laser printers are available for producing typeset-quality
+          documents.
+        </p>
+        <p>
+          The Computer Science Department network offers access to many other computing
+          facilities on the campus network. It provides a rich environment for students to gain
+          experience with computer systems and networks. Computer Science Department networks are
+          connected directly to the campus 150Mbps Internet gateway.
+        </p>
+        <p>
+          The UNIX-based operating systems available include FreeBSD, Gentoo Linux, CentOS, and
+          Kali Linux. This part of the network is known as the DogNET, in reference to the naming
+          scheme used for the machines.
+        </p>
+        <p>
+          The Windows environment includes the latest PC hardware available running on the latest
+          proven Microsoft Windows operating system available, which is currently Microsoft Windows 7.
+        </p>
+        <p>
+          Student administrator positions are available for those who are interested in the field of
+          System/Network Administration. Stop by our workroom in Kunsela C107 if you are interested.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- end accordion -->

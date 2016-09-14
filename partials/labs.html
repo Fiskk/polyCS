@@ -1,5 +1,10 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
-<p>
-  labs page is a work in progress
-</p>
+
+<div class="container-fluid text-right">
+  <dl ng-repeat="h in labs">
+    <dt></dt>
+    <!-- note that modal is template I created in the controller -->
+    <dd><modal></modal></dd>
+  </dl>
+</div>
