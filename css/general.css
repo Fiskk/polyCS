@@ -11,10 +11,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*background-color: black;*/
   }
 }
-a,p,h1,h2,h3,h4,h5,h6,li {
+a,p,h1,h2,h3,h4,h5,h6,li,pre,button {
   /* jQueryReady.js will override this rule on Windows platforms */
   font-family: 'Audiowide', cursive;
 }
@@ -22,7 +21,6 @@ a,p,h1,h2,h3,h4,h5,h6,li {
 body div {
   background-color: white;
 }
-/* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -58,9 +56,6 @@ body div {
     padding-top: 4%;
   }
   .jumbotron {
-    /*margin:20px;*/
-    /*margin-bottom: 10px;*/
-    /*margin: 0px;*/
     margin-left: 3%;
     margin-right: 3%;
     padding:0px;
@@ -168,4 +163,8 @@ body div {
 /*the rules below are applied to the network.html partial*/
 .panel-default > .panel-heading {
   background-color: #e6f3ff !important;
+}
+/*the rules below are used in the labs page*/
+.btn {
+  color: black;
 }
