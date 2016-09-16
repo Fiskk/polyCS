@@ -1,5 +1,17 @@
 app.controller('listCTRL', function($scope) {
 
+  //this function handles the typing animations
+  $(function(){
+      $("#typing").typed({
+        strings: ["First sentence.", "Second sentence."],
+        //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        strings: ["Broaden Your Horizons", "Degree Programs"],
+        typeSpeed: 50,
+        startDelay: 1000,
+        backSpeed: 30
+      });
+  });
+
   $scope.bsdegrees = [
     {degree: 'Computer & Information Science', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/"},
     {degree: 'Computer Information Systems', url: "https://sunypoly.edu/undergraduate/cis/"},

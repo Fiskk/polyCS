@@ -1,24 +1,38 @@
 - I would like to have the directory in the terminal change for each view, but I
   wasn't planning on making the "terminal" a part of the view
-
 - can I use angular to set a var that I can then check with typed.js?
 
-- look around for places to put Glyphicons
+- Get a better font for windows and test everything
 
-- why does the site make GET for {{ x.img ?}} ?
+- either get typedJS to disp messages onNavEvents or disp page titles
 
-- consider changing the on:hover color for everything
+- get the browser-sniffing out of the jQueryReady.js file, but ensure that it
+  still has scope
+
+
+                 INDEX.HTML
+-------------------------------------------------------------------------
+- make a pre-footer footer that allows ReportProblem/AskQuestion + GitHub
+<div class="container-fluid text-center">
+  <hr>
+  <p>
+    <a href="/php-bin/form-mail.php?recip=admins">Report an issue with the DogNET</a>
+    <!-- TODO: test this link once it's the site is in production -->
+  </p>
+</div>
+-------------------------------------------------------------------------
+
 
                  FACULTY.HTMl
--------------------------------------
+-------------------------------------------------------------------
 - link the emails on the faculty page up with the mailer PHP-script
-------------------------------------------------------------------
+-------------------------------------------------------------------
 
 
                  CONTACT.HTML
 --------------------------------------------------
 - test the 'request form' script on 'Contact' page
-- test the 'report an issue link' on 'Contact' page
+- drop the 'report an issue link' on 'Contact' page
 ---------------------------------------------------
 
 
@@ -30,14 +44,22 @@
 - Find Undergrad and Grad course listings and link to them
 - Create View 'Undergrad & Graduate Link'
 - Create "view capstones page" and link to wherever that goes
+- make sure to get the 'direct questions to the chair' thing
 --------------------------------------------------------------
 
-             LABS.html
+
+               LABS.html
 -----------------------------------------------------------------
 - get better pic of c122a
 - get pic of macs in b118
 - get pics of the linux machines in b118
-- make modal header and footer blue gradient
+---------------------------------------------------------------
+
+- look around for places to put Glyphicons
+
+- why does the site make a GET for {{ x.img ?}} ?(Does it matter?)
+
+- consider changing the on:hover color for everything
 
 - should I make the footer sticky?
 
@@ -49,5 +71,21 @@
 
 - ask if we still offer a Telecommunications major?
 - also ask if we no longer offer the NCS Accelerated master
-- ask if Mike Pittarelli is still here and remove from contact controller if not
 - consider adding more recipes to the mailer that is found on the contact branch
+- need stuff for chiang and reale
+- template for faculty websites
+
+- stop polluting the root scope and create a factory
+http://stackoverflow.com/questions/15025979/can-i-make-a-function-available-in-every-controller-in-angular
+
+note: removed role="presentation"
+              role="presentation"
+              role="presentation"
+              role="presentation"
+              role="presentation"
+              role="presentation"
+from the ul li elements...nothing broke...
+
+$scope.$on('$viewContentLoaded', function() {
+  // I wanted to try to use this to 'type'
+});

@@ -15,7 +15,7 @@ if (window.navigator.userAgent.indexOf("Linux") != -1) osName = "linux";
 // the var below is used for nav-button toggle
 var change = true;
 
-// this function handles the typing animations
+//this function handles the typing animations
 $(function(){
     $("#typing").typed({
       // strings: ["First sentence.", "Second sentence."],

@@ -1,2 +1,3 @@
 # polyCS
-Proposed changes to my school's CS website
+
+-Developmental Version of SUNY Polytechnic CompSci Department
