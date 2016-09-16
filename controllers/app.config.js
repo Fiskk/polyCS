@@ -1,7 +1,7 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
 // TODO: get the function below out of the root scope by creating a factory
-// this function is called whenever a nav-link is clicked
+// this function is called when home link in Nav is clicked
 app.run(function($rootScope) {
         $rootScope.homeType = function() {
           $(function(location){
@@ -20,12 +20,17 @@ app.run(function($rootScope) {
         };
     });
 
+// this function handles the ajax requests that govern different views
 app.config(function($routeProvider) {
     $routeProvider
 
     .when("/", {
         templateUrl : "partials/home.html"
         // controller  : "homeCTRL" <---that doesn't work
+    })
+    .when("/classes", {
+        templateUrl : "partials/classes.html",
+        controller  : "classesCTRL"
     })
     .when("/degrees", {
         templateUrl : "partials/degrees.html",
@@ -49,5 +54,3 @@ app.config(function($routeProvider) {
     });
 
 });
-
-// var location = 'home';

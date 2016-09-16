@@ -1,0 +1,53 @@
+<div class="container-fluid text-center">
+
+  <form name="myForm">
+      <label for="repeatSelect"> ??? </label>
+      <select name="repeatSelect0" id="repeatSelect0" ng-model="data.model0">
+        <option ng-repeat="option in data.years" value="{{option.id}}">{{option.name}}</option>
+      </select>
+      <select name="repeatSelect1" id="repeatSelect1" ng-model="data.model1">
+        <option ng-repeat="option in data.semesters" value="{{option.id}}">{{option.name}}</option>
+      </select>
+    </form>
+    <hr>
+    <tt>year = {{data.model0}}</tt><br/>
+    <tt>semester = {{data.model1}}</tt><br/>
+
+  <h4>Take A Look At Available Courses for {{ year }}!</h4>
+
+  <ul>
+    <li>
+      <a href="{{ inject() }}">
+        Computer Science (CS)
+      </a>
+    </li>
+    <li>
+      <a href="https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in={{year}}{{month}}&disc_in=IS">
+        Computer Information Systems (CIS)
+      </a>
+    </li>
+    <li>
+      <a href="https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in={{year}}{{month}}&disc_in=TEL">
+        Telecommunications (TEL)
+      </a>
+    </li>
+    <li>
+      <a href="https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in={{year}}{{month}}&disc_in=NCS">
+        Network &amp; Computer Security (NCS)
+      </a>
+    </li>
+    <li>
+      <a href="https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in={{year}}{{month}}&disc_in=CSC">
+        Computer Science (CSC)
+      </a>
+    </li>
+  </ul>
+
+  <br>
+  <a href="https://sunyit.edu/calendars_events.cal_spring16.inc">
+    Spring {{ currentYear() }} Academic Calendar
+  </a>
+  <br>
+  <br>
+
+</div>

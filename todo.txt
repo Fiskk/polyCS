@@ -9,6 +9,19 @@
 - get the browser-sniffing out of the jQueryReady.js file, but ensure that it
   still has scope
 
+                CLASSES.HTML
+--------------------------------------------------------------------
+- add labels and options to general.css so they can be styled
+-------------------------------------------------------------------
+
+accounts
+-----------------------------------------------
+create, view, controller, and update appConfig
+
+schedules
+-----------------------------------------------
+create, view, controller, and update appConfig
+
 
                  INDEX.HTML
 -------------------------------------------------------------------------
