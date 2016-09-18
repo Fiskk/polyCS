@@ -6,7 +6,7 @@ app.run(function($rootScope) {
         $rootScope.homeType = function() {
           $(function(location){
 
-              // TODO: figure out how to pass this parameters so I can DRY out my controllers
+              // TODO: figure out how to pass this parameters so we can DRY out my controllers
               $("#typing").typed({
                 //strings: ["First sentence.", "Second sentence."],
                 //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
@@ -18,7 +18,7 @@ app.run(function($rootScope) {
 
           });
         };
-    });
+    }); // TODO: get the function above out of the root scope by creating a factory
 
 // this function handles the ajax requests that govern different views
 app.config(function($routeProvider) {
@@ -31,6 +31,10 @@ app.config(function($routeProvider) {
     .when("/classes", {
         templateUrl : "partials/classes.html",
         controller  : "classesCTRL"
+    })
+    .when("/help", {
+        templateUrl : "partials/help.html",
+        controller  : "helpCTRL"
     })
     .when("/degrees", {
         templateUrl : "partials/degrees.html",

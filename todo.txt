@@ -1,17 +1,11 @@
-- I would like to have the directory in the terminal change for each view, but I
-  wasn't planning on making the "terminal" a part of the view
-- can I use angular to set a var that I can then check with typed.js?
-
 - Get a better font for windows and test everything
-
-- either get typedJS to disp messages onNavEvents or disp page titles
 
 - get the browser-sniffing out of the jQueryReady.js file, but ensure that it
   still has scope
 
                 CLASSES.HTML
 --------------------------------------------------------------------
-- add labels and options to general.css so they can be styled
+- figure out how to populate <select> dropdowns automagically
 -------------------------------------------------------------------
 
 accounts

@@ -1,5 +1,6 @@
 /*
-The majority of this script runs once the HTML has rendered and requires jQuery
+The majority of this script runs once the HTML has rendered and requires jQuery.
+Its primary purpose is to pop or push CSS classes onto or off from elements
 */
 
 // sniff the OS so that we can increase readability of the font on m$ platforms
