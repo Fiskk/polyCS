@@ -6,15 +6,9 @@
                 CLASSES.HTML
 --------------------------------------------------------------------
 - figure out how to populate <select> dropdowns automagically
+- add animation to the show
 -------------------------------------------------------------------
 
-accounts
------------------------------------------------
-create, view, controller, and update appConfig
-
-schedules
------------------------------------------------
-create, view, controller, and update appConfig
 
 
                  INDEX.HTML
@@ -33,6 +27,7 @@ create, view, controller, and update appConfig
                  FACULTY.HTMl
 -------------------------------------------------------------------
 - link the emails on the faculty page up with the mailer PHP-script
+- animate the show and hide
 -------------------------------------------------------------------
 
 

@@ -214,7 +214,7 @@ app.controller('labsCTRL', function($scope) {
       details : "24 PCs running Gentoo Linux. HP B&W LaserJet printer. Scanner. ",
 
       accounts: c012accts,
-                 rules   : labRules
+      rules   : labRules
     },
     {
       location: "B118 24x7 Open Lab",

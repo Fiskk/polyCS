@@ -149,7 +149,7 @@ body div {
   color: white;
 }
 /*the rules below are applied to the faculty.html partial*/
-#hint {
+.hint {
   font-size: 11px;
 }
 .facultyImg {
