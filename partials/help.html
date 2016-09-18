@@ -1,25 +1,25 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
 
-<!-- iterate through topic-array of accordions -->
-    <!-- within each accordion, iterate through arrays of subtopics -->
-
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
     <p class="hint text-center">
       (Hint: Click a topic to expand an accordion)
     </p>
 
+    <!-- iterate through topic-array of accordions -->
     <div class="panel panel-default shadow" ng-repeat="topic in topics">
       <div class="panel-heading yellowGradient" role="tab" id="headingOne">
         <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{topic.number}}" aria-expanded="true" aria-controls="collapse{{topic.number}}">
+          <a role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{topic.number}}"
+             aria-expanded="true" aria-controls="collapse{{topic.number}}">
             {{ topic.title }}
           </a>
         </h4>
       </div>
       <div id="collapse{{topic.number}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body">
+          <!-- within each accordion, iterate through arrays of subtopics -->
           <ul ng-repeat="subtopic in topic.acctSubtopics">
             <li><a href="#">{{subtopic}}</a></li>
           </ul>
