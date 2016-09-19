@@ -14,5 +14,8 @@
   dead last. I toyed with creating my own Angular filter that I could pipe the
   expressions through, but this would have created more spaghetti because it didn't
   work as expected and there are some areas within Angular where I lack enough depth
-  at the moment to achieve what I want quickly. If (deadlines) {return simpleSolution};
+  at the moment to achieve what I want quickly.
+
+  If (deadlines) {return simpleSolution};
+
   I reverted to using Russo-One for all clients. Way to go m$!!!!

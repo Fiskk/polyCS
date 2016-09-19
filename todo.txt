@@ -8,6 +8,8 @@
 
 - get and onclick or ng-click to close the dropdown version of the nav
 
+- fix the tooltips
+
 
 
                 CLASSES.HTML
