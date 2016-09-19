@@ -1,8 +1,6 @@
-- revert to the Windows-safe font for now until I can work out filer/scope issues with sniffing
+- figure out how to make a factory so I can DRY out my controllers
 
 - consider shadow on header
-
-- Get a better font for windows and test everything
 
 - Hide the bullets on Degree and Faculty and Classes page bc WindowsChrome pulls bullets left.
 

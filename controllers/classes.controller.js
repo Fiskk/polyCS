@@ -14,10 +14,6 @@
 
 app.controller('classesCTRL', function($scope) {
 
-  if(osName == "windows") {
-    $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-  }
-
   $(function(){
       $("#typing").typed({
         // strings: ["First sentence.", "Second sentence."],

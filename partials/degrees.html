@@ -90,30 +90,30 @@
 
   <h4><strong>Undergraduate Programs</strong></h4>
   <ul>
-    <li ng-repeat="x in bsdegrees">
+    <dd ng-repeat="x in bsdegrees">
       <a href="{{ x.url }}">{{ x.degree}}</a>
-    </li>
+    </dd>
   </ul>
 
   <h4><strong>Master's Degree Programs</strong></h4>
   <ul>
-    <li ng-repeat="y in msdegrees">
+    <dd ng-repeat="y in msdegrees">
       <a href="{{ y.url }}">{{ y.subject }}</a>
-    </li>
+    </dd>
   </ul>
 
   <h4><strong>Minors</strong></h4>
   <ul>
-    <li ng-repeat="a in minors">
+    <dd ng-repeat="a in minors">
       <a href="{{ a.url }}">{{ a.minor }}</a>
-    </li>
+    </dd>
   </ul>
 
   <h4><strong>Joint BS/MS Fast-Track Program</strong></h4>
   <ul>
-    <li ng-repeat="z in xcel">
+    <dd ng-repeat="z in xcel">
       <a href="{{ z.url }}">{{ z.combo }}</a>
-    </li>
+    </dd>
   </ul>
 
   <hr>

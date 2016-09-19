@@ -2,7 +2,7 @@
      once an AJAX request is implicitly made by the user -->
 
 <div class="container-fluid text-center">
-  <h3>Use The Widget To Check Out Available Courses!</h3>
+  <h3>Use The Dropdown To Check Out Available Courses!</h3>
   <br>
 
   <form name="myForm">
@@ -19,12 +19,12 @@
 <!--The button below doesn't set the term. It hides the links until the user specifies a term to inject into the links -->
       <button type="submit" ng-if="data.year&&data.semester" ng-click="termTrue()" ng-init="term=false">Set Term</button>
     </form>
-    <hr>
     <!-- break comment to check model
     <tt>year = {{data.year}}</tt><br/>
     <tt>semester = {{data.semester}}</tt><br/> -->
 
   <span ng-if="term">
+    <br>
     <ul>
       <li>
         <a href="https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in={{data.year}}{{data.semester}}&disc_in=CS">

@@ -1,16 +1,6 @@
-// app.filter('font', function() {
-//   return function(val) {
-//     if(osName == "windows") {
-//       $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-//     }
-//   };
-// });
 
 app.controller('listCTRL', function($scope) {
 
-  if(osName == "windows") {
-    $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-  }
   //this function handles the typing animations
   $(function(){
       $("#typing").typed({

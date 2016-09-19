@@ -1,3 +1,4 @@
+// NOTE: this is just a scratchpad
 
 var string1 = 'https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in=';
 var year = '2016';

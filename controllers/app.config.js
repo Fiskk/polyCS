@@ -1,22 +1,10 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
-// app.filter('font', function() {
-//   return function(val) {
-//     if(osName == "windows") {
-//       $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-//     }
-//   };
-// });
-
 // TODO: get the function below out of the root scope by creating a factory
 // this function is called when home link in Nav is clicked
 app.run(function($rootScope) {
   $rootScope.homeType = function() {
     $(function(location){
-
-      if(osName == "windows") {
-        $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-      }
 
       // TODO: figure out how to pass this parameters so we can DRY out my controllers
       $("#typing").typed({
@@ -32,7 +20,9 @@ app.run(function($rootScope) {
   };
 }); // TODO: get the function above out of the root scope by creating a factory
 
-// this function handles the ajax requests that govern different views
+
+// the function below handles the ajax requests that govern(display) different views
+// If you want to make a new page, add a route (and possibly a controller)
 app.config(function($routeProvider) {
     $routeProvider
 

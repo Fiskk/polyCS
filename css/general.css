@@ -14,10 +14,11 @@
   }
 }
 a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label {
-  /* jQueryReady.js will override this rule on Windows platforms */
-  font-family: 'Audiowide', cursive;
+  /*Audiowide is an awesome font doesn't display well on Windows*/
+  /*font-family: 'Audiowide', cursive;*/
+  font-family: 'Russo One', sans-serif;
 }
-/*this rule was used to prevent bleeding from background*/
+/*the rule below was used to prevent bleeding from background*/
 body div {
   background-color: white;
 }

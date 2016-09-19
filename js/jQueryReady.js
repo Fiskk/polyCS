@@ -1,17 +1,7 @@
 /*
 The majority of this script runs once the HTML has rendered and requires jQuery.
-Its primary purpose is to pop or push CSS classes onto or off from elements
+Its primary purpose is to pop or push CSS classes onto or off from HTML elements.
 */
-
-// sniff the OS so that we can increase readability of the font on m$ platforms
-var osName = "Unknown OS";
-
-if (window.navigator.userAgent.indexOf("Win") != -1) osName = "windows";
-if (window.navigator.userAgent.indexOf("Mac") != -1) osName = "OSx";
-if (window.navigator.userAgent.indexOf("X11") != -1) osName = "UNIX";
-if (window.navigator.userAgent.indexOf("Linux") != -1) osName = "linux";
-// TODO: get more comprehensive tests for windows platforms
-//console.log('Your OS: ' + osName);
 
 // the var below is used for nav-button toggle
 var change = true;
@@ -30,11 +20,6 @@ $(function(){
 
 $(document).ready(function() {
   $("#control").addClass('glyphicon-menu-hamburger');
-
-  // change font if Windows becaue m$ screws up Audiowide font
-  if(osName == "windows") {
-    $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
-  }
 
   // apply styles on initial page load based on screen width
   if($(window).width() < 679) {
@@ -89,6 +74,7 @@ $(document).ready(function() {
       $("#contactInfo").removeClass("text-center");
     }
   });
+  
 });
 
 //this is invoked when the xs/sm nav button is clicked
