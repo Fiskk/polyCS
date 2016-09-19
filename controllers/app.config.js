@@ -1,24 +1,36 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
+// app.filter('font', function() {
+//   return function(val) {
+//     if(osName == "windows") {
+//       $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
+//     }
+//   };
+// });
+
 // TODO: get the function below out of the root scope by creating a factory
 // this function is called when home link in Nav is clicked
 app.run(function($rootScope) {
-        $rootScope.homeType = function() {
-          $(function(location){
+  $rootScope.homeType = function() {
+    $(function(location){
 
-              // TODO: figure out how to pass this parameters so we can DRY out my controllers
-              $("#typing").typed({
-                //strings: ["First sentence.", "Second sentence."],
-                //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-                strings: message = ["Welcome", "We're glad you're here."],
-                typeSpeed: 100,
-                startDelay: 1000,
-                backSpeed: 50
-              });
+      if(osName == "windows") {
+        $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
+      }
 
-          });
-        };
-    }); // TODO: get the function above out of the root scope by creating a factory
+      // TODO: figure out how to pass this parameters so we can DRY out my controllers
+      $("#typing").typed({
+        //strings: ["First sentence.", "Second sentence."],
+        //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        strings: message = ["Welcome", "We're glad you're here."],
+        typeSpeed: 100,
+        startDelay: 1000,
+        backSpeed: 50
+      });
+
+    });
+  };
+}); // TODO: get the function above out of the root scope by creating a factory
 
 // this function handles the ajax requests that govern different views
 app.config(function($routeProvider) {

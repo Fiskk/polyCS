@@ -1,5 +1,9 @@
 app.controller('networkCTRL', function($scope) {
 
+  if(osName == "windows") {
+    console.log("windows");
+    $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label").css("font-family", "\'Russo One\', sans-serif");
+  }
   //this function handles the typing animations
   $(function(){
       $("#typing").typed({

@@ -1,4 +1,14 @@
+- revert to the Windows-safe font for now until I can work out filer/scope issues with sniffing
+
+- consider shadow on header
+
 - Get a better font for windows and test everything
+
+- Hide the bullets on Degree and Faculty and Classes page bc WindowsChrome pulls bullets left.
+
+- ????Firefox on Windows created non-gradient blue Background, but it stopped?????
+
+- Carousel doesnt take off automatically while site is in my home dir (Windows Client Firefox)
 
 - get the browser-sniffing out of the jQueryReady.js file, but ensure that it
   still has scope
