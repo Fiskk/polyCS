@@ -10,7 +10,7 @@
   </p>
 
   <ul>
-    <li ng-repeat="x in facultyMembers">
+    <dd ng-repeat="x in facultyMembers">
       <!-- The <a> below was used for styling purposes and doesn't go anywhere -->
       <a class="biggerText" href="{{ x.url }}">{{ x.name }}</a>
       <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-    </li>
+    </dd>
   </ul>
 
   <br>

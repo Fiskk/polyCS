@@ -1,6 +1,6 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
-     
+
 <div class="container-fluid text-center positioning hidden-xs hidden-sm">
   <h3 class="text-center">Computer &amp; Information Science</h3>
 </div>
@@ -120,3 +120,16 @@
   </p>
   <br>
 </div>
+
+<!-- NOTE: when navigating through parials via Angular, the Carousels wouldn't start without a refresh -->
+<script> // TODO: figure out how to get this out of here
+$(document).ready(function(){
+            var mCarouselTO = setTimeout(function(){
+            $('#myCarousel').carousel({
+                interval: 3000,
+                cycle: true,
+            }).trigger('slide');
+            }, 2000);
+            var q = mCarouselTO;
+        });
+</script>

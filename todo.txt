@@ -1,35 +1,28 @@
+- make close glyph more prominent on Labs modals and disp message about 'esc' key
+
+- run code through w3-validator
+
+- figure out why Angular routing kills the auto-flow on carousel.(Consider using Angular-UI)
+
 - figure out how to make a factory so I can DRY out my controllers
 
-- consider shadow on header
+- get and onclick or ng-click to close the dropdown version of the nav
 
-- Hide the bullets on Degree and Faculty and Classes page bc WindowsChrome pulls bullets left.
 
-- ????Firefox on Windows created non-gradient blue Background, but it stopped?????
-
-- Carousel doesnt take off automatically while site is in my home dir (Windows Client Firefox)
-
-- get the browser-sniffing out of the jQueryReady.js file, but ensure that it
-  still has scope
 
                 CLASSES.HTML
 --------------------------------------------------------------------
 - figure out how to populate <select> dropdowns automagically
-- add animation to the show
+- add animation to the ng-show
 -------------------------------------------------------------------
 
 
 
                  INDEX.HTML
 -------------------------------------------------------------------------
-- make a pre-footer footer that allows ReportProblem/AskQuestion + GitHub
-<div class="container-fluid text-center">
-  <hr>
-  <p>
-    <a href="/php-bin/form-mail.php?recip=admins">Report an issue with the DogNET</a>
-    <!-- TODO: test this link once it's the site is in production -->
-  </p>
-</div>
+- figure out what to do with the report a problem thing
 -------------------------------------------------------------------------
+
 
 
                  FACULTY.HTMl
@@ -39,6 +32,7 @@
 -------------------------------------------------------------------
 
 
+
                  CONTACT.HTML
 --------------------------------------------------
 - test the 'request form' script on 'Contact' page
@@ -46,16 +40,12 @@
 ---------------------------------------------------
 
 
+
               DEGREE.HTML 'Additional Resources'
 -------------------------------------------------------
-- make a partial for 'Class Schedules' and link it to the scripts that do the banner thing
-- Keep the meet the Faculty thing
 - Give the Request page a facelift and wire up to Mailer Scripts
-- Find Undergrad and Grad course listings and link to them
-- Create View 'Undergrad & Graduate Link'
-- Create "view capstones page" and link to wherever that goes
-- make sure to get the 'direct questions to the chair' thing
 --------------------------------------------------------------
+
 
 
                LABS.html
@@ -67,17 +57,11 @@
 
 - look around for places to put Glyphicons
 
-- why does the site make a GET for {{ x.img ?}} ?(Does it matter?)
-
 - consider changing the on:hover color for everything
 
 - should I make the footer sticky?
 
 - get bigger images of pamphlets
-
-- figure out whether the presentation attributes in index.html do anything
-
-- consider using the SUNY_logo.png file as a footer on some pages
 
 - ask if we still offer a Telecommunications major?
 - also ask if we no longer offer the NCS Accelerated master
@@ -94,7 +78,7 @@ note: removed role="presentation"
               role="presentation"
               role="presentation"
               role="presentation"
-from the ul li elements...nothing broke...
+from the nav ul li elements...nothing broke...
 
 $scope.$on('$viewContentLoaded', function() {
   // I wanted to try to use this to 'type'

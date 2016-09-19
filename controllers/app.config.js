@@ -3,6 +3,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 // TODO: get the function below out of the root scope by creating a factory
 // this function is called when home link in Nav is clicked
 app.run(function($rootScope) {
+
   $rootScope.homeType = function() {
     $(function(location){
 

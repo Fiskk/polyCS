@@ -15,4 +15,4 @@
   expressions through, but this would have created more spaghetti because it didn't
   work as expected and there are some areas within Angular where I lack enough depth
   at the moment to achieve what I want quickly. If (deadlines) {return simpleSolution};
-  I reverted to using Russo-One for all clients. Was to go m$!!!!
+  I reverted to using Russo-One for all clients. Way to go m$!!!!
