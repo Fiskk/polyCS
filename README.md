@@ -11,7 +11,8 @@
   Audiowide with the current font, but even after creating a bunch of wet spaghetti
   in the controllers, I still could not override all the Audiowide text because
   the ng-repeat directive that I'm using on quite a few of the views was being rendered
-  dead last. I toyed with creating my own Angular filter that I could pipe the
+  dead last and the css I was injecting would miss the output from the Angular expressions.
+  I toyed with creating my own Angular filter that I could pipe the
   expressions through, but this would have created more spaghetti because it didn't
   work as expected and there are some areas within Angular where I lack enough depth
   at the moment to achieve what I want quickly.

@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute", "ui.bootstrap"]);
 
 // TODO: get the function below out of the root scope by creating a factory
 // this function is called when home link in Nav is clicked

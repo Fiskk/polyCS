@@ -12,22 +12,16 @@
 
   <dl ng-repeat="element in topics">
     <dd>
-      <a href="{{ element.url }}" data-toggle="tooltip" data-placement="right" title="{{ element.tooltip }}" data-container="body">
-        <button class="btn btn-lg btn-default yellowGradient shadow">
-          {{ element.topic }}
+      <a href="{{ element.url }}" data-toggle="tooltip" title="{{ element.tooltip }}">
+      <!-- I was forced to use AngularUI here(which is an Angular wrapper for bootstrap) -->
+        <button class="btn btn-lg btn-default yellowGradient shadow"
+                tooltip-placement="{{tooltipPlacement()}}"
+                uib-tooltip="{{element.tooltip}}"
+                type="button">
+          {{element.topic}}{{placement.selected}}
         </button>
       </a>
     </dd>
   </dl>
-
-<a href="#" data-toggle="tooltip" data-placement="right" title='{{topics[0].tooltip}}'>{{topics[0].topic}}</a>
-<!-- Generated markup by the plugin -->
-<div class="tooltip top" role="tooltip">
-  <div class="tooltip-arrow"></div>
-  <div class="tooltip-inner">
-    {{topics[0].tooltip}}
-  </div>
-</div>
-
 
 </div>
