@@ -15,7 +15,7 @@ app.controller('accountsCTRL', function($scope) {
 
   $scope.tooltipPlacement = function () {
     return 'right';
-};
+  };
 
   $scope.topics = [
     {

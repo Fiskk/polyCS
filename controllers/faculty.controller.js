@@ -255,7 +255,5 @@ app.controller('facultyCTRL', function($scope) {
             from my publications page."
     }
     ];
-  // $scope.$onLoad('$viewContentLoaded', function() {
-  //     can I use this to trigger typed.js?
-  // });
+  
 });

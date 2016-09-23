@@ -20,8 +20,9 @@
       <div id="collapse{{topic.number}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body">
           <!-- within each accordion, iterate through arrays of subtopics -->
-          <ul ng-repeat="subtopic in topic.acctSubtopics">
-            <li><a href="#">{{subtopic}}</a></li>
+          <ul ng-repeat="element in topic.acctSubtopics" ng-init="counter=0">
+            <li ng-model="index">[{{$index + 1}}]<a href="{{ subtopicsAndArrays[$index].url }}"> {{ element }}</a></li>
+            <!-- TODO: create multiple ng-repeats for the subtopic Urls -->
           </ul>
         </div>
       </div>
