@@ -4,7 +4,7 @@
   jQuery, and AngularJS. I had to resolve some minor conflicts to integrate some things.
 
 - There are quite a few open issues that could be resolved, so don't be shy to make a
-  pull request!  
+  pull request! I am definitely not opposed to refactors, or the addition of unit tests.  
 
 - I am using a lot of textbook Bootstrap code. I am also pushing and popping elements
   onto and off from HTML elements with jQuery, and TypedJS is a jQuery plugin.
