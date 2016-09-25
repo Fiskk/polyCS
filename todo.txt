@@ -2,7 +2,7 @@
 
 - run code through w3-validator
 
-- resolve tooltip issues on the 'Accounts' page
+- resolve tooltip issues on the mobile 'Accounts' page
 
 - get the borders off the buttons all <button>s with yellowGradient class
 
@@ -79,14 +79,6 @@
 
 - stop polluting the root scope and create a factory
 http://stackoverflow.com/questions/15025979/can-i-make-a-function-available-in-every-controller-in-angular
-
-note: removed role="presentation"
-              role="presentation"
-              role="presentation"
-              role="presentation"
-              role="presentation"
-              role="presentation"
-from the nav ul li elements...nothing broke...
 
 $scope.$on('$viewContentLoaded', function() {
   // I wanted to try to use this to 'type'
