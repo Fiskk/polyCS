@@ -3,6 +3,9 @@
 - Developmental Version of SUNY Polytechnic CompSci Department. Built with Bootstrap,
   jQuery, and AngularJS. I had to resolve some minor conflicts to integrate some things.
 
+- There are quite a few open issues that could be resolved, so don't be shy to make a
+  pull request!  
+
 - I am using a lot of textbook Bootstrap code. I am also pushing and popping elements
   onto and off from HTML elements with jQuery, and TypedJS is a jQuery plugin.
 
