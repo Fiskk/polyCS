@@ -12,7 +12,7 @@
 
 - fix the tooltips
 
-- get Chiang into the contacts page
+- need contact stuff for Chiang and Reale
 
 - change glyphicon next to 'Help' in nav to a '?'
 
@@ -26,32 +26,18 @@
 
 
 
-                 INDEX.HTML
--------------------------------------------------------------------------
-- figure out what to do with the report a problem thing
--------------------------------------------------------------------------
-
-
 
                  FACULTY.HTMl
 -------------------------------------------------------------------
-- link the emails on the faculty page up with the mailer PHP-script
 - animate the show and hide
 -------------------------------------------------------------------
 
 
 
-                 CONTACT.HTML
---------------------------------------------------
-- test the 'request form' script on 'Contact' page
-- drop the 'report an issue link' on 'Contact' page
----------------------------------------------------
-
-
 
               DEGREE.HTML 'Additional Resources'
 -------------------------------------------------------
-- Give the Request page a facelift and wire up to Mailer Scripts
+- That widget is currently undergoing maintenance
 --------------------------------------------------------------
 
 
@@ -69,12 +55,11 @@
 
 - should I make the footer sticky?
 
-- get bigger images of pamphlets
+- get bigger images of pamphlets so they don't pixelate at upper bound of their stacked-widths
 
 - ask if we still offer a Telecommunications major?
 - also ask if we no longer offer the NCS Accelerated master
 - consider adding more recipes to the mailer that is found on the contact branch
-- need stuff for chiang and reale
 - template for faculty websites
 
 - stop polluting the root scope and create a factory
