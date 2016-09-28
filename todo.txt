@@ -1,3 +1,16 @@
+- Fix Labs buttons on mobile view
+
+- Degree links are off-center on Degree page
+
+- why are the tooltips on help page duplicating
+
+- get rid of disposable email addresses
+
+- make hints for the accordions
+
+- write listener that will un-apply the white background color on 'body.div'
+  when a modal is opened
+
 - make close glyph more prominent on Labs modals and disp message about 'esc' key
 
 - run code through w3-validator
@@ -9,8 +22,6 @@
 - figure out how to make a factory so I can DRY out my controllers
 
 - get and onclick or ng-click to close the dropdown version of the nav
-
-- fix the tooltips
 
 - need contact stuff for Chiang and Reale
 

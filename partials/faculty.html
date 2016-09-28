@@ -5,14 +5,14 @@
 
   <br>
 
-  <p class="hint">
+  <p class="hint orangeText">
     (Hint: Click a box to display a professor's information.)
   </p>
 
   <ul>
     <dd ng-repeat="x in facultyMembers">
       <!-- The <a> below was used for styling purposes and doesn't go anywhere -->
-      <a class="biggerText" href="{{ x.url }}">{{ x.name }}</a>
+      <a style="color:black" class="biggerText" href="{{ x.url }}">{{ x.name }}</a>
       <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
       <div>
         <div class="check-element animate-show" ng-show="checked">

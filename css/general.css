@@ -1,6 +1,6 @@
 /*
   NOTE: I attempted to strucure this sheet in a way that mimics the flow of the page
-        but was not entirely successful due to the queries
+        but was not entirely successful due to the MediaQueries
 */
 
 /* request for the background image is not made when screenWidth < 769px */
@@ -14,11 +14,10 @@
   }
 }
 a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label {
-  /*Audiowide is an awesome font doesn't display well on Windows*/
-  /*font-family: 'Audiowide', cursive;*/
   font-family: 'Russo One', sans-serif;
 }
 /*the rule below was used to prevent bleeding from background*/
+/*it is unfortunately interfering with the modal background effects*/
 body div {
   background-color: white;
 }
@@ -113,7 +112,7 @@ body div {
   border-radius: 0px 0px 10px 10px;
 }
 .oneSixth {
-  width:16.666666666666667%
+  width:16.6666666666666667%;
 }
 .links a {
   color:black;
@@ -153,6 +152,9 @@ body div {
 .hint {
   font-size: 11px;
 }
+.orangeText {
+  color: orange;
+}
 .facultyImg {
   margin:auto;
   height: 117px;
@@ -169,7 +171,3 @@ body div {
 .btn {
   color: black;
 }
-/*accounts page*/
-/*.tooltip {
-  background-color: black !important;
-}*/

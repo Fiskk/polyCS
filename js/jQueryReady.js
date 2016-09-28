@@ -74,7 +74,7 @@ $(document).ready(function() {
       $("#contactInfo").removeClass("text-center");
     }
   });
-  
+
 });
 
 //this is invoked when the xs/sm nav button is clicked

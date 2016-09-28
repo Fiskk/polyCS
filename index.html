@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <meta name="description" content=""> --><!-- NOTE: Legacy site did not have description tag -->
 
-  <title>SUNY POLYTECHNIC Computer Science Department (DogNET)</title>
+  <title>Poly Computer Science | DogNET</title>
   <link rel="icon" href="img/favicons/favicon.ico">
   <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
@@ -42,31 +42,30 @@
 </head>
 
 <body ng-app="myApp">
-  <!-- NOTE: DOGnet won't load on visitor WIFI network -->
   <br class="hidden-xs hidden-xs">
   <br class="hidden-xs hidden-xs">
 
   <div id="blueNav" class="container blueGradient">
     <nav>
       <ul class="nav nav-pills pull-right">
-        <li role="presentation">
+        <!-- <li role="presentation">
           <a href="#help">
-            <span class="glyphicon glyphicon-zoom-in"></span> Help
+            <span class="glyphicon glyphicon-question-sign"></span> Help
           </a>
-        </li>
+        </li> -->
         <li role="presentation">
           <a href="#classes">
-            <span class="glyphicon glyphicon-calendar"></span> Classes
+            <span class="glyphicon glyphicon-calendar"></span> Available Classes
           </a>
         </li>
-        <li role="presentation">
+        <!-- <li role="presentation">
           <a href="#accounts">
             <span class="glyphicon glyphicon-user"></span> Accounts
           </a>
-        </li>
+        </li> -->
         <li role="presentation">
           <a href="https://accounts.cs.sunyit.edu/webmail/">
-            <span class="glyphicon glyphicon-envelope"></span> Webmail
+            <span class="glyphicon glyphicon-envelope"></span> DogNET Webmail
           </a>
         </li>
       </ul>
@@ -79,6 +78,7 @@
       <button onclick="toggleChevron()" type="button" class="navbar-toggle blueGradient shadow"
               data-toggle="collapse" data-target="#myNavbar">
         <span id="control" class="glyphicon"></span>
+        <!-- there are other classes added to the span above by jQuery -->
       </button>
     </div>
 
@@ -99,9 +99,9 @@
         <li class="links" ng-click="homeType('home')"><a href="#/">Home</a></li><!-- TODO: consider adding active classes -->
         <li class="links"><a href="#degrees">Degrees</a></li>
         <li class="links"><a href="#faculty">Faculty</a></li>
-        <li class="links"><a href="#network">Network</a></li>
         <li class="links"><a href="#labs">Labs</a></li>
-        <li class="links"><a href="#contact">Contact</a></li>
+        <li class="links"><a href="#accounts">Accounts</a></li>
+        <li class="links"><a href="#help">Help</a></li>
       </ul>
     </div>
 
@@ -128,7 +128,7 @@
      <div class="row text-center">
        <div class="col-sm-6">
          <i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>
-         <a class="hint" href="http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=admins">
+         <a class="hint" href="http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=bakerdp">
            Would You Like To Report An Issue With Our Network Or Open A Support Ticket?
          </a>
        </div>

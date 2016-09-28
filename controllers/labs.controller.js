@@ -20,7 +20,7 @@ app.directive("modal", function() {
                       '<div class="modal-dialog" role="document"> ' +
                         '<div class="modal-content"> ' +
                           '<div class="modal-header blueGradient roundedTopCorners"> ' +
-                            '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> ' +
+                            '<button type="button" class="close" style="color:yellow; z-index:10;" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button> ' +
                             '<h4 class="modal-title" id="myModalLabel">{{ h.location }}</h4> ' +
                           '</div> ' +
                           '<div class="modal-body"> ' +
@@ -28,6 +28,7 @@ app.directive("modal", function() {
                              '<img class="img-responsive img-rounded shadow" src="{{ h.img }}" alt="Picture of {{ h.location }} lab"/>' +
                           '</div> ' +
                           '<div class="container-fluid">' +
+                            '<p class="hint orangeText">(Hint: Click on Accounts or Rules to expand the Accordion)</p>' +
                             '<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">' +
                               '<div class="panel panel-default">' +
                                 '<div class="panel-heading" role="tab" id="headingOne">' +
@@ -75,7 +76,7 @@ app.controller('labsCTRL', function($scope) {
       $("#typing").typed({
         //strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        strings: ["Do You Have Your CS Account Yet?", "Labs"],
+        strings: ["DogNET Computer Labs"],
         typeSpeed: 50,
         startDelay: 1000,
         backSpeed: 30
@@ -120,8 +121,8 @@ app.controller('labsCTRL', function($scope) {
                   "Department's main file servers. Two storage areas are available\n"+
                   "for student use: the user's home directory, and a public directory.\n"+
                   "On the windows machines, your home directory is mapped to drive H:,\n"+
-                  "and the public directory is mapped to drive T:. On the Unix \n"+
-                  "machines, the public directory is mounted as /opt/pub/ on fang \n"+
+                  "and the public directory is mapped to drive T. On the Unix \n"+
+                  "machines, the public directory is mounted as /opt/pub/ on Fang \n"+
                   "and the machines in the c012 lab. \n\n"+
                   "Due to the limited amount of space available and current disk \n"+
                   "backup contraints, your home directory is for the storing of \n"+

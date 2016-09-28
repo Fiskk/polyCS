@@ -1,0 +1,10 @@
+help/*
+inc/*
+php-bin/*
+projects/*
+resources/*
+tools/*
+favicon.ico
+*.php
+print.css
+style.css
