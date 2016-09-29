@@ -1,8 +1,8 @@
+- Figure out if I can push or pop btn-sm/btn-xs and btn-md classes onto or off
+  from buttons on Labs and Accounts pages with AngularJS.
+  If not, I can just add more jQuery stuff to do it.
+
 - Fix Labs buttons on mobile view
-
-- Degree links are off-center on Degree page
-
-- why are the tooltips on help page duplicating
 
 - get rid of disposable email addresses
 
@@ -60,17 +60,12 @@
 - get pics of the linux machines in b118
 ---------------------------------------------------------------
 
-- look around for places to put Glyphicons
-
-- consider changing the on:hover color for everything
-
 - should I make the footer sticky?
 
-- get bigger images of pamphlets so they don't pixelate at upper bound of their stacked-widths
+- get bigger images of pamphlets so they don't pixelate at upper bound of mobile UI
 
 - ask if we still offer a Telecommunications major?
 - also ask if we no longer offer the NCS Accelerated master
-- consider adding more recipes to the mailer that is found on the contact branch
 - template for faculty websites
 
 - stop polluting the root scope and create a factory

@@ -12,7 +12,7 @@ JavaScript in the current context.
 
 app.directive("modal", function() {
   return {
-    template :  '<button type="button" class="btn  btn-lg shadow yellowGradient" data-toggle="modal" data-target="#myModal{{ h.num }}"> ' +
+    template :  '<button type="button" class="btn  btn-md shadow yellowGradient" data-toggle="modal" data-target="#myModal{{ h.num }}"> ' +
                   '{{ h.location }}' +
                   '</button> ' +
 
@@ -186,7 +186,7 @@ app.controller('labsCTRL', function($scope) {
       location: "C122 Open Lab",
       num     : "1",
       img     : "img/labs/c122.jpg",
-      details : "6 PCs running Windows 7. HP B&W LaserJet printer. Scanner. 2 large whiteboards.",
+      details : "PCs running Gentoo Linux and Windows 7. HP B&W LaserJet printer. 2 large whiteboards.",
       accounts: standardAcct,
       rules   : labRules
     },
@@ -229,7 +229,7 @@ app.controller('labsCTRL', function($scope) {
       location: "DH1240 Network Security/VOIP Classroom",
       num     : "6",
       img     : "img/labs/c014.png",
-      details : "Currently reserved for NCS class' with workspaces for assigned student projects at the networking pods.",
+      details : "Currently reserved for NCS classes with workspaces for assigned student projects at the networking pods.",
       accounts: standardAcct,
       rules   : labRules
     },

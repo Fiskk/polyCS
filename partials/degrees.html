@@ -88,32 +88,32 @@
   <hr>
 
   <h4><strong>Undergraduate Programs</strong></h4>
-  <ul>
+  <dl>
     <dd ng-repeat="x in bsdegrees">
       <a href="{{ x.url }}">{{ x.degree}}</a>
     </dd>
-  </ul>
+  </dl>
 
   <h4><strong>Master's Degree Programs</strong></h4>
-  <ul>
+  <dl>
     <dd ng-repeat="y in msdegrees">
       <a href="{{ y.url }}">{{ y.subject }}</a>
     </dd>
-  </ul>
+  </dl>
 
   <h4><strong>Minors</strong></h4>
-  <ul>
+  <dl>
     <dd ng-repeat="a in minors">
       <a href="{{ a.url }}">{{ a.minor }}</a>
     </dd>
-  </ul>
+  </dl>
 
   <h4><strong>Joint BS/MS Fast-Track Program</strong></h4>
-  <ul>
+  <dl>
     <dd ng-repeat="z in xcel">
       <a href="{{ z.url }}">{{ z.combo }}</a>
     </dd>
-  </ul>
+  </dl>
 
   <hr>
   <br>

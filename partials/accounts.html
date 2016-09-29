@@ -12,9 +12,10 @@
 
   <dl ng-repeat="element in topics">
     <dd>
-      <a href="{{ element.url }}" data-toggle="tooltip" title="{{ element.tooltip }}">
+      <!-- <a href="{{ element.url }}" data-toggle="tooltip" title="{{ element.tooltip }}"> -->
+      <a href="{{ element.url }}" >
       <!-- I was forced to use AngularUI here(which is an Angular wrapper for bootstrap) -->
-        <button class="btn btn-lg btn-default yellowGradient shadow"
+        <button class="btn btn-md btn-default yellowGradient shadow"
                 tooltip-placement="{{tooltipPlacement()}}"
                 uib-tooltip="{{element.tooltip}}"
                 type="button">
