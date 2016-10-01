@@ -2,11 +2,11 @@
   from buttons on Labs and Accounts pages with AngularJS.
   If not, I can just add more jQuery stuff to do it.
 
-- Fix Labs buttons on mobile view
+- look around for places to put Glyphicons
+
+- consider changing the on:hover color for everything
 
 - get rid of disposable email addresses
-
-- make hints for the accordions
 
 - write listener that will un-apply the white background color on 'body.div'
   when a modal is opened
@@ -16,16 +16,14 @@
 - run code through w3-validator
 
 - resolve tooltip issues on the mobile 'Accounts' page
+  (find alternative to tooltips for mobile that describe buttons' functions)
+
+- get and onclick or ng-click to close the dropdown version of the nav  (p:4)
+
+- need contact stuff for Chiang and Reale (P:10)
 
 - get the borders off the buttons all <button>s with yellowGradient class
-
 - figure out how to make a factory so I can DRY out my controllers
-
-- get and onclick or ng-click to close the dropdown version of the nav
-
-- need contact stuff for Chiang and Reale
-
-- change glyphicon next to 'Help' in nav to a '?'
 
 
 

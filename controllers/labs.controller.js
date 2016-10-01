@@ -226,7 +226,7 @@ app.controller('labsCTRL', function($scope) {
       rules   : labRules
     },
     {
-      location: "DH1240 Network Security/VOIP Classroom",
+      location: "DH1240 Network Security",
       num     : "6",
       img     : "img/labs/c014.png",
       details : "Currently reserved for NCS classes with workspaces for assigned student projects at the networking pods.",

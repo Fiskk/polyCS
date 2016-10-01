@@ -5,15 +5,17 @@
 
   <br>
 
-  <p class="hint orangeText">
-    (Hint: Click a box to display a professor's information.)
-  </p>
+  <div class="animate-show" ng-hide="checked">
+    <p class="hint orangeText" >
+      (Hint: Click a name to show or hide information.)
+    </p>
+  </div>
 
-  <ul>
+  <dl>
     <dd ng-repeat="x in facultyMembers">
       <!-- The <a> below was used for styling purposes and doesn't go anywhere -->
-      <a id="hideLink" class="biggerText" href="{{ x.url }}">{{ x.name }}</a>
-      <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
+      <a class="biggerText" ng-click="checked = !checked" href="{{ x.url }}">{{ x.name }}</a>
+      <input class="notDisplayed" type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
       <div>
         <div class="check-element animate-show" ng-show="checked">
           <hr>
@@ -38,9 +40,9 @@
             </div>
           </div>
         </div>
+        <br>
       </div>
     </dd>
-  </ul>
+  </dl>
 
-  <br>
 </div>

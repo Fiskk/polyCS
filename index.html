@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <meta name="description" content=""> --><!-- NOTE: Legacy site did not have description tag -->
+  <meta name="description" content="The Computer Science Programs at SUNY Polytechnic
+                                    in Utica offer a wide range of learning experiences
+                                    and opportunities for students.">
 
-  <title>Poly Computer Science | DogNET</title>
+  <title>CompSci | DogNET</title>
   <link rel="icon" href="img/favicons/favicon.ico">
   <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
@@ -48,26 +50,19 @@
   <div id="blueNav" class="container blueGradient">
     <nav>
       <ul class="nav nav-pills pull-right">
-        <!-- <li role="presentation">
-          <a href="#help">
-            <span class="glyphicon glyphicon-question-sign"></span> Help
-          </a>
-        </li> -->
+
         <li role="presentation">
           <a href="#classes">
             <span class="glyphicon glyphicon-calendar"></span> Available Classes
           </a>
         </li>
-        <!-- <li role="presentation">
-          <a href="#accounts">
-            <span class="glyphicon glyphicon-user"></span> Accounts
-          </a>
-        </li> -->
+
         <li role="presentation">
           <a href="https://accounts.cs.sunyit.edu/webmail/">
             <span class="glyphicon glyphicon-envelope"></span> DogNET Webmail
           </a>
         </li>
+
       </ul>
     </nav>
   </div>
@@ -96,12 +91,36 @@
 
     <div id="myNavbar" class="collapse navbar-collapse">
       <ul id="navtabs" class="nav nav-tabs yellowGradient text-center roundedCorners">
-        <li class="links" ng-click="homeType('home')"><a href="#/">Home</a></li><!-- TODO: consider adding active classes -->
-        <li class="links"><a href="#degrees">Degrees</a></li>
-        <li class="links"><a href="#faculty">Faculty</a></li>
-        <li class="links"><a href="#labs">Labs</a></li>
-        <li class="links"><a href="#accounts">Accounts</a></li>
-        <li class="links"><a href="#help">Help</a></li>
+
+        <li class="links" onclick="toggleChevron()" ng-click="homeType('home')" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a>
+        </li><!-- TODO: consider adding active classes -->
+        <li class="links" onclick="toggleChevron()">
+          <a href="#degrees" data-toggle="collapse" data-target="#myNavbar">
+            <i class="fa fa-pencil" aria-hidden="true"></i> Degrees
+          </a>
+        </li>
+        <li class="links" onclick="toggleChevron()">
+          <a href="#faculty" data-toggle="collapse" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-apple"></span> Faculty
+          </a>
+        </li>
+        <li class="links" onclick="toggleChevron()">
+          <a href="#labs" data-toggle="collapse" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-console"></span> Labs
+          </a>
+        </li>
+        <li class="links" onclick="toggleChevron()">
+          <a href="#accounts" data-toggle="collapse" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-cog"></span>Account
+          </a>
+        </li>
+        <li class="links" onclick="toggleChevron()">
+          <a href="#help" data-toggle="collapse" data-target="#myNavbar">
+            <i class="fa fa-life-ring" aria-hidden="true"></i> Help
+          </a>
+        </li>
+
       </ul>
     </div>
 

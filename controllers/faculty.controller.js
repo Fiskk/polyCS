@@ -12,6 +12,12 @@ app.controller('facultyCTRL', function($scope) {
       });
   });
 
+  $scope.binder = function($event) {
+    if ($scope.checked == true) {
+      $scope.checked = false;
+    }
+  }
+
   $scope.facultyMembers = [
     {
       name: "Bruno Andriamanalimanana, Associate Professor",
@@ -169,7 +175,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7327",
       office: "Kunsela C123",
       email: "ron@sunyit.edu",
-      site: "http://people/sunyit.edu/~sarnerr/",
+      site: "https://sunypoly.edu/apps/directory/?uid=ron&format=bio",
       school: "SUNY-Binghamton",
       bio: "Ron Sarner has research and teaching interests in comparative programming \
             languages, applications of computing in the social sciences, and instructional \
@@ -255,5 +261,5 @@ app.controller('facultyCTRL', function($scope) {
             from my publications page."
     }
     ];
-  
+
 });

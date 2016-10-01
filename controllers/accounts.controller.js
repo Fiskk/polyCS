@@ -5,7 +5,7 @@ app.controller('accountsCTRL', function($scope) {
       $("#typing").typed({
         //strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        strings: ["Account Maintenance"],
+        strings: ["CS Account Maintenance"],
         typeSpeed: 50,
         startDelay: 1000,
         backSpeed: 30
@@ -19,7 +19,7 @@ app.controller('accountsCTRL', function($scope) {
 
   $scope.topics = [
     {
-      topic: 'Activate CS Account or Reset Forgotten Password',
+      topic: 'Get a CS Account or Password-Reset',
       url: 'https://accounts.cs.sunyit.edu/activate.php',
       tooltip : 'Use this link to activate your CS account, or if you need to reset a forgotten password. (You will need your ITS Account info)'},
     {
