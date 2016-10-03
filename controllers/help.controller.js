@@ -64,17 +64,17 @@ app.controller('helpCTRL', function($scope, $http) {
                           'http://www.cs.sunyit.edu/help/htaccess.php'
                        ]
     },
-    {
-      title : "General",
-      number : 3,
-      acctSubtopics : [  'Secure Email Client Configuration',
-                         'Software Available to Students'
-                      ],
-      subtopicUrls : [
-                        'http://www.cs.sunyit.edu/help/spop.php',
-                        'http://www.cs.sunyit.edu/help/downloads.php'
-                     ]
-    },
+    // {
+    //   title : "General",
+    //   number : 3,
+    //   acctSubtopics : [  'Secure Email Client Configuration',
+    //                      'Software Available to Students'
+    //                   ],
+    //   subtopicUrls : [
+    //                     'http://www.cs.sunyit.edu/help/spop.php',
+    //                     'http://www.cs.sunyit.edu/help/downloads.php'
+    //                  ]
+    // },
     {
       title : "Linux",
       number : 4,

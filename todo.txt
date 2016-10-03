@@ -1,3 +1,5 @@
+- write a .sh or .py script that will configure git and one that will enable credential helper
+
 - consider changing the on:hover color for everything
 
 - get rid of disposable email addresses
