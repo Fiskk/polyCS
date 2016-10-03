@@ -33,6 +33,7 @@ $(document).ready(function() {
     $(".format").addClass("text-left");
     $(".jumbotron").addClass("shadow");
     $("#contactInfo").addClass("text-center");
+    $(".addAttr").attr("data-toggle", "collapse");
   }
   else {
     $("#logoDiv").addClass("header");
@@ -45,6 +46,7 @@ $(document).ready(function() {
     $(".format").removeClass("text-left");
     $(".jumbotron").removeClass("shadow");
     $("#contactInfo").removeClass("text-center");
+    $(".addAttr").removeAttr("data-toggle");
   }
 
   // when resize events are occurring, apply or remove styles at breakpoints
@@ -60,6 +62,7 @@ $(document).ready(function() {
       $(".format").addClass("text-left");
       $(".jumbotron").addClass("shadow");
       $("#contactInfo").addClass("text-center");
+      $(".addAttr").attr("data-toggle", "collapse");
     }
     else {
       $("#logoDiv").addClass("header");
@@ -72,6 +75,7 @@ $(document).ready(function() {
       $(".format").removeClass("text-left");
       $(".jumbotron").removeClass("shadow");
       $("#contactInfo").removeClass("text-center");
+      $(".addAttr").removeAttr("data-toggle");
     }
   });
 

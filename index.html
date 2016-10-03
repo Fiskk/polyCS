@@ -92,31 +92,34 @@
     <div id="myNavbar" class="collapse navbar-collapse">
       <ul id="navtabs" class="nav nav-tabs yellowGradient text-center roundedCorners">
 
-        <li class="links" onclick="toggleChevron()" ng-click="homeType('home')" data-toggle="collapse" data-target="#myNavbar">
-          <a href="#/"><span class="glyphicon glyphicon-home"></span> Home</a>
+    <!-- NOTE: I am adding 'data-toggle="collapse"' to the <a> elements below through jQuery-->
+        <li class="links" onclick="toggleChevron()" ng-click="homeType('home')">
+          <a href="#/" class="addAttr" data-target="#myNavbar">
+            <span class="glyphicon glyphicon-home"></span> Home
+          </a>
         </li><!-- TODO: consider adding active classes -->
         <li class="links" onclick="toggleChevron()">
-          <a href="#degrees" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#degrees" class="addAttr" data-target="#myNavbar">
             <i class="fa fa-pencil" aria-hidden="true"></i> Degrees
           </a>
         </li>
         <li class="links" onclick="toggleChevron()">
-          <a href="#faculty" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#faculty" class="addAttr" data-target="#myNavbar">
             <span class="glyphicon glyphicon-apple"></span> Faculty
           </a>
         </li>
         <li class="links" onclick="toggleChevron()">
-          <a href="#labs" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#labs" class="addAttr" data-target="#myNavbar">
             <span class="glyphicon glyphicon-console"></span> Labs
           </a>
         </li>
         <li class="links" onclick="toggleChevron()">
-          <a href="#accounts" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#accounts" class="addAttr" data-target="#myNavbar">
             <span class="glyphicon glyphicon-cog"></span>Account
           </a>
         </li>
         <li class="links" onclick="toggleChevron()">
-          <a href="#help" data-toggle="collapse" data-target="#myNavbar">
+          <a href="#help" class="addAttr" data-target="#myNavbar">
             <i class="fa fa-life-ring" aria-hidden="true"></i> Help
           </a>
         </li>

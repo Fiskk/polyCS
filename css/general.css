@@ -34,10 +34,12 @@ body div {
 .nav-tabs li {
   border:1px solid white;
 }
+
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: orange;
   color:black;
 }
+
 @media screen and (max-width:500px) {
   #blueNav {
     padding:0px;
@@ -176,7 +178,6 @@ body div {
 }
 
 
-/*rules below not currently functional*/
 .animate-show {
   /*line-height: 20px;*/
   opacity: 1;

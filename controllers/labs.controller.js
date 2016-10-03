@@ -203,7 +203,7 @@ app.controller('labsCTRL', function($scope) {
       location: "C228 Open Lab",
       num     : "3",
       img     : "img/labs/c228.jpg",
-      details : "3 PCs running Windows 7. HP B&W LaserJet printer. \
+      details : "2 PCs running Windows 7. HP B&W LaserJet printer. \
                 This is primarily a lab for the Graduate Students.",
       accounts: standardAcct,
       rules   : labRules
@@ -215,14 +215,6 @@ app.controller('labsCTRL', function($scope) {
       details : "24 PCs running Gentoo Linux. HP B&W LaserJet printer. Scanner. ",
 
       accounts: c012accts,
-      rules   : labRules
-    },
-    {
-      location: "B118 24x7 Open Lab",
-      num     : "5",
-      img     : "img/labs/b118.png",
-      details : "2 PCs running Gentoo Linux. (In addition to 10 Windows 7 PCs)",
-      accounts: standardAcct,
       rules   : labRules
     },
     {
