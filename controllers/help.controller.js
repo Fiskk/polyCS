@@ -31,13 +31,14 @@ app.controller('helpCTRL', function($scope, $http) {
     {
       title : "Labs",
       number : 1,
-      acctSubtopics : [  'C012 Games',
+      acctSubtopics : [
+                        //  'C012 Games',
                          'Printing',
                          'Scanning from C128 Copier',
                          'Using the Scanner in C012'
                        ],
         subtopicUrls : [
-                          'http://www.cs.sunyit.edu/help/games.php',
+                          // 'http://www.cs.sunyit.edu/help/games.php',
                           'http://www.cs.sunyit.edu/help/printing.php',
                           'http://www.cs.sunyit.edu/help/copyroomScanner.php',
                           'http://www.cs.sunyit.edu/help/scanner.php'

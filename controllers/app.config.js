@@ -62,6 +62,10 @@ app.config(function($routeProvider) {
     .when("/contact", {
         templateUrl : "partials/contact.html",
         controller  : "contactCTRL"
+    })
+    .when("/vpn", {
+        templateUrl : "partials/vpn.html"
+        // controller  : "contactCTRL"
     });
 
 });

@@ -210,3 +210,8 @@ body div {
 .btn {
   color: black;
 }
+
+/*rules applied to help pages*/
+.attribution {
+  font-size:10px;
+}

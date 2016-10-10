@@ -23,7 +23,7 @@
           <ul ng-repeat="element in topic.acctSubtopics">
             <!-- TODO: figure out why the frickin heck I can access $scope.topics with topic.someproperty..WTF!!!! -->
             <li>[{{$index}}]<a href="{{topic.subtopicUrls[$index]}}"><!-- how does $index increment on each loop? -->
-            <!-- NOTE: I can't frickin believe that works without the 's' on topics. -->
+            <!-- NOTE: I don't understand why this works without the 's' on topics. -->
               {{ element }}</a>
             </li>
           </ul>

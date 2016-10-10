@@ -1,13 +1,21 @@
-- write a .sh or .py script that will configure git and one that will enable credential helper
+- figure out what to do with the jumbotron in the help pages.
 
-- consider changing the on:hover color for everything
+- images referenced by puttytunneling2.php don't disp in production, but do disp on dev server ?????
+
+- Help > rdp.php does not display in production(this is resolved but the patch needs to be pushed to production)
+
+- could use an img on Labs and Accounts page
+
+- IMGs on HELP > 'Use putty to tunnel a connection' are broken
+
+- write a .sh or .py script that will configure git and one that will enable credential helper
 
 - get rid of disposable email addresses
 
 - write listener that will un-apply the white background color on 'body.div'
   when a modal is opened
 
-- make text in modals on labs page smaller on mobile (???)
+- make text in modals on labs page smaller on mobile (???) (to fox the <pre> issue)
 
 - make close glyph more prominent on Labs modals and disp message about 'esc' key
 
