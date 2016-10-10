@@ -1,3 +1,5 @@
+- breadcrumbs
+
 - figure out what to do with the jumbotron in the help pages.
 
 - images referenced by puttytunneling2.php don't disp in production, but do disp on dev server ?????

@@ -56,8 +56,10 @@ app.controller('helpCTRL', function($scope, $http) {
                          'Restricing Access to Personal Web-Pages'
                        ],
         subtopicUrls : [
-                          'http://www.cs.sunyit.edu/help/vpn2.php',
-                          'http://www.cs.sunyit.edu/help/ssh.php',
+                          // 'http://www.cs.sunyit.edu/help/vpn2.php',
+                          '#vpn',
+                          // 'http://www.cs.sunyit.edu/help/ssh.php',
+                          '#putty',
                           'http://www.cs.sunyit.edu/help/email.php',
                           'http://www.cs.sunyit.edu/help/mysql.php',
                           'http://www.cs.sunyit.edu/help/nfs.php',

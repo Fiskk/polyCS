@@ -215,3 +215,7 @@ body div {
 .attribution {
   font-size:10px;
 }
+
+.center {
+  margin:auto;
+}
