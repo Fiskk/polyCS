@@ -60,11 +60,16 @@ app.controller('helpCTRL', function($scope, $http) {
                           '#vpn',
                           // 'http://www.cs.sunyit.edu/help/ssh.php',
                           '#putty',
-                          'http://www.cs.sunyit.edu/help/email.php',
-                          'http://www.cs.sunyit.edu/help/mysql.php',
-                          'http://www.cs.sunyit.edu/help/nfs.php',
-                          'http://www.cs.sunyit.edu/help/www.php',
-                          'http://www.cs.sunyit.edu/help/htaccess.php'
+                          // 'http://www.cs.sunyit.edu/help/email.php',
+                          '#email',
+                          // 'http://www.cs.sunyit.edu/help/mysql.php',
+                          '#mysql',
+                          // 'http://www.cs.sunyit.edu/help/nfs.php',
+                          '#nfs',
+                          // 'http://www.cs.sunyit.edu/help/www.php',
+                          '#www',
+                          // 'http://www.cs.sunyit.edu/help/htaccess.php'
+                          '#htaccess'
                        ]
     },
     // {

@@ -1,0 +1,35 @@
+<div class="container-fluid text-center">
+  <h2>Network File System</h2>
+</div>
+<hr>
+
+<div class="container-fluid">
+
+  <p>
+    The home directories of all users are exported from one machine to all other network
+    machines. This means when you log onto a machine in the lab, you are able to access
+    the same files as you have on fang.
+  </p>
+  <p>
+    The concept behind NFS is that one remote machine (with lots of disk space) is designated as a
+    file server. That file server exports its file system(s) to other machines (clients).
+    On the clients, an image of the file system will be created (mounted) so that it
+    appears to the average user that the file system is on that machine. How it works on the DogNET
+    is that the /home directory is on the server 'spuds' and exported to all other DogNET machines.
+  </p>
+  <p>
+    If you want to see information on the file systems on the computer you are logged into,
+    type the command <font color="fuchsia">df -h</font>.
+  </p>
+  <p>
+    THe 'df' command will show you the size of the
+    partitions on the machine that you are on, including those that are
+    mounted from other machines.
+  </p>
+
+  <p>
+    If you would like to see how much space you are using on the file servers, run
+    the <font color="fuchsia">quota</font> command.
+  </p>
+
+</div>

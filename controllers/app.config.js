@@ -70,6 +70,26 @@ app.config(function($routeProvider) {
     .when("/putty", {
         templateUrl : "partials/putty.html",
         controller  : "helpCTRL"
+    })
+    .when("/email", {
+        templateUrl : "partials/email.html",
+        controller  : "helpCTRL"
+    })
+    .when("/mysql", {
+        templateUrl : "partials/mysql.html",
+        controller  : "helpCTRL"
+    })
+    .when("/nfs", {
+        templateUrl : "partials/nfs.html",
+        controller  : "helpCTRL"
+    })
+    .when("/www", {
+        templateUrl : "partials/www.html",
+        controller  : "helpCTRL"
+    })
+    .when("/htaccess", {
+        templateUrl : "partials/htaccess.html",
+        controller  : "helpCTRL"
     });
 
 });

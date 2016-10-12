@@ -1,3 +1,5 @@
+- test the Help pages on mobile
+
 - breadcrumbs
 
 - figure out what to do with the jumbotron in the help pages.
