@@ -63,6 +63,18 @@ app.config(function($routeProvider) {
         templateUrl : "partials/contact.html",
         controller  : "contactCTRL"
     })
+    .when("/printing", {
+        templateUrl : "partials/printing.html",
+        controller  : "helpCTRL"
+    })
+    .when("/c128copier", {
+        templateUrl : "partials/c128copier.html",
+        controller  : "helpCTRL"
+    })
+    .when("/c012scanner", {
+        templateUrl : "partials/c012scanner.html",
+        controller  : "helpCTRL"
+    })    
     .when("/vpn", {
         templateUrl : "partials/vpn.html",
         controller  : "helpCTRL"

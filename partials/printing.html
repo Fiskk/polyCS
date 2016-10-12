@@ -1,0 +1,129 @@
+<div class="container-fluid text-center">
+	<h2>Help: Network Printing</h2>
+</div>
+<hr>
+
+<div class="container-fluid">
+<a name="print"></a>
+<h3>Printing:</h3>
+
+<p>dogps is the default DogNET printer.  If you type:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ <font color="fuchsia">lpr <i>&lt;filename></i></font>
+
+<p>The document will be printed out on the printer on C012.</p>
+
+<p>To print files on a different printer (see list below), type:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ <font color="fuchsia">lpr -P<i>&lt;printer></i> <i>&lt;filename></i></font></p>
+
+
+<BR><BR>
+<a name="cancel"></a>
+<h3>Canceling a print job:</h3>
+<OL>
+<LI>First list the pending jobs, type <font color="fuchsia">lpq -P<i>&lt;printer></i></font>.
+The output should look similar:
+<PRE>
+merantn@fang:~>lpq -Pc012
+c012lpr is ready and printing
+Rank   Owner      <B>Job</B>  Files                                 Total Size
+1st    merantn    524  /etc/printcap                         1429 bytes
+2nd    merantn    525  /etc/printcap                         1429 bytes
+3rd    merantn    526  /etc/printcap                         1429 bytes
+</PRE>
+<LI>Find the job number to cancel, within the <b>Job</B> column.
+<LI>Type <font color="fuchsia">lprm -P<i>&lt;printer></i> <i>&lt;job&gt;</i></font>
+</OL>
+
+<BR><BR>
+<a name="example"></a>
+<h3>Examples:</h3>
+<p>To print the file testpage on the C122 laser:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ <font color="fuchsia">lpr -Pc122lpr testpage</font></p>
+
+<p>To cancel job number 525 on C012lpr:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ <font color="fuchsia">lprm -Pc012lpr 525</font><br />
+<br />
+</p>
+
+<!--
+<BR><BR>
+<a name="source"></a>
+<h3>Printing Source Code:</h3>
+<p>For a better way to print source code, try the a2ps command
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ <font color="fuchsia">a2ps source.cpp | lpr</font>
+-->
+
+
+<!-- <h3>
+Printers accessible from DogNET</h3>
+<p>
+In most cases, the name of the printer is based on its location.
+
+<BR><BR>
+<center>
+<table width=400 border=3>
+<TR>
+	<TH>Printer name</TH>
+	<TH>Location</TH>
+	<TH>Model</TH>
+</TR><TR>
+	<TD>c012lpr</TD>
+	<TD>C012</TD>
+	<TD>HP LaserJet 8150N</TD>
+</TR><TR>
+	<TD>c014lpr</TD>
+	<TD>C014</TD>
+	<TD>HP LaserJet 8150DN</TD>
+</TR><TR>
+	<TD>c014clr</TD>
+	<TD>C014</TD>
+	<TD>HP Color LaserJet 3800</TD>
+</TR><TR>
+	<TD>c107lpr</TD>
+	<TD>C107</TD>
+	<TD>HP DeskJet 6p</TD>
+</TR><TR>
+	<TD>c122lpr</TD>
+	<TD>C122</TD>
+	<TD>HP LaserJet 4250tn</TD>
+</TR><TR>
+	<TD>c228lpr</TD>
+	<TD>C228</TD>
+	<TD>HP LaserJet 4200n</TD>
+</TR><TR>
+	<TD>b118lpr</TD>
+	<TD>B118</TD>
+	<TD>HP LaserJet 4350dtn</TD>
+</TR><TR>
+	<TD>dh1240lpr</TD>
+	<TD>DH 1240</TD>
+	<TD>HP LaserJet</TD>
+</table>
+</center>
+</p> -->
+
+<!--
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+Printing postscript on dogjet (dj)
+        (the -v is not needed for postscript printers)
+
+        groff -t -P-l tblsrc | lpr -v -Pdogjet
+
+        preprocess "tblsrc" with the tbl program.
+        invoke the grops program with the -l option
+        to produce landscape output for the
+        default postscript output from groff.
+        Send output to the C122 laserjet II (dogjet). The -v
+        option is used to print postscript.
+
+warning, this works ONLY on dogjet
+
+        lpr -v -Pdogjet <file.ps>
+                for printing postscript files (see above for landscape)
+        lpr -d -Pdogjet <file.dvi>
+                for printing dvi files
+-->
+
+</div>

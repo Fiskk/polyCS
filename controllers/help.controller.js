@@ -38,10 +38,12 @@ app.controller('helpCTRL', function($scope, $http) {
                          'Using the Scanner in C012'
                        ],
         subtopicUrls : [
-                          // 'http://www.cs.sunyit.edu/help/games.php',
-                          'http://www.cs.sunyit.edu/help/printing.php',
-                          'http://www.cs.sunyit.edu/help/copyroomScanner.php',
-                          'http://www.cs.sunyit.edu/help/scanner.php'
+                          // 'http://www.cs.sunyit.edu/help/printing.php',
+                          '#printing',
+                          // 'http://www.cs.sunyit.edu/help/copyroomScanner.php',
+                          '#c128copier',
+                          // 'http://www.cs.sunyit.edu/help/scanner.php'
+                          '#c012scanner'
                        ]
     },
     {
