@@ -83,6 +83,10 @@ app.config(function($routeProvider) {
         templateUrl : "partials/c012scanner.html",
         controller  : "helpCTRL"
     })
+    .when("/scp", {
+        templateUrl : "partials/help/scp.html",
+        controller  : "helpCTRL"
+    })
     .when("/vpn", {
         templateUrl : "partials/vpn.html",
         controller  : "helpCTRL"

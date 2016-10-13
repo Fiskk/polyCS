@@ -15,25 +15,25 @@
 <h3>Outline</h3>
 
 <OL type="I">
-<LI><a href="#software">Software Used</a>
-<LI><a href="#conventions">Conventions</a>
-<LI><a href="#gpgsetup">GPG Setup & Key Management</a>
+<LI><a href="" ng-click="scrollTo('software')">Software Used</a>
+<LI><a href="" ng-click="scrollTo('conventions')">Conventions</a>
+<LI><a href="" ng-click="scrollTo('gpgsetup')">GPG Setup & Key Management</a>
 	<OL type="A">
-	<LI><a href="#keygen">Generating your Public & Private keys</a>
-	<LI><a href="#keyex">Extracting keys from your keyring</a>
-	<LI><a href="#keyadd">Adding Keys to your keyring</a>
-	<LI><a href="#keyls">Viewing keys on your keyring</a>
+	<LI><a href="" ng-click="scrollTo('keygen')">Generating your Public & Private keys</a>
+	<LI><a href="" ng-click="scrollTo('keyex')">Extracting keys from your keyring</a>
+	<LI><a href="" ng-click="scrollTo('keyadd')">Adding Keys to your keyring</a>
+	<LI><a href="" ng-click="scrollTo('keyls')">Viewing keys on your keyring</a>
 	</OL>
-<LI><a href="#encdec">Command Line Encryption/Decryption</a>
+<LI><a href="" ng-click="scrollTo('encdec')">Command Line Encryption/Decryption</a>
 	<OL type="A">
-	<LI><a href="#gpge">Encrypting Messages</a>
-	<LI><a href="#gpgd">Decrypting Messages</a>
+	<LI><a href="" ng-click="scrollTo('gpge')">Encrypting Messages</a>
+	<LI><a href="" ng-click="scrollTo('gpgd')">Decrypting Messages</a>
 	</OL>
 </OL>
 
 <BR><BR>
 
-<a name="software"></a>
+<a id="software"></a>
 <h3>Software Used for this demonstration:</h3>
 <PRE>
 	OS: Gentoo Linux (grey.cs.sunyit.edu)
@@ -58,7 +58,9 @@ The first step to generating your keys is to run the appropriate command.
 <pre>
 	$ <font color="fuchsia">gpg --gen-key</font>
 </pre>
-<p>You will be prompted to choose between the DSA and Elgamal algorithm, the DSA (sign only) algorithm, or the RSA (sign only) algorithm. For most cases, the default of the DSA and Elgamal algorithm will be sufficient.</p>
+<p>You will be prompted to choose between the DSA and Elgamal algorithm,
+  the DSA (sign only) algorithm, or the RSA (sign only) algorithm. For most cases,
+  the default of the DSA and Elgamal algorithm will be sufficient.</p>
 <font color="darkred">
 <pre>
 
@@ -70,8 +72,10 @@ The first step to generating your keys is to run the appropriate command.
 </pre>
 </font>
 
-<p>Choose a key size depending on the degree of security desired.  Generally, a size
-of 2048 will be sufficient.</p>
+<p>
+  Choose a key size depending on the degree of security desired.
+  Generally, a size of 2048 will be sufficient.
+</p>
 <font color="darkred">
 <pre>
 	DSA keypair will have 1024 bits.
@@ -80,8 +84,10 @@ of 2048 will be sufficient.</p>
 </pre>
 </font>
 
-<p>You will be prompted for the number of days this key will be valid for.  Enter 0 to
-make the key valid forever.</p>
+<p>
+  You will be prompted for the number of days this key will be valid for.
+  Enter 0 to make the key valid forever.
+</p>
 <font color="darkred">
 <pre>
 	Please specify how long the key should be valid.
@@ -93,7 +99,9 @@ make the key valid forever.</p>
 	Key is valid for? (0) <font color="fuchsia">0</font>
 </pre>
 </font>
-<p>You will then be prompted to confirm the expiration time of your key.</p>
+<p>
+  You will then be prompted to confirm the expiration time of your key.
+</p>
 <font color="darkred">
 <pre>
 	Key does not expire at all
@@ -102,7 +110,10 @@ make the key valid forever.</p>
 </font>
 </p>
 
-<p>You will now be prompted to enter information such as your real name, email address, and any comments.</p>
+<p>
+  You will now be prompted to enter information such as your real name, email
+  address, and any comments.
+</p>
 <font color="darkred">
 <pre>
 	You need a user ID to identify your key; the software constructs the user ID
@@ -145,7 +156,12 @@ them as your passphrase.  When entering your passphrase, nothing will be echoed 
 </pre>
 </font>
 
-<p>The system will now generate your GPG secret/public keypair. During this process, you may be prompted to perform some more tasks on the machine. This is to provide the key generator with enough entropy such that it may generate a sufficiently secure key.</p>
+<p>
+  The system will now generate your GPG secret/public keypair. During this
+  process, you may be prompted to perform some more tasks on the machine. This
+  is to provide the key generator with enough entropy such that it may generate
+  a sufficiently secure key.
+</p>
 <font color="darkred">
 <pre>
 	We need to generate a lot of random bytes. It is a good idea to perform
@@ -175,14 +191,17 @@ them as your passphrase.  When entering your passphrase, nothing will be echoed 
 </pre>
 </font>
 
-<p>If all goes well, your secret/public keypair will now be generated and put in the keyrings in the .gnupg directory.</p>
+<p>
+  If all goes well, your secret/public keypair will now be generated and put in
+  the keyrings in the .gnupg directory.
+</p>
 
 <BR><BR><BR>
 <a name="keyex"></a>
 <B>Extracting keys from your keyring:</b><BR><BR>
 
-Now that you have your GPG keys created, it's time to distribute your public key for people to send you
-encrypted messages.</p>
+Now that you have your GPG keys created, it's time to distribute your public key
+for people to send you encrypted messages.</p>
 
 <font color="darkred">
 <pre>

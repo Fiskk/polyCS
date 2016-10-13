@@ -1,4 +1,4 @@
-app.controller('helpCTRL', function($scope, $http) {
+app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
 
   $(function(){
       $("#typing").typed({
@@ -10,6 +10,11 @@ app.controller('helpCTRL', function($scope, $http) {
         backSpeed: 50
       });
   });
+
+  $scope.scrollTo = function(id) {
+    $location.hash(id);
+    $anchorScroll();
+  }
 
   $scope.index = -1;
 
@@ -30,28 +35,30 @@ app.controller('helpCTRL', function($scope, $http) {
                           'http://www.cs.sunyit.edu/help/msdnaa.php'
                        ]
     },
-    {
-      title : "Labs",
-      number : 1,
-      acctSubtopics : [
+    // {
+    //   title : "Labs",
+    //   number : 1,
+    //   acctSubtopics : [
                         //  'C012 Games',
-                         'Printing',
+
                         //  'Scanning from C128 Copier',
-                         'Using the Scanner in C012'
-                       ],
-        subtopicUrls : [
+                        //  'Using the Scanner in C012'
+                      //  ],
+        // subtopicUrls : [
                           // 'http://www.cs.sunyit.edu/help/printing.php',
-                          '#printing',
+
                           // 'http://www.cs.sunyit.edu/help/copyroomScanner.php',
                           // '#c128copier',
                           // 'http://www.cs.sunyit.edu/help/scanner.php'
-                          '#c012scanner'
-                       ]
-    },
+                          // '#c012scanner'
+                      //  ]
+    // },
     {
       title : "Services",
       number : 2,
-      acctSubtopics : [  'Connect to NetlabOpenVPN Server',
+      acctSubtopics : [
+                         'Printing',
+                         'Connect to NetlabOpenVPN Server',
                          'Connect with SSH using PuTTY',
                          'Email Services',
                          'mySQL Databases',
@@ -60,6 +67,7 @@ app.controller('helpCTRL', function($scope, $http) {
                          'Restricing Access to Personal Web-Pages'
                        ],
         subtopicUrls : [
+                          '#printing',
                           // 'http://www.cs.sunyit.edu/help/vpn2.php',
                           '#vpn',
                           // 'http://www.cs.sunyit.edu/help/ssh.php',
@@ -89,7 +97,7 @@ app.controller('helpCTRL', function($scope, $http) {
     // },
     {
       title : "Linux",
-      number : 4,
+      number : 3,
       acctSubtopics : [
                          'Accessing Graphical Applications Remotely',
                          'Connect to SSH with PuTTY',
@@ -103,13 +111,14 @@ app.controller('helpCTRL', function($scope, $http) {
                         '#putty',
                         // 'http://www.cs.sunyit.edu/help/gpg.php',
                         '#gpg',
-                        'http://www.cs.sunyit.edu/help/scp.php'
+                        // 'http://www.cs.sunyit.edu/help/scp.php'
+                        '#scp'
 
                      ]
     },
     {
       title : "Windows",
-      number : 5,
+      number : 4,
       acctSubtopics : [  'Connect to Microsoft Remote Desktop Service',
                          'Connect to Unix Servers with PuTTY',
                          'Securely Transfer Files to Linux',
@@ -126,7 +135,7 @@ app.controller('helpCTRL', function($scope, $http) {
     },
     {
       title : "Xen",
-      number : 6,
+      number : 5,
       acctSubtopics : [  'Boot a DVD Through Xen',
                          'Boot Into Single-User Mode',
                          'Configuring an IP-Address on CentOS',
