@@ -63,6 +63,14 @@ app.config(function($routeProvider) {
         templateUrl : "partials/contact.html",
         controller  : "contactCTRL"
     })
+    .when("/remotegui", {
+        templateUrl : "partials/help/remotegui.html",
+        controller  : "helpCTRL"
+    })
+    .when("/gpg", {
+        templateUrl : "partials/help/gpg.html",
+        controller  : "helpCTRL"
+    })
     .when("/printing", {
         templateUrl : "partials/printing.html",
         controller  : "helpCTRL"
@@ -74,13 +82,13 @@ app.config(function($routeProvider) {
     .when("/c012scanner", {
         templateUrl : "partials/c012scanner.html",
         controller  : "helpCTRL"
-    })    
+    })
     .when("/vpn", {
         templateUrl : "partials/vpn.html",
         controller  : "helpCTRL"
     })
     .when("/putty", {
-        templateUrl : "partials/putty.html",
+        templateUrl : "partials/help/putty.html",
         controller  : "helpCTRL"
     })
     .when("/email", {

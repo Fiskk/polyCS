@@ -11,6 +11,8 @@ app.controller('helpCTRL', function($scope, $http) {
       });
   });
 
+  $scope.index = -1;
+
   // NOTE: topics is accessed from the view by 'topic.property'. Note the lack of the 's'. IDKY???
   $scope.topics = [
     {
@@ -34,14 +36,14 @@ app.controller('helpCTRL', function($scope, $http) {
       acctSubtopics : [
                         //  'C012 Games',
                          'Printing',
-                         'Scanning from C128 Copier',
+                        //  'Scanning from C128 Copier',
                          'Using the Scanner in C012'
                        ],
         subtopicUrls : [
                           // 'http://www.cs.sunyit.edu/help/printing.php',
                           '#printing',
                           // 'http://www.cs.sunyit.edu/help/copyroomScanner.php',
-                          '#c128copier',
+                          // '#c128copier',
                           // 'http://www.cs.sunyit.edu/help/scanner.php'
                           '#c012scanner'
                        ]
@@ -88,15 +90,19 @@ app.controller('helpCTRL', function($scope, $http) {
     {
       title : "Linux",
       number : 4,
-      acctSubtopics : [  'Accessing Graphical Applications Remotely',
+      acctSubtopics : [
+                         'Accessing Graphical Applications Remotely',
                          'Connect to SSH with PuTTY',
                          'Encrypting Text With GNU Privacy Guard (GPG)',
                          'Transfer Files Between Machines Securely Using SCP'
                       ],
       subtopicUrls : [
-                        'http://www.cs.sunyit.edu/help/x11remote.php',
-                        'http://www.cs.sunyit.edu/help/ssh.php',
-                        'http://www.cs.sunyit.edu/help/gpg.php',
+                        // 'http://www.cs.sunyit.edu/help/x11remote.php',
+                        '#remotegui',
+                        // 'http://www.cs.sunyit.edu/help/ssh.php',
+                        '#putty',
+                        // 'http://www.cs.sunyit.edu/help/gpg.php',
+                        '#gpg',
                         'http://www.cs.sunyit.edu/help/scp.php'
 
                      ]
@@ -134,7 +140,4 @@ app.controller('helpCTRL', function($scope, $http) {
                        ]
     }
   ];
-
-  $scope.index = -1;
-
 });

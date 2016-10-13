@@ -1,4 +1,8 @@
-- look into c128 scanner driver issue
+- separate help-docs partials from top-level pages
+
+- purge c128copier, contact, and network pages
+
+- look into c128 scanner driver issue(why wasn't the old site serving drivers)
 
 - test the Help pages on mobile
 
