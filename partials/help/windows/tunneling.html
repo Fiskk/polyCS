@@ -1,0 +1,53 @@
+<!-- NOTE: this is legacy markup that should be refactored -->
+<div class="container-fluid text-center">
+  <h1>SSH: Tunneling</h1>
+</div>
+
+<div class="container-fluid">
+  <a name=""></a>
+  <h3>Using PuTTY For Tunneling a Connection:</h3>
+
+  <BR>
+  <p><center><img src="img/help/windows/sshtunnel.png"></center></p>
+  <BR>
+  <b>Windows Setting up PuTTY</b>
+  <ol>
+  <li>This tutorial requires using PuTTY on a Windows machine.
+  <br><a href="pix/puttytunnel/1.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/1.JPG"></a>
+  <li>In the "Host Name" box in PuTTY type 'fang.cs.sunyit.edu'
+  <br><a href="pix/puttytunnel/putty2.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/putty2.JPG"></a>
+  <li>Then on the sidebar scroll down, click the plus sign next to SSH, and then click Tunnels.
+  <br><a href="pix/puttytunnel/putty3.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/putty3.JPG"></a>
+  <li>In the Source port box type 8118, and in the Destination box type 'localhost:8118'. Then click Add.
+  <br><a href="pix/puttytunnel/putty4.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/putty4.JPG"></a>
+  <li>Sign into fang with your CS credentials.
+  <br><a href="pix/puttytunnel/putty5.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/putty5.JPG"></a>
+  </ol>
+
+  <b>Windows Setting up Portable Firefox </b>
+  <ol>
+  <li>Once you have PuTTY configured an connected, now it's time to setup Portable Firefox which can be found <a href='http://portableapps.com/apps/internet/firefox_portable'>here</a>
+  <li>Extract the Portable Firefox to somewhere easy to find
+  <br><a href="pix/puttytunnel/firefox1.JPG" rel='lightbox'> <img src="img/help/windows/puttytunnel/firefox1.JPG"></a>
+  <li>Open the Firefox menu and then Options and Options again.
+  <br><a href="pix/puttytunnel/firefox.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox2.JPG"></a>
+  <li>Click on the Advanced tab, and then Network
+  <br><a href="pix/puttytunnel/firefox3.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox3.JPG"></a>
+  <li>Once the Network tab is chosen, click the settings button.
+  <li>Choose Manual proxy configuation, and then under HTTP Proxy type 'localhost' and Port: '8118'. Click OK, and OK again.
+  <br><a href="pix/puttytunnel/firefox.jpg" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox4.jpg"></a>
+  <li>In your URL bar type 'about:config' and hit Enter
+  <br><a href="pix/puttytunnel/firefox5.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox5.JPG"></a>
+  <li>In the search bar, search for 'remote_dns'and set "network.proxy.socks_remote_dns" to true (double click it)
+  <br><a href="pix/puttytunnel/firefox6.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox6.JPG"></a>
+  <li>Next, open the folder that was extracted with the files for Portable Firefox. Right click New --> Text Document
+  <br><a href="pix/puttytunnel/firefox7.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox7.JPG"></a>
+  <li>In the text document type 'AllowMultipleInstances=true' and save the file as 'FirefoxPortable.ini'
+  <br><a href="pix/puttytunnel/firefox8.JPG" rel='lightbox'><img src="img/help/windows/puttytunnel/firefox8.JPG"></a>
+  <li>Now if your session is still open with fang, you should be able to connect to the internet while going through the tunnel.
+  <li>To verify you successfully setup your tunnel, you can go to Google and type "What is my IP address" and it should be telling you a SUNYIT IP address.
+  </ol>
+
+  <BR>
+
+</div>

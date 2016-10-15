@@ -132,7 +132,8 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                           '#putty',
                           // 'http://www.cs.sunyit.edu/help/winscp.php',
                           '#winscp',
-                          'http://www.cs.sunyit.edu/help/puttytunneling2.php',
+                          // 'http://www.cs.sunyit.edu/help/puttytunneling2.php',
+                          '#tunneling',
                           // 'http://www.cs.sunyit.edu/help/winprofile.php'
                           '#winprofile'
                        ]

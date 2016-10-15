@@ -83,6 +83,10 @@ app.config(function($routeProvider) {
         templateUrl : "partials/help/windows/winscp.html",
         controller  : "helpCTRL"
     })
+    .when("/tunneling", {
+        templateUrl : "partials/help/windows/tunneling.html",
+        controller  : "helpCTRL"
+    })
     .when("/printing", {
         templateUrl : "partials/printing.html",
         controller  : "helpCTRL"
