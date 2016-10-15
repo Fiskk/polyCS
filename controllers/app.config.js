@@ -71,6 +71,18 @@ app.config(function($routeProvider) {
         templateUrl : "partials/help/gpg.html",
         controller  : "helpCTRL"
     })
+    .when("/winprofile", {
+        templateUrl : "partials/help/windows/winprofile.html",
+        controller  : "helpCTRL"
+    })
+    .when("/rdp", {
+        templateUrl : "partials/help/windows/rdp.html",
+        controller  : "helpCTRL"
+    })
+    .when("/winscp", {
+        templateUrl : "partials/help/windows/winscp.html",
+        controller  : "helpCTRL"
+    })
     .when("/printing", {
         templateUrl : "partials/printing.html",
         controller  : "helpCTRL"

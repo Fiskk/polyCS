@@ -126,11 +126,15 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                          'Windows User Profile'
                        ],
         subtopicUrls : [
-                          'http://www.cs.sunyit.edu/help/rdp.php',
-                          'http://www.cs.sunyit.edu/help/ssh.php',
-                          'http://www.cs.sunyit.edu/help/winscp.php',
+                          // 'http://www.cs.sunyit.edu/help/rdp.php',
+                          '#rdp',
+                          // 'http://www.cs.sunyit.edu/help/ssh.php',
+                          '#putty',
+                          // 'http://www.cs.sunyit.edu/help/winscp.php',
+                          '#winscp',
                           'http://www.cs.sunyit.edu/help/puttytunneling2.php',
-                          'http://www.cs.sunyit.edu/help/winprofile.php'
+                          // 'http://www.cs.sunyit.edu/help/winprofile.php'
+                          '#winprofile'
                        ]
     },
     {
