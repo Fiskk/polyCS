@@ -42,10 +42,6 @@ app.controller('accountsCTRL', function($scope) {
       topic: 'Create a Disposable Email Address',
       url: 'https://accounts.cs.sunyit.edu/disposable.php',
       tooltip : 'To protect your primary account from spammers when posting to the Internet.'},
-    // {
-    //   topic: 'Create a URL Converter',
-    //   url: 'http://nym.cs.sunyit.edu/redirect.php?add',
-    //   tooltip : '.'}
   ];
 
 });

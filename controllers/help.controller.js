@@ -10,7 +10,7 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
         backSpeed: 50
       });
   });
-
+  // This allows for in-page <a> linking
   $scope.scrollTo = function(id) {
     $location.hash(id);
     $anchorScroll();
@@ -18,7 +18,7 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
 
   $scope.index = -1;
 
-  // NOTE: topics is accessed from the view by 'topic.property'. Note the lack of the 's'. IDKY???
+  // NOTE: Topics is accessed from the view by 'topic.property'. Note the lack of the 's'.
   $scope.topics = [
     {
       title : "Accounts",
@@ -35,24 +35,6 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                           'http://www.cs.sunyit.edu/help/msdnaa.php'
                        ]
     },
-    // {
-    //   title : "Labs",
-    //   number : 1,
-    //   acctSubtopics : [
-                        //  'C012 Games',
-
-                        //  'Scanning from C128 Copier',
-                        //  'Using the Scanner in C012'
-                      //  ],
-        // subtopicUrls : [
-                          // 'http://www.cs.sunyit.edu/help/printing.php',
-
-                          // 'http://www.cs.sunyit.edu/help/copyroomScanner.php',
-                          // '#c128copier',
-                          // 'http://www.cs.sunyit.edu/help/scanner.php'
-                          // '#c012scanner'
-                      //  ]
-    // },
     {
       title : "Services",
       number : 2,
@@ -68,33 +50,15 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                        ],
         subtopicUrls : [
                           '#printing',
-                          // 'http://www.cs.sunyit.edu/help/vpn2.php',
                           '#vpn',
-                          // 'http://www.cs.sunyit.edu/help/ssh.php',
                           '#putty',
-                          // 'http://www.cs.sunyit.edu/help/email.php',
                           '#email',
-                          // 'http://www.cs.sunyit.edu/help/mysql.php',
                           '#mysql',
-                          // 'http://www.cs.sunyit.edu/help/nfs.php',
                           '#nfs',
-                          // 'http://www.cs.sunyit.edu/help/www.php',
                           '#www',
-                          // 'http://www.cs.sunyit.edu/help/htaccess.php'
                           '#htaccess'
                        ]
     },
-    // {
-    //   title : "General",
-    //   number : 3,
-    //   acctSubtopics : [  'Secure Email Client Configuration',
-    //                      'Software Available to Students'
-    //                   ],
-    //   subtopicUrls : [
-    //                     'http://www.cs.sunyit.edu/help/spop.php',
-    //                     'http://www.cs.sunyit.edu/help/downloads.php'
-    //                  ]
-    // },
     {
       title : "Linux",
       number : 3,
@@ -105,13 +69,9 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                          'Transfer Files Between Machines Securely Using SCP'
                       ],
       subtopicUrls : [
-                        // 'http://www.cs.sunyit.edu/help/x11remote.php',
                         '#remotegui',
-                        // 'http://www.cs.sunyit.edu/help/ssh.php',
                         '#putty',
-                        // 'http://www.cs.sunyit.edu/help/gpg.php',
                         '#gpg',
-                        // 'http://www.cs.sunyit.edu/help/scp.php'
                         '#scp'
 
                      ]
@@ -126,15 +86,10 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                          'Windows User Profile'
                        ],
         subtopicUrls : [
-                          // 'http://www.cs.sunyit.edu/help/rdp.php',
                           '#rdp',
-                          // 'http://www.cs.sunyit.edu/help/ssh.php',
                           '#putty',
-                          // 'http://www.cs.sunyit.edu/help/winscp.php',
                           '#winscp',
-                          // 'http://www.cs.sunyit.edu/help/puttytunneling2.php',
                           '#tunneling',
-                          // 'http://www.cs.sunyit.edu/help/winprofile.php'
                           '#winprofile'
                        ]
     },

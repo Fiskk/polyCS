@@ -2,13 +2,9 @@
 
 - purge c128copier, contact, and network pages
 
-- look into c128 scanner driver issue(why wasn't the old site serving drivers)
-
 - test the Help pages on mobile
 
-- breadcrumbs
-
-- figure out what to do with the jumbotron in the help pages.
+- comsider adding breadcrumbs
 
 - images referenced by puttytunneling2.php don't disp in production, but do disp on dev server ?????
 
@@ -25,18 +21,16 @@
 - write listener that will un-apply the white background color on 'body.div'
   when a modal is opened
 
-- make text in modals on labs page smaller on mobile (???) (to fox the <pre> issue)
+- make text in modals on labs page smaller on mobile (???) (to fix the <pre> issue)
 
 - make close glyph more prominent on Labs modals and disp message about 'esc' key
 
-- run code through w3-validator
+- run code through w3-validator(all the 'ng-xxx' stuff is not W3C-compliant)
 
 - resolve tooltip issues on the mobile 'Accounts' page
   (find alternative to tooltips for mobile that describe buttons' functions)
 
 - get the borders off the buttons all <button>s with yellowGradient class
-- figure out how to make a factory so I can DRY out my controllers
-
 
 
                 CLASSES.HTML
@@ -46,21 +40,10 @@
 -------------------------------------------------------------------
 
 
-
-
                  FACULTY.HTMl
 -------------------------------------------------------------------
 - animate the show and hide
 -------------------------------------------------------------------
-
-
-
-
-              DEGREE.HTML 'Additional Resources'
--------------------------------------------------------
-- That widget is currently undergoing maintenance
---------------------------------------------------------------
-
 
 
                LABS.html
