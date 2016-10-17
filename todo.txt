@@ -1,3 +1,5 @@
+- figure out what links I will break on the main site and let Poly's webmaster know
+
 - separate help-docs partials from top-level pages
 
 - purge c128copier, contact, and network pages

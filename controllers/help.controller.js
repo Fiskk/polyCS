@@ -96,16 +96,17 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
     {
       title : "Xen",
       number : 5,
-      acctSubtopics : [  'Boot a DVD Through Xen',
+      acctSubtopics : [
+                         'Boot a DVD Through Xen',
                          'Boot Into Single-User Mode',
                          'Configuring an IP-Address on CentOS',
                          'Setting up DogNET CentOS Repository'
                        ],
         subtopicUrls : [
-                          'http://www.cs.sunyit.edu/help/bootdvd.php',
-                          'http://www.cs.sunyit.edu/help/singleuser.php',
-                          'http://www.cs.sunyit.edu/help/centip.php',
-                          'http://www.cs.sunyit.edu/help/centrepo.php'
+                          '#bootdvd',
+                          '#singleuser',
+                          '#centip',
+                          '#centrepo'
                        ]
     }
   ];

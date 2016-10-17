@@ -87,6 +87,26 @@ app.config(function($routeProvider) {
         templateUrl : "partials/help/windows/tunneling.html",
         controller  : "helpCTRL"
     })
+
+    // Routing for pages in Help/Xen section
+    .when("/bootdvd", {
+        templateUrl : "partials/help/xen/bootdvd.html",
+        controller  : "helpCTRL"
+    })
+    .when("/singleuser", {
+        templateUrl : "partials/help/xen/singleuser.html",
+        controller  : "helpCTRL"
+    })
+    .when("/centip", {
+        templateUrl : "partials/help/xen/centip.html",
+        controller  : "helpCTRL"
+    })
+    .when("/centrepo", {
+        templateUrl : "partials/help/xen/centrepo.html",
+        controller  : "helpCTRL"
+    })
+    // End of routing for pages in Help/Xen section
+
     .when("/printing", {
         templateUrl : "partials/printing.html",
         controller  : "helpCTRL"
