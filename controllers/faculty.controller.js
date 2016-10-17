@@ -40,7 +40,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7231",
       office: "Kunsela C125",
       email: "roger@sunyit.edu",
-      site: "",
+      site: "http://web.cs.sunyit.edu/~roger/",
       school: "State University of New York at Binghamton",
       bio: "Roger Cavallo is an expert in systems theory with an extensive record \
             of research and publications. He has produced a number of books along \
@@ -195,7 +195,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7353",
       office: "Kunsela C129",
       email: "sengupta@sunyit.edu",
-      site: "",
+      site: "http://web.cs.sunyit.edu/~sengupta/",
       school: "University of Waterloo",
       bio: "Sam Sengupta's work spans various topics in applied mathematics and computer \
             science. He taught for six years at the University of Guelph in Canada before joining \
