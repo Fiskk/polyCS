@@ -23,10 +23,11 @@ app.run(function($rootScope) {
 
 
 // the function below handles the ajax requests that govern(display) different views
-// If you want to make a new page, add a route (and possibly a controller)
+// If you want to make a new page, you'll need to add a route (and possibly a controller)
 app.config(function($routeProvider) {
     $routeProvider
 
+     // Routing for top-level pages
     .when("/", {
         templateUrl : "partials/home.html"
         // controller  : "homeCTRL" <---that doesn't work
@@ -51,30 +52,89 @@ app.config(function($routeProvider) {
         templateUrl : "partials/faculty.html",
         controller  : "facultyCTRL"
     })
+    .when("/labs", {
+        templateUrl : "partials/labs.html",
+        controller  : "labsCTRL"
+    }) // End of routing for top-level pages
+
+
+    // network page is deprecated
     .when("/network", {
         templateUrl : "partials/network.html",
         controller  : "networkCTRL"
     })
-    .when("/labs", {
-        templateUrl : "partials/labs.html",
-        controller  : "labsCTRL"
-    })
+    // contact page is deprecated
     .when("/contact", {
         templateUrl : "partials/contact.html",
         controller  : "contactCTRL"
     })
+
+    // Routing for Help/Services pages
+   .when("/printing", {
+       templateUrl : "partials/help/services/printing.html",
+       controller  : "helpCTRL"
+   })
+   .when("/vpn", {
+       templateUrl : "partials/help/services/vpn.html",
+       controller  : "helpCTRL"
+   })
+   // NOTE: SSH PuTTY page is at the bottom
+   .when("/email", {
+       templateUrl : "partials/help/services/email.html",
+       controller  : "helpCTRL"
+   })
+   .when("/mysql", {
+       templateUrl : "partials/help/services/mysql.html",
+       controller  : "helpCTRL"
+   })
+   .when("/nfs", {
+       templateUrl : "partials/help/services/nfs.html",
+       controller  : "helpCTRL"
+   })
+   .when("/www", {
+       templateUrl : "partials/help/services/www.html",
+       controller  : "helpCTRL"
+   })
+   .when("/htaccess", {
+       templateUrl : "partials/help/services/htaccess.html",
+       controller  : "helpCTRL"
+   }) // End of routing for Help/Services pages
+
+
+    // Routing for Help/Linux pages
     .when("/remotegui", {
-        templateUrl : "partials/help/remotegui.html",
+        templateUrl : "partials/help/linux/remotegui.html",
         controller  : "helpCTRL"
     })
+    // NOTE: SSH PuTTY page is at the bottom
     .when("/gpg", {
-        templateUrl : "partials/help/gpg.html",
+        templateUrl : "partials/help/linux/gpg.html",
+        controller  : "helpCTRL"
+    })
+    .when("/scp", {
+        templateUrl : "partials/help/linux/scp.html",
+        controller  : "helpCTRL"
+    }) // End of routing for Help/Linux pages
+
+
+    // Routing for pages in Help/Windows section
+    .when("/winrdp", {
+        templateUrl : "partials/help/windows/rdp/winrdp.html",
+        controller  : "helpCTRL"
+    })
+    .when("/osxrdp", {
+        templateUrl : "partials/help/windows/rdp/osxrdp.html",
+        controller  : "helpCTRL"
+    })
+    .when("/linuxrdp", {
+        templateUrl : "partials/help/windows/rdp/linuxrdp.html",
         controller  : "helpCTRL"
     })
     .when("/winprofile", {
         templateUrl : "partials/help/windows/winprofile.html",
         controller  : "helpCTRL"
     })
+    // NOTE: SSH PuTTY page is at the bottom
     .when("/rdp", {
         templateUrl : "partials/help/windows/rdp.html",
         controller  : "helpCTRL"
@@ -86,7 +146,8 @@ app.config(function($routeProvider) {
     .when("/tunneling", {
         templateUrl : "partials/help/windows/tunneling.html",
         controller  : "helpCTRL"
-    })
+    }) // End of routing for pages in Help/Windows section
+
 
     // Routing for pages in Help/Xen section
     .when("/bootdvd", {
@@ -104,51 +165,12 @@ app.config(function($routeProvider) {
     .when("/centrepo", {
         templateUrl : "partials/help/xen/centrepo.html",
         controller  : "helpCTRL"
-    })
-    // End of routing for pages in Help/Xen section
+    }) // End of routing for pages in Help/Xen section
 
-    .when("/printing", {
-        templateUrl : "partials/printing.html",
-        controller  : "helpCTRL"
-    })
-    .when("/c128copier", {
-        templateUrl : "partials/c128copier.html",
-        controller  : "helpCTRL"
-    })
-    .when("/c012scanner", {
-        templateUrl : "partials/c012scanner.html",
-        controller  : "helpCTRL"
-    })
-    .when("/scp", {
-        templateUrl : "partials/help/scp.html",
-        controller  : "helpCTRL"
-    })
-    .when("/vpn", {
-        templateUrl : "partials/vpn.html",
-        controller  : "helpCTRL"
-    })
+
+    // NOTE: This route is used by three links
     .when("/putty", {
         templateUrl : "partials/help/putty.html",
-        controller  : "helpCTRL"
-    })
-    .when("/email", {
-        templateUrl : "partials/email.html",
-        controller  : "helpCTRL"
-    })
-    .when("/mysql", {
-        templateUrl : "partials/mysql.html",
-        controller  : "helpCTRL"
-    })
-    .when("/nfs", {
-        templateUrl : "partials/nfs.html",
-        controller  : "helpCTRL"
-    })
-    .when("/www", {
-        templateUrl : "partials/www.html",
-        controller  : "helpCTRL"
-    })
-    .when("/htaccess", {
-        templateUrl : "partials/htaccess.html",
         controller  : "helpCTRL"
     });
 
