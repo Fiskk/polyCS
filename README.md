@@ -9,7 +9,7 @@
   
 - Refactors or design tweaks are encouraged.  
   
-- The repo contains all the necessary dependencies to run the client-side stuff, so cloning the repo should get you up and running since we're Angular is served locally instead of from a CDN.    
+- The repo contains all the necessary dependencies to run the client-side stuff, so simply cloning the repo should get you up and running since Angular is served locally instead of from a CDN.    
   
 - If you have questions, feel free to ask: bakerdp@sunyit.edu.   
 
