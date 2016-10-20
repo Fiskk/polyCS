@@ -4,7 +4,7 @@
   I guess I could simply add duplicate instances of the UI that would wind up imperceptible to those
   not looking to hard. I don't really want to though. Sigh...Legacy Pains.
 
-- accounts and msdn subdomains are both served from 10.56.192.35:443
+- accounts and msdn subdomains are both served from 10.56.192.35:443...which is good.
 
 - figure out what links I will break on the main site and let Poly's webmaster know
 
