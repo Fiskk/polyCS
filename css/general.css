@@ -13,7 +13,7 @@
     background-size: cover;
   }
 }
-a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label {
+a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label,input,textarea {
   font-family: 'Russo One', sans-serif;
 }
 /*the rule below was used to prevent bleeding from background*/

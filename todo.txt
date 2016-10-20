@@ -20,7 +20,7 @@
 
 - Help > rdp.php does not display in production(this is resolved but the patch needs to be pushed to production)
 
-- could use an img on Labs and Accounts page
+- could use an img ogit n Labs and Accounts page
 
 - IMGs on HELP > 'Use putty to tunnel a connection' are broken
 
