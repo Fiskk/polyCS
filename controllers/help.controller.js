@@ -29,10 +29,10 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
                          'Microsoft Dreamspark (MSDNAA)'
                        ],
         subtopicUrls : [
-                          'http://www.cs.sunyit.edu/help/activate.php',
-                          'http://www.cs.sunyit.edu/help/passwd.php',
-                          'http://www.cs.sunyit.edu/help/reset.php',
-                          'http://www.cs.sunyit.edu/help/msdnaa.php'
+                          '#activate',
+                          '#password',
+                          '#resetpw',
+                          '#msdnaa'
                        ]
     },
     {

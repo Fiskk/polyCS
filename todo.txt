@@ -1,8 +1,16 @@
+- Currently, the website is distributed between Alfie and whatever other machines provide various
+  services related to accounts. Ideally, there would have been APIs so that Alfie could simply
+  communicate with those services. I'm currently feeling like that was a poor architectural decision.
+  I guess I could simply add duplicate instances of the UI that would wind up imperceptible to those
+  not looking to hard. I don't really want to though. Sigh...Legacy Pains.
+
+- accounts and msdn subdomains are both served from 10.56.192.35:443
+
 - figure out what links I will break on the main site and let Poly's webmaster know
 
-- separate help-docs partials from top-level pages
+- separate help-docs partials from top-level partials
 
-- purge c128copier, contact, and network pages
+- purge c128copier, contact, and network pages(eventually)
 
 - test the Help pages on mobile
 

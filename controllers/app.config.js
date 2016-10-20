@@ -69,6 +69,29 @@ app.config(function($routeProvider) {
         controller  : "contactCTRL"
     })
 
+    // Rounting for the Help/Account pages
+    .when("/activate", {
+        templateUrl : "partials/help/accounts/activate.html",
+        controller  : "helpCTRL"
+    })
+    .when("/password", {
+        templateUrl : "partials/help/accounts/password.html",
+        controller  : "helpCTRL"
+    })
+    .when("/resetpw", {
+        templateUrl : "partials/help/accounts/resetpw.html",
+        controller  : "helpCTRL"
+    })
+    .when("/msdnaa", {
+        templateUrl : "partials/help/accounts/msdnaa.html",
+        controller  : "helpCTRL"
+    })
+    .when("/msdnaa-agree", {
+        templateUrl : "partials/help/accounts/msdn-agree.html",
+        controller  : "helpCTRL"
+    })
+    // End of routing for the Help/Accounts pages
+
     // Routing for Help/Services pages
    .when("/printing", {
        templateUrl : "partials/help/services/printing.html",
