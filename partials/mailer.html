@@ -1,50 +1,54 @@
-<div class="container-fluid text-center">
-	<h3><span class="glyphicon glyphicon-fire"></span> Is There Something We Should Know About?</h3>
+<!-- Input to this form is validated on both client and server-side -->
+<div class="container-fluid col-xs-12" ng-hide="addformtoggle">
+
+<div class="text-center">
+  <h3><span class="glyphicon glyphicon-fire"></span> Is There Something We Should Know About?</h3>
 </div>
 <hr>
 
-<div class="container-fluid">
-	<form ng-submit="processForm()" id="addRecordForm" method="POST">
-       	
-		<div class="col-sm-8">
+<form ng-submit="processForm()" id="form" method="POST">
 
-		    <div class="form-group">
-			  <label for="name">Name</label>
-			  <input type="text" class="form-control" id="name" placeholder="Your name" name="name">
-			</div>
+  <!-- Customer name -->
+  <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
+    <label>Name</label>
+    <input type="text" name="customer_name" class="form-control"
+           placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
+    <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
+  </div>
+  <!-- email -->
+  <div class="form-group" ng-class="{ 'has-error' : error_email }">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control" required
+             placeholder="example: user@provider.com" ng-model="PostformData.email">
+      <span class="help-block" ng-show="error_email">{{ error_email }}</span>
+  </div>
+  <!-- subject -->
+  <div class="form-group" ng-class="{ 'has-error' : error_subject }">
+      <label>Subject</label>
+      <input  name="subject" type="tel" max-length="12" class="form-control"
+              placeholder="What does this correspondence pertain to?" ng-model="PostformData.subject">
+      <span class="help-block" ng-show="error_email">{{ error_subject }}</span>
+  </div>
+  <!-- message -->
+  <div class="form-group">
+    <label for="message">Message</label>
+    <!-- NOTE: if you put the closing textarea tag on a different line than the opening tag, the placeholder will not disp -->
+    <textarea ng-model="PostformData.message" class="form-control" rows="3" required placeholder="Specific details regarding the issue we are discussing"></textarea>
+  </div>
+  <!-- message below disps after successful post -->
+  <div class="col-sm-12 alert alert-success" ng-show="show_success_message">
+    <p>{{ show_success_message }}</p>
+  </div>
+  <!-- button -->
+  <div class="col-sm-6 pull-right">
+    <button type="submit" class="btn btn-md btn-block yellowGradient shadow pull-right">
+        <span class="glyphicon glyphicon-flash"></span> Submit !
+    </button>
+  </div>
+</form>
 
-			<div class="form-group">
-			  <label for="email">Email Address</label>
-			  <input type="email" class="form-control" id="email" name="email" placeholder="alan@turing.gnu" required>
-			</div>					      
-
-	        <div class="form-group">
-			    <label for="subject">Subject</label>
-			    <input type="text" class="form-control" id="subject" name="subject" placeholder="The subject of your message">
-			</div>
-
-			<textarea class="form-control" rows="3" required placeholder="Your message"></textarea>
-
-			<br>
-
-			<!-- Do I need to pass a parameter to the PHP script -->
-			<!-- php-bin/form-mail.php?recip=bakerdp -->
-
-			<input type="text" name="recipe" value="">
-
-			<input type="submit" value="Submit">  
-		    <input type="reset" value="Reset">
-		    <!-- div below is used to disp success message  -->
-		    
-			<div  class="alert-success" style="height:30px" ng-show="show_success_message">
-			  {{ show_success_message }}
-			</div> 
-
-            <!-- I can't use the line below without a HTTP request to the server -->
-		    <!-- <p>Logged: <?= $_SERVER['REMOTE_ADDR'] ?></p> -->
-		    <input type=hidden name="referer" value="<?= $_SERVER['HTTP_REFERER'] ?>">
-
-		</div>    
-
-    </form>
+<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED (for debugging)-->
+<!-- <pre>
+    {{ PostformData }}
+</pre> -->
 </div>

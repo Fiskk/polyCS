@@ -1,10 +1,26 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
-<div class="container-fluid text-right">
+
+<div class="col-sm-6">
+  <img class="img-responsive img-rounded shadow" src="img/labs/turing.jpg" alt="Alan Turing" />
+  <a href="//commons.wikimedia.org/wiki/User:Antoinetav" title="User:Antoinetav">
+    Antoine Taveneaux
+  </a> -
+  <span class="int-own-work" lang="en">
+    Own work
+  </span>,
+  <a href="http://creativecommons.org/licenses/by-sa/3.0"
+     title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0
+  </a>,
+  <a href="https://commons.wikimedia.org/w/index.php?curid=20247421">Link
+  </a>
+</div>
+
+<div class="col-sm-6 text-right">
   <p class="hint orangeText">(Hint: Click a button to open a modal)</p>
   <dl ng-repeat="h in labs">
     <dt></dt>
-    <!-- note that modal is template I created in labs.controller.js -->
+    <!-- note that modal is a template I created in labs.controller.js -->
     <dd><modal></modal></dd>
   </dl>
 </div>

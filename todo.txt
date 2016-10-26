@@ -24,6 +24,12 @@
 
 - IMGs on HELP > 'Use putty to tunnel a connection' are broken
 
+- Figure out if and where Norvillo's personal site is
+
+- Change link messages on bottom of template to shorter version on xs screens
+
+- experiment with z-index on labs modals
+
 - write a .sh or .py script that will configure git and one that will enable credential helper
 
 - get rid of disposable email addresses

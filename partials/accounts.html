@@ -1,14 +1,13 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once an AJAX request is implicitly made by the user -->
+ <div class="container-fluid text-center">
+   <p class="hint orangeText hidden-xs">
+     (Hint: hover if you would like to see a description)
+   </p>
+   <br>
+ </div>
 
-<div class="container-fluid">
-
-  <div class="container-fluid text-center">
-    <p class="hint orangeText hidden-xs">
-      (Hint: hover if you would like to see a description)
-    </p>
-    <br>
-  </div>
+<div class="col-sm-8">
 
   <dl ng-repeat="element in topics">
     <dd>
@@ -25,4 +24,8 @@
     </dd>
   </dl>
 
+</div>
+
+<div class="col-sm-4">
+  <img class="img-responsive img-rounded shadow pull-right" src="img/portal.jpeg" alt="Digital Portal" />
 </div>

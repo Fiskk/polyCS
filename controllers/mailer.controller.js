@@ -1,4 +1,4 @@
-app.controller('mailCTRL', function($scope) {
+app.controller('mailCTRL', function ($scope, $http, $timeout) {
 
   $(function(){
       $("#typing").typed({
@@ -12,36 +12,44 @@ app.controller('mailCTRL', function($scope) {
   });
 
   $scope.PostformData = {};
-  $scope.processForm = function() {
+
+  $scope.processForm = function(){
     $http({
       method  : 'POST',
-      url     : 'php-bin/form-mail.php?recip=bakerdp',
-      // url  : 'formProcess.php?action=postFormData',
-
-      // pass in data as strings
-      data    : $.param($scope.PostformData), 
-      // set the headers so angular passing info as form data (not request payload)
-      headers : {'Content-Type': 'application/x-www-form-urlencoded' } 
+      url     : 'php-bin/NewMail.php?action=postFormData', // postFormData
+      data    : $.param($scope.PostformData),  // pass data from view in as strings
+      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
     })
 
     .success(function(data) {
-      if(!data.success) {
-        // should I perform server-side validation?
+      if (!data.success) {
+        // if not successful, bind errors to error variables
+        // $scope.error_first_name  = data.errors.first_name;
+        // $scope.error_last_name   = data.errors.last_name;
+        $scope.error_email          = data.errors.email;
+        $scope.error_subject      = data.errors.subject;
+        $scope.error_customer_name  = data.errors.customer_name;
+        $scope.error_message        = data.errors.message;
       }
       else {
-        $scope.error_first_name  = "";
-        $scope.error_last_name   = "";
-        $scope.error_email       = "";
-        $scope.phone_num         = "";
-        $scope.customer_name     = "";
-        // if successful, bind success message to message
-        $scope.show_success_message = data.message;
+        // Hide errors If exist ???
+        // $scope.error_first_name  = "";
+        // $scope.error_last_name   = "";
+        $scope.error_email   = "";
+        $scope.subject     = "";
+        $scope.customer_name = "";
+        $scope.message       = "";
 
-        $timeout(function () { 
-          $scope.show_success_message = false; 
+        // if successful, bind success message to message
+        document.getElementById('form').reset();
+        $scope.show_success_message = data.message;
+        $timeout(function () {
+          $scope.show_success_message = false;
         }, 5000);
       }
+
     });
+
   }
-  
+
 });

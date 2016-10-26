@@ -230,7 +230,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7229",
       office: "Kunsela C120",
       email: "urbanc@sunyit.edu",
-      site: "http://www.sunyit.edu/~urbanc/",
+      site: "http://www.cs.sunyit.edu/~urbanc/",
       school: "Naval War College",
       bio: "Chris Urban's primary focus is the practical application of computer \
             information systems (CIS) technology to satisfy real-world requirements. \
