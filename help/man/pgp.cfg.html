@@ -1,0 +1,158 @@
+<HTML>
+<BODY bgcolor="#FFFFFF">
+<PRE>
+<!-- Manpage converted by man2html 3.0.1 -->
+<H2>NAME</H2><PRE>
+
+       pgp.cfg - Format of the configuration file used by <B>pgp(1)</B>.
+
+</PRE>
+<H2>DESCRIPTION</H2><PRE>
+       The default location for this file  is  ~/.pgp.	 You  may
+       specify	another location by setting the environment vari-
+       able  <I>PGPPATH</I>.	SH  COMMAND-LINE  SPECIFICATION  All  PGP
+       applications  accept  these  options as command-line argu-
+       ments, as well.	Command line  arguments  always  override
+       the configuration file.	Options are specified with a dou-
+       ble-dash (--) or plus (+), followed by an equal	sign  (=)
+       and  the  value,  if appropriate.  For example, to specify
+       the public keyring to use on an encryption operation:
+
+       <I>pgpe</I> <I>-r</I> <I>foo@bar.baz.com</I> <I>--pubring=~/fooring.pkr</I>
+
+       To turn on text mode, in an encryption:
+
+       <I>pgpe</I> <I>-r</I> <I>foo@bar.baz.com</I> <I>--textmode</I>
+
+
+</PRE>
+<H2>OPTIONS</H2><PRE>
+       The following configuration options are supported, both in
+       the  <I>pgp.cfg</I>  file and on the command line of PGP applica-
+       tions.  Case is not important in specifying  the  variable
+       names,  but  may  be in specifying filenames, depending on
+       your operating environment.   Immediately  following  each
+       option  is  a  description of its type:	Boolean is either
+       "1" or "on" or "0" or "off"; String is a string; and Inte-
+       ger is a number.
+
+       Armor  Boolean.	 Turns	ASCII  armoring  on  or off.  The
+	      default is off.
+
+       ArmorLines
+	      Integer.	Specifies the  maximum	number	of  lines
+	      that  may be contained in an ASCII armored message.
+	      Messages longer than this number of lines  will  be
+	      broken  up  into multi-part ASCII armored messages.
+	      A value of zero indicates an  unlimited  number  of
+	      lines.  The default is zero.
+
+       AutoServerFetch
+	      Boolean.	 If on, when adding keys with <B>pgpk(1)</B>, if
+	      a specified key file is not found, it is assumed to
+	      be  the name of a key to retrieve from your default
+	      key  server  (see  <I>HTTPKeyServerHost</I>  and  <I>HTTPKey-</I>
+	      <I>ServerPort</I>,    below).	 Some	intelligence   is
+	      attempted; even if this is on, if it is  obvious	a
+	      file  was  intended  (if	the  first characters are
+	      either "/" or "./"), a fetch will not be made.  The
+	      default is on.
+
+       Compress
+
+       EncryptToSelf
+	      Boolean.	 If  on,  automatically encrypts all mes-
+	      sages to your  default  key,  as	well  as  to  the
+	      intended	recipient.  Intended to allow you to read
+	      encrypted mail you've sent.  The default is off.
+
+       FastKeyGen
+	      Boolean.	Utilizes pre-generated prime numbers  for
+	      certain  initial	operations  on DSS/Diffie-Hellman
+	      key generation.  This only works for "standard" key
+	      sizes  (1024,  1596  and 2048).  The default is on.
+	      To turn this off, use: <I>pgpk</I> <I>+fastkeygen=0</I> <I>-g</I>
+
+       HTTPKeyServerHost
+	      String.  The name of a keyserver to use in  default
+	      lookups  (see <I>AutoServerFetch</I>, above).  The default
+	      is pgpkeys.mit.edu.
+
+       HTTPKeyServerPort
+	      Integer.	The port to use for  connections  to  the
+	      default  key  server as specified in <I>HTTPKeyServer-</I>
+	      <I>Host</I>, above.  The default  is  11371,  the  default
+	      port for the Horowitz Key Protocol.
+
+       Language
+	      String.	The country code of the language you wish
+	      to use.  The default is "us."
+
+       LanguageFile
+	      String.	The  file  from  which	to  load  runtime
+	      strings.	 The  default is "language50.txt" in your
+	      .pgp directory.  If this file does not  exist,  PGP
+	      will use internal defaults.
+
+       MyName String.	The  key  ID  you  wish to be default for
+	      signing operations and  the  <I>EncryptToSelf</I>  option,
+	      above.   There  is  no default; however, if none is
+	      specified, the first  secret  key  on  your  secret
+	      keyring will be used for most operations.
+
+       NoBatchInvalidKeys
+	      Boolean.	If True, batch mode will fail if the user
+	      attempts to encrypt to a key that is invalid or not
+	      completely  valid.   If  false, batch mode will use
+	      invalid keys.  Note that this option  only  applies
+	      to  batch  mode; normally, PGP will ask the user to
+	      confirm prior to encrypting to in an  invalid  key.
+	      The default is on.
+
+       PubRing
+	      String.	Your public keyring file.  The default is
+	      String.  Entropy-generating device.  If present, it
+	      will  be	used in favor of asking the user for key-
+	      board input.  The default is "/dev/random."
+
+       SecRing
+	      String.  Your secret keyring file.  The default  is
+	      "secring.skr" in your .pgp directory.
+
+       WarnOnMixRSADiffieHellman
+	      Boolean.	 Warns the user if encrypting to multiple
+	      keys, one or more of which is RSA and one  or  more
+	      of  which  is  DSS/Diffie-Hellman.   The reason for
+	      this warning is that most RSA key owners will still
+	      be  using  2.6.2,  which	will not properly decrypt
+	      such messages.  The default is on.
+
+       WarnOnRSARecipAndNonRSASigner
+	      Boolean.	Warns the user if encrypting  to  an  RSA
+	      key,  but  signing  with	a DSS/Diffie-Hellman key.
+	      The reason for this warning is that  most  RSA  key
+	      owners  will  still  be using 2.6.2, which will not
+	      properly decrypt such messages.  The default is on.
+
+
+
+
+</PRE>
+<H2>BUGS</H2><PRE>
+       See <B>pgp(1)</B>.
+
+
+</PRE>
+<H2>SEE ALSO</H2><PRE>
+       <B>pgp(1)</B>,	<B>pgpe(1)</B>,  <B>pgpv(1)</B>, <B>pgps(1)</B>, <B>pgpk(1)</B>, <B>pgp-integra-</B>
+       <B>tion(7)</B>,    http://www.pgp.com	 (US	versions)     and
+       http://www.pgpi.com (International versions)
+
+</PRE>
+<HR>
+<ADDRESS>
+Man(1) output converted with
+<a href="http://www.oac.uci.edu/indiv/ehood/man2html.html">man2html</a>
+</ADDRESS>
+</BODY>
+</HTML>

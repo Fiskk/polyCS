@@ -145,7 +145,8 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7352",
       office: "Kunsela C220",
       email: "jorge@sunyit.edu",
-      site: "http://jorge.sunyit.edu/",
+      // site: "http://jorge.sunyit.edu/",
+      site: "",
       school: "Lehigh University",
       bio: ""
     },

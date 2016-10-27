@@ -1,0 +1,10 @@
+AuthName "Survey Administration"
+AuthType Basic
+#AuthYP On
+require valid-user
+
+AuthLDAPURL "ldap://directory.cs.sunyit.edu/ou=People,dc=cs,dc=sunyit,dc=edu?uid"
+AuthBasicAuthoritative off
+AuthBasicProvider ldap
+AuthzLDAPAuthoritative on
+

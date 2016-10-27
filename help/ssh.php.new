@@ -1,0 +1,213 @@
+<a name="top"></a>
+<?php include("{$_SERVER['DOCUMENT_ROOT']}/header.php"); ?>
+<h1>Help: Secure Shell</h1>
+
+<div id='content'>
+
+<ul>
+<li><a href="#putty"> Connect to SSH with PuTTY </a> 
+<li><a href="#agent"> Using ssh-agent for passwordless authenication </a> 
+<li><a href="#keys"> Setting up a public/private key pair </a> 
+<li><a href="#linux"> Connect to SSH using Linux/BSD </a> 
+</ul>
+
+
+<a name="agent"></a>
+<h3>Using SSH Agent for passwordless authentication:</h3>
+
+<P>SSH agent is a tool that, once started, will pass authentication 
+information to hosts on your behalf. This provides a form of single 
+sign-on for your session.
+</P>
+
+<P> To use SSH Agent, first, ensure you have a public/private key pair setup. See <a href="#keys"> Setting up a public/private key pair </a></P>
+<P> After this, simply login to a CS computer and type:</P>
+<i><pre>ssh-agent bash</pre></i> or <i><pre>ssh-agent tcsh</pre></i>
+<P>This will spawn a new shell within an SSH Agent session. Now type:</P>
+<i><pre>ssh-add</pre></i>
+<P> You will be prompted for your passphrase. After it is entered, you will 
+be able to login to other CS computers without typing your password.  </P>
+
+<P>Example:</P>
+<pre>
+pupeckd@fang:~><i>ssh-agent bash</i>
+[pupeckd@fang ~]$ <i>ssh-add</i>
+Enter passphrase for /home/undergrad/pupeckd/.ssh/id_rsa:
+Identity added: /home/undergrad/pupeckd/.ssh/id_rsa (/home/undergrad/pupeckd/.ssh/id_rsa)
+[pupeckd@fang ~]$ <i>ssh bingo</i>
+pupeckd@bingo:~>
+</pre>
+
+<P>If you recieve a prompt like:
+
+<pre>
+[pupeckd@fang ~]$ ssh bingo
+Password: 
+</pre> 
+
+Then it is likley you forgot the authorized keys section of <a href="#keys"> Setting up a public/private key pair </a></P>. 
+
+
+<a href="#top"> Top </a> 
+
+<a name="ssh"></a>
+<h3>Remote Connections with SSH:</h3>
+
+<center>
+<p>
+<a href="http://www.cs.sunyit.edu/network/downloads/SSHClient.exe">Click here to download SSH Secure Shell</a>
+</p>
+</center>
+
+
+<P>The Computer Science department is phasing out use of the insecure telnet
+and FTP protocols and replacing them with secure alternatives.</P>
+
+<P>To connect to your unix account from home, we recommend using the Secure Shell (SSH)
+client available from <a href="http://www.ssh.com/">SSH Communications Security</a>.  
+You can download a copy directly from our
+<a href="http://www.cs.sunyit.edu/network/downloads/SSHClient.exe">Software Collection</a>.
+
+<p>After you download and install the SSH program, follow the steps below to connect to your account
+or transfer files securely.</p>
+
+<p align="center">
+<TABLE width=600>
+<TR>
+<TD valign="top"><p>Double click on the SSH Secure Shell Client icon on your desktop.</p></TD>
+<TD><img src="pix/ssh0.png"></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>Click on quick connect</p></TD>
+<TD><a href="pix/ssh1.png"><img src="pix/ssh1s.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>Enter the hostname of the machine you would like to connect to, and your username.</p></TD>
+<TD><a href="pix/ssh2.png"><img src="pix/ssh2s.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You will then be prompted for your password.</p></TD>
+<TD><a href="pix/ssh2a.png"><img src="pix/ssh2as.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You are now connected to the remote unix machine, and should have a shell prompt.</p></TD>
+<TD><a href="pix/ssh3.png"><img src="pix/ssh3s.png"></a><TD>
+</TR>
+</TABLE>
+</p>
+
+<a href="#top"> Top </a> 
+</div>
+
+<div id='content'>
+<a name="putty"></a>
+<h3>Remote Connections with PuTTY:</h3>
+
+<center>
+<p>
+<a href="http://www.cs.sunyit.edu/network/downloads/files/putty-0.60-installer.exe">Click here to download PuTTY</a>
+</p>
+</center>
+
+
+<P>The Computer Science department is phasing out use of the insecure telnet
+and FTP protocols and replacing them with secure alternatives.</P>
+
+<p>PuTTY is a free implementation of Telnet and SSH for Win32 and Unix platforms, along with an xterm terminal emulator. 
+PuTTY is maintained by a small team based in Cambridge, England.<p>
+<P>As an alternative, and free, way to connect to your unix account from home with secure shell, we recommend using the 
+PuTTY client available from the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Official PuTTY Website</a>.  
+You can download a copy directly from our
+<a href="http://www.cs.sunyit.edu/network/downloads/files/putty-0.60-installer.exe">Software Collection</a>.
+<p>After you download and install the PuTTY program, follow the steps below to connect to your account securely</p>
+
+<p align="center">
+<TABLE width=600>
+<TR>
+<TD valign="top"><p>Double click on the PuTTY icon on your desktop or in Start -> All Programs -> PuTTY.</p></TD>
+<TD><img src="pix/putty0.png"></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>The program will look like this when it starts: </p></TD>
+<TD><a href="pix/putty1s.png"><img src="pix/putty1.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>Enter the hostname of the machine you would like to connect to and make sure SSH is still selected for connection type.</p></TD>
+<TD><a href="pix/putty2s.png"><img src="pix/putty2.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You will most likely be prompted to accept a certificate if it is your first time accessing that machine.</p></TD>
+<TD><a href="pix/putty3s.png"><img src="pix/putty3.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You will then be prompted for your username.</p></TD>
+<TD><a href="pix/putty4s.png"><img src="pix/putty4.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You will then be prompted for your password (No characters will show up on the screen when entering your password, not even '*'s).</p></TD>
+<TD><a href="pix/putty5s.png"><img src="pix/putty5.png"></a></TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>You are now connected to the remote unix machine, and should have a shell prompt.</p></TD>
+<TD><a href="pix/putty6s.png"><img src="pix/putty6.png"></a><TD>
+</TR>
+
+<TR>
+<TD valign="top"><p>As can be seen, there are a number of features that can be customized by you for the session, 
+terminal, window, and connection including sizes, colorings, etc. These features are covered in the manual that comes 
+with the installed program or can be viewed on the PuTTY website.</p></TD>
+<TD><a href="pix/putty7s.png"><img src="pix/putty7.png"></a><TD>
+</TR>
+</TABLE>
+</p>
+
+<a href="#top"> Top </a> 
+
+
+<a name="keys"></a>
+<h3>Setting up a public/private key pair:</h3>
+<P>Public/private key pairs provide an alternate means of authentication for ssh and are the basis of 
+passwordless, secure connections. </P>
+
+<P>To setup a public/private key pair, first login to a CS computer, then enter:</P>
+
+<i><pre>ssh-keygen -t rsa</pre></i>
+
+<P>Now you will be prompted for a location, You can just hit enter for the default location.<P> 
+
+<P>Next, you will be prompted for a passphrase twice, choose something long, yet easy to remember.<P>
+
+<P>Example:</P>
+<pre>
+pupeckd@fang:~><i>ssh-keygen -t rsa</i>
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/undergrad/pupeckd/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/undergrad/pupeckd/.ssh/id_rsa.
+Your public key has been saved in /home/undergrad/pupeckd/.ssh/id_rsa.
+The key fingerprint is:
+<s>foo</s> pupeckd@fang.cs.sunyit.edu
+The key's randomart image is:
+<s>bar</s>
+pupeckd@fang:~>
+</pre>
+
+<P> Lastly, copy the key into your authorized_keys file by typing: </P>
+
+<i><pre> cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys</pre></i>
+
+<a href="#top"> Top </a> 
+
+</div>
+<?php include("{$_SERVER['DOCUMENT_ROOT']}/footer.php"); ?>

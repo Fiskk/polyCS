@@ -1,0 +1,178 @@
+<HTML>
+<BODY bgcolor="#FFFFFF">
+<PRE>
+<!-- Manpage converted by man2html 3.0.1 -->
+<H2>NAME</H2><PRE>
+
+       PGP - A suite of tools for encrypting, decrypting and ver-
+       ifying messages.
+
+
+</PRE>
+<H2>DESCRIPTION</H2><PRE>
+       There are two files in this  package,  but  several  addi-
+       tional  modes  of  operation  are  available  via symbolic
+       links:
+
+	      <B>pgp(1)</B> is the main cryptographic engine of the  PGP
+	      package.	 However,  invoking  it  as itself merely
+	      prints a usage summary.
+
+	      <B>pgpe(1)</B> is executed  to  encrypt,  or  encrypt  and
+	      sign, files.  It is a link to <B>pgp(1)</B>.
+
+	      <B>pgps(1)</B>  is  executed  to only sign files.  It is a
+	      link to <B>pgp(1)</B>.
+
+	      <B>pgpv(1)</B> is  executed  to	only  verify  or  decrypt
+	      signed or encrypted files.  It is a link to <B>pgp(1)</B>.
+
+	      <B>pgpk(1)</B> is the key management application, which is
+	      used  to	generate, retrieve and send keys, as well
+	      as manage trust.
+
+       Public key cryptography must be fully  understood  by  the
+       user to be useful.  A successful PGP user must be familiar
+       with public key cryptography in general, and some PGP-spe-
+       cific  concepts	(such  as the web of trust).  If you feel
+       comfortable with your own level of knowledge on this  sub-
+       ject,  your  first  step is probably going to be to invoke
+       <B>pgpk(1)</B> to generate a key.  Additionally, a page  by  Phil
+       Zimmermann  on  the importance of cryptography is included
+       in <B>pgp-intro(7)</B>.
+
+
+</PRE>
+<H2>FILES</H2><PRE>
+       <I>~/.pgp/pgp.cfg</I>
+	      User-specific  configuration  file.   In	 previous
+	      releases,  this  file  was  called <I>config.txt</I>.  See
+	      <B>pgp.cfg(5)</B> for further details.
+
+
+</PRE>
+<H2>MIGRATION</H2><PRE>
+       Users migrating from earlier versions of PGP will need  to
+       manually migrate the following configuration files:
+
+	      <I>~/.pgp/config.txt</I> is now <I>~/.pgp/pgp.cfg</I>.	This file
+	      may be copied manually.  If  not	copied,  internal
+	      defaults	will  be  used.   This	file  is  largely
+	      unchanged in 5.0.  See <B>pgp.cfg(5)</B> for more informa-
+	      tion on this file.
+
+	      <I>~/.pgp/pubring.pgp</I>  is now <I>~/.pgp/pubring.pkr</I>.  You
+
+	      <I>~/.pgp/secring.pgp</I>  is now <I>~/.pgp/secring.skr</I>.  You
+	      may copy your old private keyring.  Even if you  do
+	      this,   you   are  encouraged  to  generate  a  new
+	      DSS/Diffie-Hellman key to allow communication  with
+	      all 5.0 users.
+
+	      <I>~/.pgp/language.txt</I>  is  now <I>~/.pgp/language50.txt</I>.
+	      This file should <B>not</B> be copied from  your  previous
+	      installation, as it is completely different in 5.0.
+	      If this file is not present, internal defaults will
+	      be used.
+
+
+<H2>Authors</H2><PRE>
+       A cast of thousands.  This is, of course, derived directly
+       from the work of Phil R. Zimmermann &lt;prz@pgp.com&gt;.   Major
+       contributors to this release include:
+
+       Unix Development
+		   Derek Atkins &lt;warlord@MIT.EDU&gt;
+		   Hal Finney &lt;hal@pgp.com&gt;
+		   Mark McArdle &lt;markm@pgp.com&gt;
+		   Brett A. Thomas &lt;quark@baz.com&gt;
+		   Mark Weaver &lt;mhw@pgp.com&gt;
+
+       Be Development
+		   Mark Elrod &lt;elrod@pgp.com&gt;
+		   Brett A. Thomas &lt;quark@baz.com&gt;
+
+       Library Development
+		   Derek Atkins &lt;warlord@MIT.EDU&gt;
+		   Colin Plumb &lt;colin@pgp.com&gt;
+		   Hal Finney &lt;hal@pgp.com&gt;
+		   Mark Weaver &lt;mhw@pgp.com&gt;
+
+       Unix Beta Testing
+		   Steve Gilbert &lt;darkelf@redcloud.org&gt;
+		   Mike Shappe &lt;mshappe@jeeves.net&gt;
+
+       Man Pages
+		   Brett A. Thomas &lt;quark@baz.com&gt;
+
+
+</PRE>
+<H2>BUGS</H2><PRE>
+       Keyserver support should be more informative with  unknown
+       protocols.
+
+       URL parsing uses static buffers and is vulnerable to over-
+       flow attacks.
+
+       The PAGER directive in pgp.cfg doesn't work.
+
+       The -b option to <B>pgpv(1)</B> is not implemented.  This  option
+       allowed	the  "breaking"  of signed files into a signature
+       and a file (effectively,  a  retroactive  detached  signa-
+       ture).
+
+       <B>pgpv</B>  <B>-m</B>  ("more"  mode) and "eyes-only" decryption is not
+       displaying properly.  It is suggested that your	pipe  the
+       output of <B>pgpv(1)</B> into your pager of preference until this
+       is fixed.
+
+       <B>pgpk(1)</B> doesn't pay attention  to  the  <B>+force</B>  option  to
+       force file overwrite; it stops to ask for confirmation.
+
+       Multipart  armoring  doesn't  handle all possible permuta-
+       tions - specifically, it does not work properly if all the
+
+       There is currently no way to specify just a secret or pub-
+       lic keyring for an operation.
+
+       <B>pgp</B>  <B>--version</B> doesn't work.  Use <B>pgpk</B> <B>--version</B> or one of
+       the other commands, instead.
+
+       <B>pgpv</B> <B>-p</B>, to "preserve" the original input filename, is not
+       yet supported.
+
+       There  are a number of bugs when specifying filenames end-
+       ing in digits; the general result is that the default out-
+       put filename is not what might be expected (i.e., <B>pgpe</B> <B>-sa</B>
+       <B>foo1</B> results in an output suggestion of <I>foo1.asc.1</I> instead
+       of  <I>foo1.asc</I>,  as  expected).   It is conjectured that the
+       user interface is becoming confused and invoking the rules
+       used to generate multi-part ASCII armor filenames.
+
+       Configuration  option  <I>TZfix</I> doesn't allow specifying non-
+       mainstream values, such as <B>-420</B> or <B>30</B>.
+
+       <B>pgpk</B> <B>-e</B> does not ask about marking a new  userid  as  pri-
+       mary.
+
+       <B>pgpk</B> <B>-a</B> should accept a key on stdin, but does not.
+
+       <B>pgpk</B>  is,  in  some instances, overwriting the "previously
+       encrypted to invalid key" flag on some keys.
+
+
+
+</PRE>
+<H2>SEE ALSO</H2><PRE>
+       <B>pgpe(1)</B>, <B>pgpv(1)</B>, <B>pgps(1)</B>, <B>pgpk(1)</B>, <B>pgp.cfg(5)</B>,	<B>pgp-inte-</B>
+       <B>gration(7)</B>, <B>pgp-intro(7)</B>, http://www.pgp.com (US versions)
+       and http://www.pgpi.com (International versions)
+
+</PRE>
+<HR>
+<ADDRESS>
+Man(1) output converted with
+<a href="http://www.oac.uci.edu/indiv/ehood/man2html.html">man2html</a>
+</ADDRESS>
+</BODY>
+</HTML>
