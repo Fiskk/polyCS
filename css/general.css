@@ -117,7 +117,7 @@ body div {
   border-radius: 0px 0px 10px 10px;
 }
 .oneSixth {
-  width:16.6666666666666667%;
+  width:16.66666666666666666666667%;
 }
 .links a {
   color:black;
@@ -218,4 +218,9 @@ body div {
 
 .center {
   margin:auto;
+}
+
+.raised {
+  position:relative;
+  z-index:10;
 }

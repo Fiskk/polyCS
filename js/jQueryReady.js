@@ -9,8 +9,6 @@ var change = true;
 //this function handles the typing animations
 $(function(){
     $("#typing").typed({
-      // strings: ["First sentence.", "Second sentence."],
-      // ^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       strings: ["Welcome", "We're glad you're here."],
       typeSpeed: 100,
       startDelay: 1000,
@@ -81,7 +79,7 @@ $(document).ready(function() {
 
 });
 
-//this is invoked when the xs/sm nav button is clicked
+// This is invoked on xs/sm screens when the nav button is clicked
 function toggleChevron() {
   $("#control").toggleClass("glyphicon-triangle-top", change);
   $("#control").toggleClass("glyphicon-menu-hamburger", !change);
