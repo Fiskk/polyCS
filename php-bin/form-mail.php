@@ -88,10 +88,9 @@ if(blacklisted($_SERVER["REMOTE_ADDR"])) {
 }
 
 $website_addons = array("form_focus","form_focus_field"=>"name");
-
-// include("../header.php");
-// echo "<div id='content'>";
-// echo "<h1>Send a message:</h1>\n";
+include("../header.php");
+echo "<div id='content'>";
+echo "<h1>Send a message:</h1>\n";
 
 // The recipient can be passed either via GET or POST.
 if(isset($_GET['recip'])) { $recip = $_GET['recip']; }
