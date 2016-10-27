@@ -15,12 +15,11 @@ app.run(function($rootScope) {
         typeSpeed: 100,
         startDelay: 1000,
         backSpeed: 50
-      });
+      });    
 
     });
   };
 }); // TODO: get the function above out of the root scope by creating a factory
-
 
 // the function below handles the ajax requests that govern(display) different views
 // If you want to make a new page, you'll need to add a route (and possibly a controller)
