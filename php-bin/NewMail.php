@@ -9,6 +9,9 @@
 		 if (empty($_POST['email'])) {
 		   $errors['email'] = 'Email is required';
 		 }
+		 elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+		   $errors['email'] = 'Invalid email format';
+		 }
 		 if (empty($_POST['message'])) {
 			 $errors['message'] = 'Comment is required';
 		 }
@@ -20,7 +23,7 @@
 	   }
 		 else {
 			 // If there are no errors, return a message to user and process form
-		   $myemail = "bakerdp@sunyit.edu";
+		   $webmaster_email = "bakerdp@sunyit.edu";
 			 $name = $_POST['customer_name'];
 			 $email = $_POST['email'];
 			 $subject = "DogNET Help-Desk: " . $_POST['subject'];
@@ -28,7 +31,7 @@
 
 			 $headers = "From: $name\r\n";
 			 $headers .= "Reply-To: $email\r\n";
-			 mail($myemail, $subject, $message, $headers);
+			 mail($webmaster_email, $subject, $message, $headers);
 
 	     $data['message'] = "Your email was sent successfully! We will respond to your request within 24 hours.";
 			 $data['success'] = true;

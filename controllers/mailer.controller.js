@@ -40,7 +40,7 @@ app.controller('mailCTRL', function ($scope, $http, $timeout) {
         $scope.customer_name = "";
         $scope.message       = "";
 
-        // if successful, bind success message to message
+        // if successful, bind success message to message and reset the form
         document.getElementById('form').reset();
         $scope.show_success_message = data.message;
         $timeout(function () {
