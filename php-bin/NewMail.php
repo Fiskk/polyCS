@@ -30,7 +30,9 @@
 			 $message = "From: " . $name . "\r\nEmail: $email\r\nSubject: "
 			          . $_POST['subject'] . "\r\nMessage: " . $_POST['message'];
 
-			 $headers = "Web-Form\r\nReply-To" . $email . "\r\n";
+			 $headers = "From: $name\r\n";
+			 $headers .= "Reply-To: $email\r\n";
+			//  $headers = "Web-Form\r\nReply-To: " . $email . "\r\n";
 			//  $headers .= "Reply-To: $email\r\n";
 			 mail($webmaster_email, $subject, $message, $headers);
 
