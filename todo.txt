@@ -1,10 +1,9 @@
-- Currently, the website is distributed between Alfie and whatever other machines provide various
-  services related to accounts. Ideally, there would have been APIs so that Alfie could simply
+- Currently, the website is distributed between Alfie and Rocky. Ideally, there would have been APIs so that Alfie could simply
   communicate with those services. I'm currently feeling like that was a poor architectural decision.
   I guess I could simply add duplicate instances of the UI that would wind up imperceptible to those
-  not looking to hard. I don't really want to though. Sigh...Legacy Pains.
+  not looking too hard. I don't really want to though. Sigh...Legacy Pains.
 
-- accounts and msdn subdomains are both served from 10.56.192.35:443...which is good.
+- accounts and msdn subdomains are both served from 10.56.192.35:443...
 
 - figure out what links I will break on the main site and let Poly's webmaster know
 
@@ -14,15 +13,7 @@
 
 - test the Help pages on mobile
 
-- comsider adding breadcrumbs
-
-- images referenced by puttytunneling2.php don't disp in production, but do disp on dev server ?????
-
-- Help > rdp.php does not display in production(this is resolved but the patch needs to be pushed to production)
-
-- could use an img ogit n Labs and Accounts page
-
-- IMGs on HELP > 'Use putty to tunnel a connection' are broken
+- consider adding breadcrumbs
 
 - Figure out if and where Norvillo's personal site is
 
@@ -31,8 +22,6 @@
 - experiment with z-index on labs modals
 
 - write a .sh or .py script that will configure git and one that will enable credential helper
-
-- get rid of disposable email addresses
 
 - write listener that will un-apply the white background color on 'body.div'
   when a modal is opened

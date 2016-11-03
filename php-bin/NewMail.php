@@ -28,7 +28,7 @@
 			 $email = $_POST['email'];
 			 $subject = "DogNET Help-Desk: " . $_POST['subject'];
 			 $message = "NOTE: This correspondence originated from the CS Website's mail-form.\r\n\r\n"
-                                  . "From: " . $name . "\r\nEmail: $email\r\nSubject: "
+                . "From: " . $name . "\r\nEmail: $email\r\nSubject: "
 			          . $_POST['subject'] . "\r\nMessage: " . $_POST['message'];
 
 			 $headers = "From: $name\r\n";
