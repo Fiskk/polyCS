@@ -27,13 +27,12 @@
 			 $name = $_POST['customer_name'];
 			 $email = $_POST['email'];
 			 $subject = "DogNET Help-Desk: " . $_POST['subject'];
-			 $message = "From: " . $name . "\r\nEmail: $email\r\nSubject: "
+			 $message = "NOTE: This correspondence originated from the CS Website's mail-form.\r\n\r\n"
+                                  . "From: " . $name . "\r\nEmail: $email\r\nSubject: "
 			          . $_POST['subject'] . "\r\nMessage: " . $_POST['message'];
 
 			 $headers = "From: $name\r\n";
 			 $headers .= "Reply-To: $email\r\n";
-			//  $headers = "Web-Form\r\nReply-To: " . $email . "\r\n";
-			//  $headers .= "Reply-To: $email\r\n";
 			 mail($webmaster_email, $subject, $message, $headers);
 
 	     $data['message'] = "Your email was sent successfully! We will respond to your request within 24 hours.";
