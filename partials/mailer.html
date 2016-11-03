@@ -10,14 +10,14 @@
 
   <!-- Customer name -->
   <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
-    <label>Name</label>
+    <label>Your Name</label>
     <input type="text" name="customer_name" class="form-control"
            placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
     <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
   </div>
   <!-- email -->
   <div class="form-group" ng-class="{ 'has-error' : error_email }">
-      <label>Email</label>
+      <label>Your Email</label>
       <input type="email" name="email" class="form-control" required
              placeholder="example: user@provider.com" ng-model="PostformData.email">
       <span class="help-block" ng-show="error_email">{{ error_email }}</span>
