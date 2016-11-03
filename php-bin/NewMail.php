@@ -27,9 +27,9 @@
 			 $name = $_POST['customer_name'];
 			 $email = $_POST['email'];
 			 $subject = "DogNET Help-Desk: " . $_POST['subject'];
-			 $message = "From: " . $name . "\r\n" . $_POST['message'];
+			 $message = "From: " . $name . "\r\nSubject: $subject\r\n" . $_POST['message'];
 
-			 $headers = "From: DogNETWebsite\r\n";
+			 $headers = "Web-Form\r\n";
 			 $headers .= "Reply-To: $email\r\n";
 			 mail($webmaster_email, $subject, $message, $headers);
 
