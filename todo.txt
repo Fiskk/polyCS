@@ -15,9 +15,7 @@
 
 - consider adding breadcrumbs
 
-- Figure out if and where Norvillo's personal site is
-
-- Change link messages on bottom of template to shorter version on xs screens
+- Figure out if Norvillo's has a personal 
 
 - experiment with z-index on labs modals
 
