@@ -5,7 +5,7 @@
 
 - accounts and msdn subdomains are both served from 10.56.192.35:443...
 
-- figure out what links I will break on the main site and let Poly's webmaster know
+- Why does GitHub break my formatting when displaying files?
 
 - separate help-docs partials from top-level partials
 
@@ -24,7 +24,7 @@
 - write a .sh or .py script that will configure git and one that will enable credential helper
 
 - write listener that will un-apply the white background color on 'body.div'
-  when a modal is opened
+  when a modal is opened(maybe)
 
 - make text in modals on labs page smaller on mobile (???) (to fix the <pre> issue)
 
@@ -37,6 +37,7 @@
 
 - get the borders off the buttons all <button>s with yellowGradient class
 
+- figure out what links I will break on the main site and let Poly's webmaster know(none as of 11/3/16)
 
                 CLASSES.HTML
 --------------------------------------------------------------------
@@ -63,7 +64,7 @@
 - get bigger images of pamphlets so they don't pixelate at upper bound of mobile UI
 
 - ask if we still offer a Telecommunications major?
-- also ask if we no longer offer the NCS Accelerated master
+- also ask if we no longer offer the NCS Accelerated master+bs
 - template for faculty websites
 
 - stop polluting the root scope and create a factory

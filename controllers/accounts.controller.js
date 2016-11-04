@@ -24,7 +24,7 @@ app.controller('accountsCTRL', function($scope) {
       tooltip : 'Use this link to activate your CS account, or if you need to reset a forgotten password. (You will need your ITS Account info)'},
     {
       topic: 'Access the MSDN Downloads Site',
-      url: 'http://www.cs.sunyit.edu/helpdocs/msdnaa.php',
+      url: '#msdnaa',
       tooltip : 'To download Microsoft software from the Microsoft Developer Network Academic website.'},
     {
       topic: 'Request a MySQL Database Account',
