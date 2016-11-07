@@ -4,7 +4,7 @@ app.controller('listCTRL', function($scope) {
   //this function handles the typing animations
   $(function(){
       $("#typing").typed({
-        strings: ["First sentence.", "Second sentence."],
+        // strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
         strings: ["Degree Programs"],
         typeSpeed: 50,

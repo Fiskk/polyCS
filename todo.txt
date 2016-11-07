@@ -1,9 +1,10 @@
-- Currently, the website is distributed between Alfie and Rocky. Ideally, there would have been APIs so that Alfie could simply
-  communicate with those services. I'm currently feeling like that was a poor architectural decision.
-  I guess I could simply add duplicate instances of the UI that would wind up imperceptible to those
-  not looking too hard. I don't really want to though. Sigh...Legacy Pains.
+- Currently, the website is distributed between Alfie and Rocky.
+  Can we move the entire site to Rocky?
 
-- accounts and msdn subdomains are both served from 10.56.192.35:443...
+- Figure out why cs.sunyit.edu usually won't resolve to the proper IP address
+
+- Check Apache configs to determine if I can create a redirect from broken links in Accounts
+  subdomain
 
 - make buttons on the carousel more pronounced
 
@@ -14,6 +15,8 @@
 - purge contact, and network pages
 
 - consider adding breadcrumbs
+
+- fix the on-hover of the nav so that is highlights the entire element
 
 - experiment with z-index on labs modals
 
@@ -27,6 +30,8 @@
 - run code through w3-validator(all the 'ng-xxx' stuff is not W3C-compliant)
 
 - resolve tooltip issues on the mobile 'Accounts' page
+  (turn off tooltips on mobile)
+  (address screen reader issues)
   (find alternative to tooltips for mobile that describe buttons' functions)
 
 - get the borders off the buttons all <button>s with yellowGradient class
@@ -41,7 +46,6 @@
 
                 CLASSES.HTML
 --------------------------------------------------------------------
-- figure out how to populate <select> dropdowns automagically
 - add animation to the ng-show
 -------------------------------------------------------------------
 
@@ -59,9 +63,5 @@
 - get pics of the linux machines in b118
 ---------------------------------------------------------------
 
-- stop polluting the root scope and create a factory
+- stop polluting the root scope and create a factory???
 http://stackoverflow.com/questions/15025979/can-i-make-a-function-available-in-every-controller-in-angular
-
-$scope.$on('$viewContentLoaded', function() {
-  // I wanted to try to use this to 'type'
-});
