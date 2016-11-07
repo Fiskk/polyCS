@@ -1,17 +1,3 @@
-// Use this to calc the month of the next semester and generate links to Banner app
-// function calcNext() {
-//   var currentMonth = new Date().getMonth();
-//   if (currentMonth > 9) {
-//     return '01';
-//   }
-//   else if (currentMonth > 1 && currentMonth <= 6) {
-//     return '06';
-//   }
-//   else {
-//     return '01';
-//   }
-// }
-
 app.controller('classesCTRL', function($scope) {
 
   $(function(){
@@ -29,18 +15,15 @@ app.controller('classesCTRL', function($scope) {
     return $scope.term = true;
   }
 
-  $scope.currentYear = function() {
-    var thisYear = new Date().getFullYear();
-      return thisYear;
-  };
+  $scope.currentYear = new Date().getFullYear();
 
   $scope.data = {
     model: null,
     years: [
       {value: '', name: 'Select Year'},
-      {value: '2015', name: '2015'},
-      {value: '2016', name: '2016'},
-      {value: '2017', name: '2017'}
+      {value: $scope.currentYear - 1, name: '2015'},
+      {value: $scope.currentYear, name: '2016'},
+      {value: $scope.currentYear + 1, name: '2017'}
     ],
     semesters: [
       {value: '', name: 'Select Semester'},
@@ -49,14 +32,5 @@ app.controller('classesCTRL', function($scope) {
       {id: '06', name : 'Summer'}
     ]
    };
-
-//   $scope.string1 = "https://banner.sunyit.edu/pls/prod/swssschd.P_ShowSchd?term_in=";
-//   $scope.year = "2016";
-//   $scope.month = calcNext();
-//   $scope.string2 = "&disc_in=CS";
-//
-//   $scope.inject = function() {
-//     return $scope.string1.concat($scope.year, $scope.month, $scope.string2);
-//   };
 
 });

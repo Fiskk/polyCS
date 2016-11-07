@@ -9,13 +9,13 @@
 
 - separate help-docs partials from top-level partials
 
-- purge c128copier, contact, and network pages(eventually)
+- purge contact, and network pages
 
 - test the Help pages on mobile
 
 - consider adding breadcrumbs
 
-- Figure out if Norvillo's has a personal 
+- Figure out if Norvillo's has a personal
 
 - experiment with z-index on labs modals
 

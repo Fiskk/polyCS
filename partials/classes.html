@@ -15,13 +15,12 @@
       <select name="repeatSelect1" id="repeatSelect1" ng-model="data.semester" ng-init="data.semester=null" required>
         <option ng-repeat="option in data.semesters" value="{{option.id}}">{{option.name}}</option>
       </select>
-      <!-- <input class="btn btn-success" type="checkbox" ng-model="term" ng-init="term=false" /> -->
 <!--The button below doesn't set the term. It hides the links until the user specifies a term to inject into the links -->
       <button type="submit" ng-if="data.year&&data.semester" ng-click="termTrue()" ng-init="term=false">Set Term</button>
     </form>
-    <!-- break comment to check model
-    <tt>year = {{data.year}}</tt><br/>
-    <tt>semester = {{data.semester}}</tt><br/> -->
+    <!-- break comment to check data in model -->
+    <!-- <tt>year = {{data.year}}</tt><br/>
+    <tt>semester = {{data.semester}}</tt><br/> -->    
 
   <span ng-if="term">
     <br>
