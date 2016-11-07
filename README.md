@@ -14,3 +14,5 @@
 - If you have questions, feel free to ask: bakerdp@sunyit.edu.   
 
 - The Master Branch usually sees at least one commit per day, so make sure you keep your local branch up to date.
+
+- Note: using non-minified version of Angular will allow you to see complete error messages
