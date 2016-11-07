@@ -11,11 +11,11 @@ app.run(function($rootScope) {
       $("#typing").typed({
         //strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        strings: message = ["Welcome", "We're glad you're here."],
+        strings: message = ["Welcome"],
         typeSpeed: 100,
         startDelay: 1000,
         backSpeed: 50
-      });    
+      });
 
     });
   };

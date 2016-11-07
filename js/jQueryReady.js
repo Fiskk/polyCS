@@ -9,7 +9,7 @@ var change = true;
 //this function handles the typing animations
 $(function(){
     $("#typing").typed({
-      strings: ["Welcome", "We're glad you're here."],
+      strings: ["Welcome"],
       typeSpeed: 100,
       startDelay: 1000,
       backSpeed: 50

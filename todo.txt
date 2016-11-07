@@ -5,21 +5,17 @@
 
 - accounts and msdn subdomains are both served from 10.56.192.35:443...
 
+- make buttons on the carousel more pronounced
+
 - Why does GitHub break my formatting when displaying files?
 
 - separate help-docs partials from top-level partials
 
 - purge contact, and network pages
 
-- test the Help pages on mobile
-
 - consider adding breadcrumbs
 
-- Figure out if Norvillo's has a personal
-
 - experiment with z-index on labs modals
-
-- write a .sh or .py script that will configure git and one that will enable credential helper
 
 - write listener that will un-apply the white background color on 'body.div'
   when a modal is opened(maybe)
@@ -36,6 +32,12 @@
 - get the borders off the buttons all <button>s with yellowGradient class
 
 - figure out what links I will break on the main site and let Poly's webmaster know(none as of 11/3/16)
+
+- should I make the footer sticky?
+
+- get bigger images of pamphlets so they don't pixelate at upper bound of mobile UI
+
+- template for faculty websites
 
                 CLASSES.HTML
 --------------------------------------------------------------------
@@ -56,14 +58,6 @@
 - get pic of macs in b118
 - get pics of the linux machines in b118
 ---------------------------------------------------------------
-
-- should I make the footer sticky?
-
-- get bigger images of pamphlets so they don't pixelate at upper bound of mobile UI
-
-- ask if we still offer a Telecommunications major?
-- also ask if we no longer offer the NCS Accelerated master+bs
-- template for faculty websites
 
 - stop polluting the root scope and create a factory
 http://stackoverflow.com/questions/15025979/can-i-make-a-function-available-in-every-controller-in-angular

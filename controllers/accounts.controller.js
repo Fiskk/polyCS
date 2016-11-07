@@ -3,8 +3,7 @@ app.controller('accountsCTRL', function($scope) {
   //this function handles the typing animations
   $(function(){
       $("#typing").typed({
-        //strings: ["First sentence.", "Second sentence."],
-        //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        //strings: ["First sentence.", "Second sentence."],        
         strings: ["CS Account Maintenance"],
         typeSpeed: 50,
         startDelay: 1000,

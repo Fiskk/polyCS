@@ -6,7 +6,7 @@ app.controller('listCTRL', function($scope) {
       $("#typing").typed({
         strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        strings: ["Broaden Your Horizons", "Degree Programs"],
+        strings: ["Degree Programs"],
         typeSpeed: 50,
         startDelay: 1000,
         backSpeed: 30

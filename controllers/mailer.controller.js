@@ -2,8 +2,7 @@ app.controller('mailCTRL', function ($scope, $http, $timeout) {
 
   $(function(){
       $("#typing").typed({
-        // strings: ["First sentence.", "Second sentence."],
-        // ^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+        // strings: ["First sentence.", "Second sentence."]
         strings: ["DogNET Help-Desk"],
         typeSpeed: 100,
         startDelay: 1000,
@@ -24,8 +23,6 @@ app.controller('mailCTRL', function ($scope, $http, $timeout) {
     .success(function(data) {
       if (!data.success) {
         // if not successful, bind errors to error variables
-        // $scope.error_first_name  = data.errors.first_name;
-        // $scope.error_last_name   = data.errors.last_name;
         $scope.error_email          = data.errors.email;
         $scope.error_subject      = data.errors.subject;
         $scope.error_customer_name  = data.errors.customer_name;
@@ -33,8 +30,6 @@ app.controller('mailCTRL', function ($scope, $http, $timeout) {
       }
       else {
         // Hide errors If exist ???
-        // $scope.error_first_name  = "";
-        // $scope.error_last_name   = "";
         $scope.error_email   = "";
         $scope.subject     = "";
         $scope.customer_name = "";
@@ -46,6 +41,7 @@ app.controller('mailCTRL', function ($scope, $http, $timeout) {
         $timeout(function () {
           $scope.show_success_message = false;
         }, 5000);
+
       }
 
     });

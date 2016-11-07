@@ -1,3 +1,5 @@
+// NOTE: this page is deprecated
+
 app.controller('networkCTRL', function($scope) {
 
   //this function handles the typing animations

@@ -9,7 +9,7 @@ app.controller('contactCTRL', function($scope) {
       $("#typing").typed({
         //strings: ["First sentence.", "Second sentence."],
         //^ Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-        strings: ["Looking For Someone?", "Contact Info"],
+        strings: ["Contact Info"],
         typeSpeed: 50,
         startDelay: 1000,
         backSpeed: 30
