@@ -1,6 +1,8 @@
 - Currently, the website is distributed between Alfie and Rocky.
   Can we move the entire site to Rocky?
 
+--TODO media query that will round top corners of the onhover behavior of the nav
+
 - Figure out why cs.sunyit.edu usually won't resolve to the proper IP address
 
 - Check Apache configs to determine if I can create a redirect from broken links in Accounts

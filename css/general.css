@@ -32,9 +32,19 @@ body div {
   border-left:1px solid white;
 }
 
-.nav > li > a:focus, .nav > li > a:hover {
+.nav > li > a:focus, .nav > li > a:hover, .nav > li:hover {
   background-color: orange;
   color:black;
+  border:none;
+  /*border-radius: 10px;*/
+  /*border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;*/
+}
+
+/*.nav > li > a:hover, .nav > li:hover {*/
+.roundedLeft {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
 }
 
 @media screen and (max-width:500px) {

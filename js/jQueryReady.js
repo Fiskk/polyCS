@@ -25,9 +25,11 @@ $(document).ready(function() {
     $("#logoImg").removeClass("padding");
     $("#navtabs").removeClass("nav-tabs");
     $(".links").removeClass("oneSixth");
+    $("#roundMe").removeClass("roundedLeft");
     $("#footer").removeClass("roundedBottomCorners");
     $("#firstP").removeClass("marginLeft");
     $("#blueNav").removeClass("roundedTopCorners");
+    $("#roundMe2").removeClass("roundedLeft");
     $(".format").addClass("text-left");
     $(".jumbotron").addClass("shadow");
     $("#contactInfo").addClass("text-center");
@@ -38,12 +40,14 @@ $(document).ready(function() {
     $("#logoImg").addClass("padding");
     $("#navtabs").addClass("nav-tabs");
     $(".links").addClass("oneSixth");
+    $("#roundMe").addClass("roundedLeft");
     $("#footer").addClass("roundedBottomCorners");
     $("#firstP").addClass("marginLeft");
     $("#blueNav").addClass("roundedTopCorners");
     $(".format").removeClass("text-left");
     $(".jumbotron").removeClass("shadow");
     $("#contactInfo").removeClass("text-center");
+    $("#roundMe2").addClass("roundedLeft");
     $(".addAttr").removeAttr("data-toggle");
   }
 
@@ -54,9 +58,11 @@ $(document).ready(function() {
       $("#logoImg").removeClass("padding");
       $("#navtabs").removeClass("nav-tabs");
       $(".links").removeClass("oneSixth");
+      $("#roundMe").removeClass("roundedLeft");
       $("#footer").removeClass("roundedBottomCorners");
       $("#firstP").removeClass("marginLeft");
       $("#blueNav").removeClass("roundedTopCorners");
+      $("#roundMe2").removeClass("roundedLeft");
       $(".format").addClass("text-left");
       $(".jumbotron").addClass("shadow");
       $("#contactInfo").addClass("text-center");
@@ -67,12 +73,14 @@ $(document).ready(function() {
       $("#logoImg").addClass("padding");
       $("#navtabs").addClass("nav-tabs");
       $(".links").addClass("oneSixth");
+      $("#roundMe").addClass("roundedLeft");
       $("#footer").addClass("roundedBottomCorners");
       $("#firstP").addClass("marginLeft");
       $("#blueNav").addClass("roundedTopCorners");
       $(".format").removeClass("text-left");
       $(".jumbotron").removeClass("shadow");
       $("#contactInfo").removeClass("text-center");
+      $("#roundMe2").addClass("roundedLeft");
       $(".addAttr").removeAttr("data-toggle");
     }
   });
