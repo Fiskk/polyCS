@@ -33,15 +33,16 @@ body div {
 }
 
 .nav > li > a:focus, .nav > li > a:hover, .nav > li:hover {
-  background-color: orange;
+  /*background-color: orange;*/
+  background: orange; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ff9900, #ffff00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ff9900, #ffff00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ff9900, #ffff00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ff9900, #ffff00); /* Standard syntax */
   color:black;
   border:none;
-  /*border-radius: 10px;*/
-  /*border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;*/
 }
-
-/*.nav > li > a:hover, .nav > li:hover {*/
+/*Two classes below are applied to or removed from navbar via jQueryReady.js */
 .roundedLeft {
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
