@@ -25,11 +25,17 @@ $(document).ready(function() {
     $("#logoImg").removeClass("padding");
     $("#navtabs").removeClass("nav-tabs");
     $(".links").removeClass("oneSixth");
-    $("#roundMe").removeClass("roundedLeft");
+
+    $("#roundMyLeft").removeClass("roundedLeft");
+    $("#roundMyRight").removeClass("roundedRight");
+
     $("#footer").removeClass("roundedBottomCorners");
     $("#firstP").removeClass("marginLeft");
     $("#blueNav").removeClass("roundedTopCorners");
-    $("#roundMe2").removeClass("roundedLeft");
+
+    $("#roundMyLeft2").removeClass("roundedLeft");
+    $("#roundMyRight2").removeClass("roundedRight");
+
     $(".format").addClass("text-left");
     $(".jumbotron").addClass("shadow");
     $("#contactInfo").addClass("text-center");
@@ -40,14 +46,20 @@ $(document).ready(function() {
     $("#logoImg").addClass("padding");
     $("#navtabs").addClass("nav-tabs");
     $(".links").addClass("oneSixth");
-    $("#roundMe").addClass("roundedLeft");
+
+    $("#roundMyLeft").addClass("roundedLeft");
+    $("#roundMyRight").addClass("roundedRight");
+
     $("#footer").addClass("roundedBottomCorners");
     $("#firstP").addClass("marginLeft");
     $("#blueNav").addClass("roundedTopCorners");
     $(".format").removeClass("text-left");
     $(".jumbotron").removeClass("shadow");
     $("#contactInfo").removeClass("text-center");
-    $("#roundMe2").addClass("roundedLeft");
+
+    $("#roundMyLeft2").addClass("roundedLeft");
+    $("#roundMyLeft2").removeClass("roundedRight");
+
     $(".addAttr").removeAttr("data-toggle");
   }
 
@@ -58,11 +70,19 @@ $(document).ready(function() {
       $("#logoImg").removeClass("padding");
       $("#navtabs").removeClass("nav-tabs");
       $(".links").removeClass("oneSixth");
-      $("#roundMe").removeClass("roundedLeft");
+
+      // remove class that rounds the left on-hover corners of nav
+      $("#roundMyLeft").removeClass("roundedLeft");
+      $("#roundMyRight").removeClass("roundedRight");
+
       $("#footer").removeClass("roundedBottomCorners");
       $("#firstP").removeClass("marginLeft");
       $("#blueNav").removeClass("roundedTopCorners");
-      $("#roundMe2").removeClass("roundedLeft");
+
+      // remove class that rounds the left on-hover corners of nav
+      $("#roundMyLeft2").removeClass("roundedLeft");
+      $("#roundMyRight2").removeClass("roundedRight");
+
       $(".format").addClass("text-left");
       $(".jumbotron").addClass("shadow");
       $("#contactInfo").addClass("text-center");
@@ -73,14 +93,22 @@ $(document).ready(function() {
       $("#logoImg").addClass("padding");
       $("#navtabs").addClass("nav-tabs");
       $(".links").addClass("oneSixth");
-      $("#roundMe").addClass("roundedLeft");
+
+      // round the left on-hover corners of nav
+      $("#roundMyLeft").addClass("roundedLeft");
+      $("#roundMyRight").addClass("roundedRight");
+
       $("#footer").addClass("roundedBottomCorners");
       $("#firstP").addClass("marginLeft");
       $("#blueNav").addClass("roundedTopCorners");
       $(".format").removeClass("text-left");
       $(".jumbotron").removeClass("shadow");
       $("#contactInfo").removeClass("text-center");
-      $("#roundMe2").addClass("roundedLeft");
+
+      // round the right on-hover corners of nav 
+      $("#roundMyLeft2").addClass("roundedLeft");
+      $("#roundMyLeft2").removeClass("roundedRight");
+
       $(".addAttr").removeAttr("data-toggle");
     }
   });

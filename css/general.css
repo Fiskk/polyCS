@@ -46,6 +46,20 @@ body div {
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
 }
+.roundedRight {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+/*Rule below rounds corners on the mobile nav's on:hover behavior*/
+@media screen and (max-width: 768px) {
+  .nav > #roundMyLeft > a:focus, .nav > #roundMyLeft > a:hover, .nav > #roundMyLeft:hover {
+    border-radius: 10px 10px 0px 0px;
+  }
+  /*.nav > li > a:focus, .nav > li > a:hover, .nav > li:hover {*/
+  .nav > #roundMyRight > a:focus, .nav > #roundMyRight > a:hover, .nav > #roundMyRight:hover {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
 
 @media screen and (max-width:500px) {
   #blueNav {
