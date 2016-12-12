@@ -1,14 +1,10 @@
-- Currently, the website is distributed between Alfie and Rocky.
-  Can we move the entire site to Rocky?
+- Edit text on Help/services/mysql(make HERE link all caps, add a space before mysql link, add part about SSHing to DB)
 
 --TODO media query that will round top corners of the onhover behavior of the nav
 
 - Figure out why cs.sunyit.edu usually won't resolve to the proper IP address
 
-- Check Apache configs to determine if I can create a redirect from broken links in Accounts
-  subdomain
-
-- make buttons on the carousel more pronounced
+- make buttons on the carousel more pronounced (dark translucent background) 
 
 - Why does GitHub break my formatting when displaying files?
 
