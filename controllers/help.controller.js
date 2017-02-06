@@ -26,7 +26,7 @@ app.controller('helpCTRL', function($scope, $http, $location, $anchorScroll) {
       acctSubtopics : [  'Activate Your CS Account',
                          'Changing Your CS Password',
                          'Resetting a CS Password',
-                         'Microsoft Dreamspark (MSDNAA)'
+                         'Microsoft Imagine (Free Microsoft Products)'
                        ],
         subtopicUrls : [
                           '#activate',

@@ -116,7 +116,7 @@ app.controller('facultyCTRL', function($scope) {
       url: "#faculty",
       img: "img/faculty/marsh.jpg",
       phone: "792-7125",
-      office: "Kunsela C225",
+      office: "Kunsela C119",
       email: "fjam@sunyit.edu",
       site: "http://people.sunyit.edu/~fjam/",
       school: "Carnegie Mellon University",
