@@ -225,6 +225,17 @@ app.controller('facultyCTRL', function($scope) {
             years in El Salvador."
     },
     {
+      name: "Ali Tekeoglu, NCS Faculty",
+      url: "#faculty",
+      img: "img/faculty/tekeoglu.png",
+      phone: "",
+      office: "Kunsela C135",
+      email: "tekeoga@sunyit.edu",
+      site: "http://web.cs.sunyit.edu/~tekeoga/",
+      school: "University of Texas at San Antonio ",
+      bio: "Cyber Vulnerability Analyst & Penetration Tester at Rackspace. Research interests: Secure Multimedia, Internet of Things."
+    },
+    {
       name: "Chris Urban, Lecturer, Dept. Chair",
       url: "#faculty",
       img: "img/faculty/chris.png",

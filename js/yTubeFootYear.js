@@ -39,6 +39,8 @@
         player.stopVideo();
       }
 
+// End YouTube API code
+// ------------------------------------------------------------------------------------------------------------------
 
 // this file generates the year in the footer
 window.onload = function() {
