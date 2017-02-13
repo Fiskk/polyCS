@@ -33,6 +33,16 @@
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
+@media screen and (min-width: 768px) {
+    #myCarousel {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+    #myCarousel {
+    height: 100%;
+  }
+}
 #myCarousel, .carousel-fade .carousel-control {
   z-index: 2;
 }
