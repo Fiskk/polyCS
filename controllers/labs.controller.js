@@ -20,7 +20,7 @@ app.directive("modal", function() {
                       '<div class="modal-dialog" role="document"> ' +
                         '<div class="modal-content"> ' +
                           '<div class="modal-header blueGradient roundedTopCorners"> ' +
-                            '<button type="button" class="close" style="color:yellow; z-index:10;" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button> ' +
+                            '<button type="button" class="close" style="color:yellow; z-index:10; opacity:0.8;" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button> ' +
                             '<h4 class="modal-title" id="myModalLabel">{{ h.location }}</h4> ' +
                           '</div> ' +
                           '<div class="modal-body"> ' +

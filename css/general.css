@@ -234,6 +234,9 @@ body div {
 .btn {
   color: black;
 }
+.modal-content {
+  border-radius:10px !important;
+}
 
 /*rules applied to help pages*/
 .attribution {

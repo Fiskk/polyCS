@@ -1,5 +1,5 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
-     once an AJAX request is implicitly made by the user -->
+     once an request is made by the user -->
 
 <div class="col-sm-6">
   <img class="img-responsive img-rounded shadow" src="img/labs/turing.jpg" alt="Alan Turing" />
@@ -20,7 +20,7 @@
   <p class="hint orangeText">(Hint: Click a button to open a modal)</p>
   <dl ng-repeat="h in labs">
     <dt></dt>
-    <!-- note that modal is a template I created in labs.controller.js -->
+    <!-- note that <modal> element is a template I created in labs.controller.js -->
     <dd><modal></modal></dd>
   </dl>
 </div>
