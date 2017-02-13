@@ -22,6 +22,9 @@ body div {
   margin-top: 0;
   margin-bottom: 0;
 }
+#navtabs li > a:focus {
+  outline:none;
+}
 .nav-pills a {
   color:white;
 }
@@ -31,7 +34,6 @@ body div {
 .nav-tabs li {
   border-left:1px solid white;
 }
-
 .nav > li > a:focus, .nav > li > a:hover, .nav > li:hover {
   /*background-color: orange;*/
   background: orange; /* For browsers that do not support gradients */

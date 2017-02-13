@@ -37,6 +37,9 @@
     #myCarousel {
     height: 270px;
   }
+  #myDegreeCarousel {
+    height: 465px;
+  }
 }
 @media screen and (max-width: 767px) {
     #myCarousel {
