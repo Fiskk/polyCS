@@ -16,8 +16,7 @@ $(function(){
     });
 });
 
-$(document).ready(function() {
-  $("#control").addClass('glyphicon-menu-hamburger');
+$(document).ready(function() {  
 
   // apply styles on initial page load based on screen width
   if($(window).width() < 679) {
@@ -120,4 +119,9 @@ function toggleChevron() {
   $("#control").toggleClass("glyphicon-triangle-top", change);
   $("#control").toggleClass("glyphicon-menu-hamburger", !change);
   change = !change
+}
+function play() {
+  $("#bimal").css("display", "inline-block");
+  $("#VideoHint").css("display", "inline-block");
+  $("#play").css("display", "none");
 }
