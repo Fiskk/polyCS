@@ -1,10 +1,31 @@
 <!-- Input to this form is validated on both client and server-side -->
 <div class="container-fluid col-xs-12" ng-hide="addformtoggle">
 
-<div class="text-center">
+<!--<div class="text-center">
   <h3><span class="glyphicon glyphicon-fire"></span> Is There Something We Should Know About?</h3>
 </div>
-<hr>
+<hr> -->
+
+<div class="container-fluid alert alert-danger" style="padding:0px 3px 3px 3px;">
+          <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
+          <p>
+            Due to maintenance on DogNET systems, some users may experience warnings when SSHing into Fang.
+            These users will be required to purge the key their machine presently associates with Fang.
+            If you encounter a warning when attempting to SSH into Fang, this means that you were affected.
+            <br><br>
+            If you are using Linux or OSx or you are using Bash on Ubuntu on Windows, the offending key can be
+            removed with a command such as: <br>
+            <span style="color:black">ssh-keygen -f "/&lt;PATH_TO_.ssh_DIR&gt;/.ssh/known_hosts" -R fang</span>
+           <br> or you can manually remove the lines associated with Fang from  the known_hosts file located in the .ssh subdirectory of
+your home directory.
+            <br><br>
+            NOTE: you will have to determine where the system you are using stores SSH keys and adjust the above
+            command accordingly.
+            <br><br>
+            <a href="http://superuser.com/questions/30087/remove-key-from-known-hosts">See this link for more details</a></br></br>
+            If you are unable to resolve the issue on your own, submit a support request and  one our Student Admins will be in touch ASAP.
+          </p>
+       </div>
 
 <form ng-submit="processForm()" id="form" method="POST">
 

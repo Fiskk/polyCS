@@ -23,10 +23,6 @@
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/general.css">
 
-  <!-- NOTE: In case the need arises for custom IE support.-->
-  <!--[if lt IE 11]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <![endif]-->
 </head>
 
 <body ng-app="myApp">
@@ -125,23 +121,30 @@
         <span id="typing"></span>
       </h3>
     </div>
-       <div class="container-fluid alert alert-danger">
-          <h3><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h3>
+
+      <!-- <div class="container-fluid alert alert-danger" style="padding:0px 3px 3px 3px;">
+          <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
           <p> 
             Due to maintenance on DogNET systems, some users may experience warnings when SSHing into Fang. 
             These users will be required to purge the key their machine presently associates with Fang. 
             If you encounter a warning when attempting to SSH into Fang, this means that you were affected. 
             <br><br>
-            If you are on a Linux system, the offending key can be removed with a command such as: <br>
-            <span style="color:black">ssh-keygen -f "&lt;PATH_TO_.ssh_DIR&gt;/.ssh/known_hosts" -R fang</span> 
+            If you are using Linux or OSx or you are using Bash on Ubuntu on Windows, the offending key can be 
+            removed with a command such as: <br>
+            <span style="color:black">ssh-keygen -f "/&lt;PATH_TO_.ssh_DIR&gt;/.ssh/known_hosts" -R fang</span>
+           <br> or you can manually remove the lines associated with Fang from  the known_hosts file located in the .ssh subdirectory of 
+your home directory.  
             <br><br>
-            NOTE: you will have to determine where the system you are using stores SSH keys and adjust the 
+            NOTE: you will have to determine where the system you are using stores SSH keys and adjust the above 
             command accordingly.
             <br><br>
-            If you are unable to resolve the issue on your own, please contact us using the support link at 
-            the bottom of the page.
+            <a href="http://superuser.com/questions/30087/remove-key-from-known-hosts">See this link for more details</a></br>
+            If you are unable to resolve the issue on your own, you can request assistance using the support link at 
+            the bottom of the page. You can expect to receive a response within 4 hours.
           </p>
-       </div>
+       </div> 
+       <br> -->
+
 
   </div>
    
