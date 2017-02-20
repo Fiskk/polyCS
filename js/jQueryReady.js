@@ -120,8 +120,4 @@ function toggleChevron() {
   $("#control").toggleClass("glyphicon-menu-hamburger", !change);
   change = !change
 }
-function play() {
-  $("#bimal").css("display", "inline-block");
-  $("#VideoHint").css("display", "inline-block");
-  $("#play").css("display", "none");
-}
+
