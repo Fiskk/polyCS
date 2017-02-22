@@ -93,23 +93,47 @@
       The computing and information fields are enabling the ongoing revolutions
       in technology and communications that are reshaping our societies. The ways
       in which businesses, governments, and individuals interact with each other has changed
-      dramatically in recent years and is still changing. The value of the techniques, tools,
+      dramatically in recent years and is still changing. 
+      The value of and demand for the techniques, tools,
       and problem-solving approaches needed for continued innovations is beyond question.
+      <p class="hint orangeText">(And the pay is decent. See chart below)</p>
     </p>
   </div>
 
 </div><!-- end row -->
 
-<!--<br>
+<br>
 <div class="container-fluid text-center">         
-      <h4>        
-        World-Class Data Scientist and Former SUNY Poly Professor Bimal Roy on Predictive Analytics
-      </h4>             
-      <video controls style="width: 100%; height: auto;">
-        <source src="StagedForDownload/feb1017.mp4" type="video/mp4">        
-        Your browser does not support the <video> tag.
-      </video>
-</div>-->
+  <div id="curve_chart" style="width: 700px; height: 250px"></div>
+</div>
+
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Average', 'Tech'],
+      // ['2008',  41334,      ' '],
+      // ['2009',  40711,      ' '],
+      ['2010',  41673,       79348],
+      ['2011',  42979,      81327],
+      ['2012',  44321,     85619],
+      ['2013',  44888,     87811],
+      ['2014',  46481,      89450],
+      // ['2015',  48098,      ' ']
+    ]);
+
+    var options = {
+      title: 'Average U.S. Tech Salaries relative to Average U.S. Wages (not adjusted for inflation) ',
+      curveType: 'function',
+      legend: {position: 'bottom'}
+    };
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
 
 <div class="container-fluid text-center">
   <hr>

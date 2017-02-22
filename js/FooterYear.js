@@ -5,7 +5,7 @@ window.onload = function() {
   document.getElementById("year").innerHTML = " " + date.getFullYear();
 }
 
-$("#play").click(function(){
-    alert("The paragraph was clicked.");
-});
+// $("#play").click(function(){
+//     alert("The paragraph was clicked.");
+// });
 
