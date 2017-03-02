@@ -11,8 +11,9 @@
   }
 }
 a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label,input,textarea {
-  font-family: 'Russo One', sans-serif;
+  /* font-family: 'Russo One', sans-serif; #This is unreadable. */
 }
+
 /*the rule below was used to prevent bleeding from background*/
 /*it is unfortunately interfering with the modal background effects TODO*/
 body div {
@@ -43,6 +44,10 @@ body div {
   background: linear-gradient(#ff9900, #ffff00); /* Standard syntax */
   color:black;
   border:none;
+  font-family: monospace;
+}
+.jumbotron {
+	font-family: monospace; 
 }
 /*Two classes below are applied to or removed from navbar via jQueryReady.js */
 .roundedLeft {
