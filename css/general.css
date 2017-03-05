@@ -166,7 +166,6 @@ body div {
 .marginLeft {
   margin-left: 2%;
 }
-/* TODO: update these to current browser versions. (They may have converged on a standard) */
 .blueGradient {
   color:white;
   background: #00264d; /* For browsers that do not support gradients */
@@ -186,6 +185,18 @@ body div {
 #linkToHome {
   color: white;
 }
+
+/*the rules below are applied to the faculty.html partial*/
+@media  screen and (min-width:768px) {
+    width: 700px; 
+    height: 250px  
+}
+@media  screen and (min-width:768px) {
+    width: 350px; 
+    height: 125px;  
+} 
+/*end Home rules*/
+
 /*the rules below are applied to the faculty.html partial*/
 .hint {
   font-size: 11px;
