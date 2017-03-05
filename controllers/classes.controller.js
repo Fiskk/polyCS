@@ -21,9 +21,9 @@ app.controller('classesCTRL', function($scope) {
     model: null,
     years: [
       {value: '', name: 'Select Year'},
-      {value: $scope.currentYear - 1, name: '2015'},
-      {value: $scope.currentYear, name: '2016'},
-      {value: $scope.currentYear + 1, name: '2017'}
+      {value: $scope.currentYear - 1, name: $scope.currentYear - 1},
+      {value: $scope.currentYear, name: $scope.currentYear},
+      {value: $scope.currentYear + 1, name: $scope.currentYear + 1}
     ],
     semesters: [
       {value: '', name: 'Select Semester'},
