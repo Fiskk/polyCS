@@ -3,9 +3,6 @@ The majority of this script runs once the HTML has rendered and requires jQuery.
 Its primary purpose is to pop or push CSS classes onto or off from HTML elements.
 */
 
-// the var below is used for nav-button toggle
-var change = true;
-
 //this function handles the typing animations
 $(function(){
     $("#typing").typed({
@@ -114,10 +111,24 @@ $(document).ready(function() {
 
 });
 
-// This is invoked on xs/sm screens when the nav button is clicked
-function toggleChevron() {
-  $("#control").toggleClass("glyphicon-triangle-top", change);
-  $("#control").toggleClass("glyphicon-menu-hamburger", !change);
-  change = !change
-}
+// var change = true;
+// // This is invoked on xs/sm screens when the nav button is clicked
+// function toggleChevron() {
+//   $("#control").toggleClass("glyphicon-triangle-top", change);
+//   $("#control").toggleClass("glyphicon-menu-hamburger", !change);
+//   change = !change
+// }
 
+// var Russo = true;
+// $("#FontChanger").click(function () {
+//   if (Russo == true) {
+//     $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label,input,textarea")
+//     .css("font-family", "'Helvetica Neue', sans-serif");
+//     Russo = false;
+//   }
+//   else {
+//     $("a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label,input,textarea")
+//     .css("font-family", "Russo One");
+//     Russo = true;
+//   }
+// });

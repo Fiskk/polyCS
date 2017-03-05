@@ -9,9 +9,9 @@
                                     in Utica offer a wide range of learning experiences
                                     and opportunities for students.">
   <!--Attempt to force Users' cache to clear (Chrome uses cache VERY aggressively)-->
-  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+  <!--<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
   <meta http-equiv="expires" content="Tue, 28 Feb 2017 00:00:00 GMT">
-  <meta http-equiv="pragma" content="no-cache">                                    
+  <meta http-equiv="pragma" content="no-cache">                                    -->
 
   <title>CompSci | DogNET</title>
   <!-- dogtag=7efd8e3b85b0857 -->
@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="lib/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/css/typingAnimation.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/general.css">
 
@@ -30,6 +31,7 @@
   <br class="hidden-xs hidden-xs">
   <br class="hidden-xs hidden-xs">
 
+  <!--blue nav section -->
   <div id="blueNav" class="container blueGradient">
     <nav>
       <ul class="nav nav-pills pull-right">
@@ -46,9 +48,16 @@
           </a>
         </li>
 
+        <!--<li role="presentation">
+          <a id="FontChanger" href="javascript:void(0);">
+            <span class="glyphicon glyphicon-font"></span> Change Font
+          </a>
+        </li>-->
+
       </ul>
     </nav>
   </div>
+  <!--end blue nav section -->
 
   <div class="container shadow">
 
@@ -123,33 +132,7 @@
       </h3>
     </div>
 
-      <!-- <div class="container-fluid alert alert-danger" style="padding:0px 3px 3px 3px;">
-          <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
-          <p> 
-            Due to maintenance on DogNET systems, some users may experience warnings when SSHing into Fang. 
-            These users will be required to purge the key their machine presently associates with Fang. 
-            If you encounter a warning when attempting to SSH into Fang, this means that you were affected. 
-            <br><br>
-            If you are using Linux or OSx or you are using Bash on Ubuntu on Windows, the offending key can be 
-            removed with a command such as: <br>
-            <span style="color:black">ssh-keygen -f "/&lt;PATH_TO_.ssh_DIR&gt;/.ssh/known_hosts" -R fang</span>
-           <br> or you can manually remove the lines associated with Fang from  the known_hosts file located in the .ssh subdirectory of 
-your home directory.  
-            <br><br>
-            NOTE: you will have to determine where the system you are using stores SSH keys and adjust the above 
-            command accordingly.
-            <br><br>
-            <a href="http://superuser.com/questions/30087/remove-key-from-known-hosts">See this link for more details</a></br>
-            If you are unable to resolve the issue on your own, you can request assistance using the support link at 
-            the bottom of the page. You can expect to receive a response within 4 hours.
-          </p>
-       </div> 
-       <br> -->
-
-
   </div>
-   
-
 
    <!-- start the partial-view --> <!-- AngularJS will inject the partials here -->
    <div ng-view class="container"></div>
@@ -159,8 +142,7 @@ your home directory.
      <hr>
      <div class="row text-center">
        <div class="col-xs-6">
-         <i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>
-         <!-- <a class="hint" href="http://www.cs.sunyit.edu/php-bin/form-mail.php?recip=bakerdp"> -->
+         <i class="fa fa-life-ring fa-2x" aria-hidden="true"></i><br>         
          <a class="hint" href="#mailer">
            <span class="hidden-xs">Would You Like To Report An Issue Or </span>
            Open A Support Ticket
@@ -196,6 +178,8 @@ your home directory.
 
 <script src="lib/js/angular1.5.8.min.js"></script>
 <script src="lib/js/angRouting1.5.8.js"></script>
+
+<!--AngularUI-->
 <script src="lib/js/ui-bootstrap-tpls-2.1.3.min.js"></script>
 
 <script src="controllers/app.config.js"></script>
@@ -211,5 +195,5 @@ your home directory.
 
 <script src="lib/js/typed.min.js"></script>
 <script src="js/jQueryReady.js"></script>
-<script src="js/FooterYear.js"></script>
+<script src="js/ToggleAndYear.js"></script>
 </html>

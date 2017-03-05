@@ -11,7 +11,13 @@
   }
 }
 a,p,h1,h2,h3,h4,h5,h6,li,pre,button,label,input,textarea {
-  /* font-family: 'Russo One', sans-serif; #This is unreadable. */
+  /*font-family: 'Russo One', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+    
+}
+p {
+  font-weight: 500;
 }
 
 /*the rule below was used to prevent bleeding from background*/
@@ -44,13 +50,8 @@ body div {
   background: linear-gradient(#ff9900, #ffff00); 
   color:black;
 
-  border:none;
-  font-family: monospace;
+  border:none;  
 }
-.jumbotron {
-	font-family: monospace; 
-}
-
 
 /*Two classes below are applied to or removed from navbar via jQueryReady.js */
 .roundedLeft {
