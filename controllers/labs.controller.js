@@ -70,6 +70,10 @@ app.directive("modal", function() {
 });
 
 app.controller('labsCTRL', function($scope) {
+  
+  window.addEventListener("hashchange", function(e) {
+    location.reload();
+  });
 
   //this function handles the typing animations
   $(function(){
