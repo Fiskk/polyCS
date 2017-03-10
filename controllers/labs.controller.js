@@ -72,7 +72,12 @@ app.directive("modal", function() {
 app.controller('labsCTRL', function($scope) {
   
   window.addEventListener("hashchange", function(e) {
-    location.reload();
+    var body = document.getElementsByTagName("body");
+    body[0].classList.remove('modal-open');
+    var modalResidue = document.getElementsByClassName('modal-backdrop');
+    modalResidue[0].classList.remove('fade');
+    modalResidue[0].classList.remove('modal-backdrop');
+    //modalResidue[0].parentNode.removeChild(modalResidue[0]);
   });
 
   //this function handles the typing animations
