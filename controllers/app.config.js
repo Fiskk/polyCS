@@ -117,7 +117,7 @@ app.config(function($routeProvider) {
    })
    // NOTE: SSH PuTTY page is at the bottom
    .when("/email", {
-       templateUrl : "partials/help/services/email.html",
+       templateUrl : "partials/help/services/email.html?v=1.1",
        controller  : "helpCTRL"
    })
    .when("/mysql", {
