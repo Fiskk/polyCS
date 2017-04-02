@@ -51,7 +51,7 @@ app.config(function($routeProvider) {
         controller  : "mailCTRL"
     })
     .when("/accounts", {
-        templateUrl : "partials/accounts.html",
+        templateUrl : "partials/accounts.html?v=1.1",
         controller  : "accountsCTRL"
     })
     .when("/help", {

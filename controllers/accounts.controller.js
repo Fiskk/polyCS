@@ -16,6 +16,10 @@ app.controller('accountsCTRL', function($scope) {
     return 'right';
   };
 
+  /* 
+   * Links below are absolute because there is a second instance of the website
+   * that does all the heavy lifting 
+   */
   $scope.topics = [
     {
       topic: 'Get a CS Account or Password-Reset',
@@ -36,7 +40,7 @@ app.controller('accountsCTRL', function($scope) {
     {
       topic: 'Set Up Email Forwarding',
       // url: 'https://accounts.cs.sunyit.edu/dotforward.php',
-      url: 'http://www.cs.sunyit.edu/#/email#forward',
+      url: '#email#forward',
       tooltip : 'Forward your CS Department account to another email address.'},
     {
       topic: 'Create a Disposable Email Address',
