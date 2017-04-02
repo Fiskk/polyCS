@@ -17,6 +17,6 @@
 
 - Make sure you keep your local branch up to date.
 
-- If you make a change to a CSS or JS file, append a faux GET parameter in the reference to the file so that clients will request the new file as opposed to loading old source from cache. EX: <p style="color:red">src="controllers/labs.controller.js?version=1.1"</p>
+- If you make a change to a CSS or JS file, append a faux GET parameter in the reference to the file so that clients will request the new file as opposed to loading old source from cache. EX: <span style="text-decoration:underline;">src="controllers/labs.controller.js?version=1.1"</span>
 
 - Note: using non-minified version of Angular will allow you to see complete error messages
