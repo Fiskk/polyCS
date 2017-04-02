@@ -35,7 +35,8 @@ app.controller('accountsCTRL', function($scope) {
       tooltip : 'Change password for an already activated CS account.'},
     {
       topic: 'Set Up Email Forwarding',
-      url: 'https://accounts.cs.sunyit.edu/dotforward.php',
+      // url: 'https://accounts.cs.sunyit.edu/dotforward.php',
+      url: 'http://www.cs.sunyit.edu/#/email#forward',
       tooltip : 'Forward your CS Department account to another email address.'},
     {
       topic: 'Create a Disposable Email Address',

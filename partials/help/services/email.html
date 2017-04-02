@@ -51,98 +51,10 @@ of the screen to navigate.</p>
 Checking/Sending over the web:
 </br></h3></u><br>Use the CS Department Webmail at <a href="http://webmail.cs.sunyit.edu/">https://webmail.cs.sunyit.edu</a></br>
 
-<!-- <u><h3><br>Checking Mail at Home:</h3></br></u> -->
-
-<!-- <br>Checking Mail at home can done using a Mail Client such as Eudora or Outlook.</br> -->
-
-
-
-<!-- <br>From your home machine over SPOP (encrypted):</br> -->
-
-<!-- <u><h3><br>Configuring Eudora:</h3></br></u>
-
-<b>Step 1:</b>
-
-<p>
-Launch Eudora mail client. From within Eudora, click on Tools/Options,
-then select Checking Mail. Enter the mail server information provided below, also
-replacing the username listed with yours. Finally click ok.
-</p>
-
-<br>Mail Server: mailbox.cs.sunyit.edu</br>
-
-
-<br><b>Step 2:</b></br>
-
-<br>
-Try checking your mail. You should be prompted with the message "No New Email"
-</br>
-
-<br><b>Step 3:</b></br>
-
-<br>Return to the Tools/Options/Checking Mail settings from step 1. Click on the "Last SSL Info" button.
-You should see the CS Dept certificate in the window like below. Click on Add to Trusted.</br>
-
-
-<b><br>Step 4:</b></br>
-
-<br>After clicking on Add to Trusted, the certificate window should appear.
-You should now be able to check your mail over a SSL encrypted connection.</br> -->
-
-
-<!-- <u><h3><br>Configuring Outlook:</br></h3></u>
-
-
-
-
-
-
-<br><b>Step 1:</b></br>
-<br>
-Open Outlook. Click on Tools/Accounts. Click on the Add button and select Mail.
-Enter your username and email address in the next two screens, on the third,
-enter the settings as shown below: </br>
-
-<br>My Incoming mail server is a 'POP3' server.</br>
-
-<br>Incoming mail (PoP3,IMAP) server:</br>
-
-<br>mailbox.cs.sunyit.edu</br>
-
-<br>Outgoing mail (STMP) server:</br>
-
-<br>mailbox.cs.sunyit.edu</br>
-
-<br><b>Step 2:</br></b>
-<br>After configuring the settings as descbribed above click next and
-return to the Internet Accounts Menu. click on the Mail tab. Select your CS account
-then click on Properties. </br>
-
-
-<br><b>Step 3:</b></br>
-<p>Click on the Advanced tab, then click on checkbox next to "This server
-requires a secure connection(SSL)", Then click ok. You should now be able to
-check your mail over a SSL encrypted connection.</p>
-
-
-<br>Visual directions available at <a href="spop.php">Eudora and Outlook</a></br>
-
-<br>If you have any further questions please email us</br> -->
-
-
-
-
-
-
 <BR>
 <a name="forward"></a>
 
-
-
-
-
-
-<h3>Forwarding Email:</h3>
+<h3 id="forward" target="_self">Forwarding Email:</h3>
 
 <p>To receive mail in one place (machine) or forward your email to another account, use a .forward file.</p>
 
@@ -150,7 +62,7 @@ check your mail over a SSL encrypted connection.</p>
 <LI>From the command line:
 <p>Create a file named .forward in your home directory with the contents:</p>
 
-<font color="fuchsia">username@machinename</font><BR><BR>
+<font color="fuchsia">username@emailprovider</font><BR><BR>
 
 <p>For example, to forward all of your email from the CS network to your campus account, log into fang and type:</p>
 
@@ -159,6 +71,11 @@ check your mail over a SSL encrypted connection.</p>
 </pre>
 </font>
 where <i>username</i> is your username on the UNIX systems.
+
+<p>
+	You can also manually edit the file with Nano or Vi, and you can forward to 
+	multiple accounts by specifying one target email per line.
+</p>
 
 <!-- <BR><BR><BR>
 <LI>Over the Web:
