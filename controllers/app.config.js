@@ -66,6 +66,10 @@ app.config(function($routeProvider) {
         templateUrl : "partials/faculty.html",
         controller  : "facultyCTRL"
     })
+    .when("/RoundcubeIsDown", {
+        templateUrl : "partials/404.html",
+        controller  : "facultyCTRL"
+    })
     .when("/labs", {
         templateUrl : "partials/labs.html",
         controller  : "labsCTRL"
