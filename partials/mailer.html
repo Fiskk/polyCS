@@ -27,12 +27,53 @@
   </p>
 </div>-->
 
-<h1>
-  Our mailer is currently down for maintenance but will be back up shortly. We apologize for any inconvenience.
-</h1>
+<form id="form" method="POST" action="https://formspree.io/bakerdp@sunyit.edu">  
+    <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
+      <label>Your Name</label>
+      <input type="text" name="name" class="form-control"
+             placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
+      <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
+    </div>
+    
+    <div class="form-group" ng-class="{ 'has-error' : error_email }">
+        <label>Your Email</label>
+        <input type="email" name="_replyto" class="form-control" required
+               placeholder="example: user@provider.com" ng-model="PostformData.email">
+        <span class="help-block" ng-show="error_email">{{ error_email }}</span>
+    </div>
+    
+    <div class="form-group" ng-class="{ 'has-error' : error_subject }">
+        <label>Subject</label>
+        <input  name="_subject" type="text" max-length="12" class="form-control"
+                placeholder="What does this correspondence pertain to?" ng-model="PostformData.subject">
+        <span class="help-block" ng-show="error_email">{{ error_subject }}</span>
+    </div>
 
-<!-- <form ng-submit="processForm()" id="form" method="POST">
-  
+    <!-- <input type="hidden" name="_cc" value="chient@sunyit.edu" /> -->
+
+    <input type="text" name="_gotcha" style="display:none" />
+    <!-- success page -->
+    <input type="hidden" name="_next" value="http://www.cs.sunyit.edu/#/" />
+    
+    <div class="form-group">
+      <label for="message">Message</label>    
+      <textarea ng-model="PostformData.message" name="message" class="form-control" rows="3" required 
+                placeholder="Specific details regarding the issue we are discussing">
+      </textarea>
+    </div>
+    
+    <div class="col-sm-12 alert alert-success" ng-show="show_success_message">
+      <p>{{ show_success_message }}</p>
+    </div>
+    
+    <div class="col-sm-6 pull-right">
+      <button type="submit" class="btn btn-md btn-block yellowGradient shadow pull-right">
+          <span class="glyphicon glyphicon-flash"></span> Submit !
+      </button>
+    </div>
+  </form>
+
+<!-- <form ng-submit="processForm()" id="form" method="POST">  
   <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
     <label>Your Name</label>
     <input type="text" name="customer_name" class="form-control"
