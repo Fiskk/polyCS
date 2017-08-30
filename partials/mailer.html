@@ -1,10 +1,7 @@
 <!-- Input to this form is validated on both client and server-side -->
 <div class="container-fluid col-xs-12" ng-hide="addformtoggle">
 
-<!--<div class="text-center">
-  <h3><span class="glyphicon glyphicon-fire"></span> Is There Something We Should Know About?</h3>
-</div>
-<hr> -->
+
 
 <!--<div class="container-fluid alert alert-danger" style="padding:0px 3px 3px 3px;">
   <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
@@ -30,51 +27,49 @@
   </p>
 </div>-->
 
-<form ng-submit="processForm()" id="form" method="POST">
+<h1>
+  Our mailer is currently down for maintenance but will be back up shortly. We apologize for any inconvenience.
+</h1>
 
-  <!-- Customer name -->
+<!-- <form ng-submit="processForm()" id="form" method="POST">
+  
   <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
     <label>Your Name</label>
     <input type="text" name="customer_name" class="form-control"
            placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
     <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
   </div>
-  <!-- email -->
+  
   <div class="form-group" ng-class="{ 'has-error' : error_email }">
       <label>Your Email</label>
       <input type="email" name="email" class="form-control" required
              placeholder="example: user@provider.com" ng-model="PostformData.email">
       <span class="help-block" ng-show="error_email">{{ error_email }}</span>
   </div>
-  <!-- subject -->
+  
   <div class="form-group" ng-class="{ 'has-error' : error_subject }">
       <label>Subject</label>
       <input  name="subject" type="tel" max-length="12" class="form-control"
               placeholder="What does this correspondence pertain to?" ng-model="PostformData.subject">
       <span class="help-block" ng-show="error_email">{{ error_subject }}</span>
   </div>
-  <!-- message -->
+  
   <div class="form-group">
-    <label for="message">Message</label>
-    <!-- NOTE: if you put the closing textarea tag on a different line than the opening tag, the placeholder will not disp -->
+    <label for="message">Message</label>    
     <textarea ng-model="PostformData.message" class="form-control" rows="3" required 
               placeholder="Specific details regarding the issue we are discussing">
     </textarea>
   </div>
-  <!-- message below disps after successful post -->
+  
   <div class="col-sm-12 alert alert-success" ng-show="show_success_message">
     <p>{{ show_success_message }}</p>
   </div>
-  <!-- button -->
+  
   <div class="col-sm-6 pull-right">
     <button type="submit" class="btn btn-md btn-block yellowGradient shadow pull-right">
         <span class="glyphicon glyphicon-flash"></span> Submit !
     </button>
   </div>
-</form>
+</form> -->
 
-<!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED (for debugging)-->
-<!-- <pre>
-    {{ PostformData }}
-</pre> -->
 </div>
