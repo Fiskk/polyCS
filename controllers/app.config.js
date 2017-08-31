@@ -50,6 +50,12 @@ app.config(function($routeProvider) {
         templateUrl : "partials/mailer.html",
         controller  : "mailCTRL"
     })
+    // for testing
+    .when("/mailertest", {
+        templateUrl : "partials/mailertest.html",
+        controller  : "mailCTRL"
+    })
+
     .when("/accounts", {
         templateUrl : "partials/accounts.html?v=1.2",
         controller  : "accountsCTRL"
