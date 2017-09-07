@@ -39,7 +39,7 @@ app.config(function($routeProvider) {
 
      // Routing for top-level pages
     .when("/", {
-        templateUrl : "partials/home.html?v=1.1"
+        templateUrl : "partials/home.html?v=1.2"
         // controller  : "homeCTRL" <---that doesn't work
     })
     .when("/classes", {
@@ -47,7 +47,7 @@ app.config(function($routeProvider) {
         controller  : "classesCTRL"
     })
     .when("/mailer", {
-        templateUrl : "partials/mailer.html?v=1.1",
+        templateUrl : "partials/mailer.html?v=1.2",
         controller  : "mailCTRL"
     })
     // for testing
