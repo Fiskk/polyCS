@@ -1,4 +1,4 @@
-<!-- <div class="container-fluid alert alert-danger pulse" 
+<!-- <div class="container-fluid alert alert-danger pulse"
      style="padding:0px 3px 3px 3px; margin-bottom: 40px;">
   <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
   <p>
@@ -24,8 +24,8 @@
     If you are using Linux or OSx or you are using Bash on Ubuntu on Windows, the offending key can be
     removed with a command such as: <br>
     <span style="color:black">ssh-keygen -f "/&lt;PATH_TO_.ssh_DIR&gt;/.ssh/known_hosts" -R fang</span>
-    <br> 
-    or you can manually remove the lines associated with Fang from  the known_hosts file located 
+    <br>
+    or you can manually remove the lines associated with Fang from  the known_hosts file located
     in the .ssh subdirectory of your home directory.
     <br><br>
     NOTE: you will have to determine where the system you are using stores SSH keys and adjust the above
@@ -33,26 +33,26 @@
     <br><br>
     <a href="http://superuser.com/questions/30087/remove-key-from-known-hosts">See this link for more details</a>
     </br></br>
-    If you are unable to resolve the issue on your own, submit a support request and 
+    If you are unable to resolve the issue on your own, submit a support request and
     one our Student Admins will be in touch ASAP.
   </p>
 </div>-->
 
-<form id="form" method="POST" action="https://formspree.io/bakerdp@sunyit.edu">  
+<form id="form" method="POST" action="https://formspree.io/bakerdp@sunyit.edu">
     <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
       <label>Your Name</label>
       <input type="text" name="name" class="form-control"
              placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
       <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
     </div>
-    
+
     <div class="form-group" ng-class="{ 'has-error' : error_email }">
         <label>Your Email</label>
         <input type="email" name="_replyto" class="form-control" required
                placeholder="example: user@provider.com" ng-model="PostformData.email">
         <span class="help-block" ng-show="error_email">{{ error_email }}</span>
     </div>
-    
+
     <div class="form-group" ng-class="{ 'has-error' : error_subject }">
         <label>Subject</label>
         <input  name="_subject" type="text" max-length="12" class="form-control"
@@ -65,18 +65,28 @@
     <input type="text" name="_gotcha" style="display:none" />
     <!-- success page -->
     <input type="hidden" name="_next" value="http://www.cs.sunyit.edu/#/" />
-    
+
     <div class="form-group">
-      <label for="message">Message</label>    
-      <textarea ng-model="PostformData.message" name="message" class="form-control" rows="3" required 
+      <label for="message">Message</label>
+      <textarea ng-model="PostformData.message" name="message" class="form-control" rows="3" required
                 placeholder="Specific details regarding the issue we are discussing">
       </textarea>
     </div>
-    
+
     <div class="col-sm-12 alert alert-success" ng-show="show_success_message">
       <p>{{ show_success_message }}</p>
     </div>
-    
+
+    <div class="col-sm-6">
+      <a href="https://accounts.cs.sunyit.edu/activate.php"
+         class="btn btn-md btn-primary btn-block shadow">
+           CS Password Reset
+      </a>
+    </div>
+
+    <br class="hidden-sm hidden-md hidden-lg" />
+    <!-- <br class="hidden-sm hidden-md hidden-lg" /> -->
+
     <div class="col-sm-6 pull-right">
       <button type="submit" class="btn btn-md btn-block yellowGradient shadow pull-right">
           <span class="glyphicon glyphicon-flash"></span> Submit !
@@ -84,39 +94,39 @@
     </div>
   </form>
 
-<!-- <form ng-submit="processForm()" id="form" method="POST">  
+<!-- <form ng-submit="processForm()" id="form" method="POST">
   <div class="form-group" ng-class="{ 'has-error' : error_customer_name }">
     <label>Your Name</label>
     <input type="text" name="customer_name" class="form-control"
            placeholder="example: Jane Doe" ng-model="PostformData.customer_name">
     <span class="help-block" ng-show="error_customer_name">{{ error_customer_name }}</span>
   </div>
-  
+
   <div class="form-group" ng-class="{ 'has-error' : error_email }">
       <label>Your Email</label>
       <input type="email" name="email" class="form-control" required
              placeholder="example: user@provider.com" ng-model="PostformData.email">
       <span class="help-block" ng-show="error_email">{{ error_email }}</span>
   </div>
-  
+
   <div class="form-group" ng-class="{ 'has-error' : error_subject }">
       <label>Subject</label>
       <input  name="subject" type="tel" max-length="12" class="form-control"
               placeholder="What does this correspondence pertain to?" ng-model="PostformData.subject">
       <span class="help-block" ng-show="error_email">{{ error_subject }}</span>
   </div>
-  
+
   <div class="form-group">
-    <label for="message">Message</label>    
-    <textarea ng-model="PostformData.message" class="form-control" rows="3" required 
+    <label for="message">Message</label>
+    <textarea ng-model="PostformData.message" class="form-control" rows="3" required
               placeholder="Specific details regarding the issue we are discussing">
     </textarea>
   </div>
-  
+
   <div class="col-sm-12 alert alert-success" ng-show="show_success_message">
     <p>{{ show_success_message }}</p>
   </div>
-  
+
   <div class="col-sm-6 pull-right">
     <button type="submit" class="btn btn-md btn-block yellowGradient shadow pull-right">
         <span class="glyphicon glyphicon-flash"></span> Submit !
