@@ -70,7 +70,7 @@ app.directive("modal", function() {
 });
 
 app.controller('labsCTRL', function($scope) {
-  
+
   window.addEventListener("hashchange", function(e) {
     var body = document.getElementsByTagName("body");
     body[0].classList.remove('modal-open');
@@ -97,8 +97,8 @@ app.controller('labsCTRL', function($scope) {
                      " -Enter your Computer Science Department username and password.\n" +
                      " -Be sure the domain field is set to CS.SUNYIT.EDU.\n\n" +
 
-                      "Computer Science Department accounts are based on your SUNYIT\n" +
-                      "account. You will need to know your SUNYIT username and\n" +
+                      "Computer Science Department accounts are based on your SUNY POLY\n" +
+                      "account. You will need to know your SUNY POLY username and\n" +
                       "password in order to activate your CS account. \n\n" +
                       "Anyone on campus, regardless of major, is welcome to activate \n" +
                       "an account on the CS network and use our resources. If \n" +
@@ -157,8 +157,8 @@ app.controller('labsCTRL', function($scope) {
 
   var c012accts = "To log into the machines in this lab enter your Computer Science \n"+
                   "Department username and password. \n\n"+
-                  "Computer Science Department accounts are based on your SUNYIT\n"+
-                  "account.You will need to know your SUNYIT username and\n"+
+                  "Computer Science Department accounts are based on your SUNY POLY\n"+
+                  "account.You will need to know your SUNY POLY username and\n"+
                   "password in order to activate your CS account.\n\n"+
                   "Anyone on campus, regardless of major, is welcome to activate their\n"+
                   "account on the CS network and make use of our resources. If\n"+
@@ -168,8 +168,8 @@ app.controller('labsCTRL', function($scope) {
 
   var xenAccts = "If you are interested in a virtual machine and have a CS account,\n"+
                  "visit our accounts page and submit a request. \n\n"+
-                 "Computer Science Department accounts are based on your SUNYIT \n"+
-                 "account. You will need to know your SUNYIT username and password\n"+
+                 "Computer Science Department accounts are based on your SUNY POLY \n"+
+                 "account. You will need to know your SUNY POLY username and password\n"+
                  "in order to activate your CS account. \n\n"+
                  "Anyone on campus, regardless of major, is welcome to activate an\n"+
                  "account on the CS network and make use of our resources. If you\n"+

@@ -185,7 +185,7 @@ app.controller('facultyCTRL', function($scope) {
             of the New York State legislative process. He has taught a variety of introductory \
             programming and applications courses as well as courses in decision support and \
             programming languages on the undergraduate level and data analysis on the graduate \
-            level. Ron has held a number of administrative positions at SUNYIT including Director \
+            level. Ron has held a number of administrative positions at SUNY POLY including Director \
             of Information Services, Interim Dean of ISET, and \
             Executive Vice President for Academic Affairs. "
     },
@@ -200,7 +200,7 @@ app.controller('facultyCTRL', function($scope) {
       school: "University of Waterloo",
       bio: "Sam Sengupta's work spans various topics in applied mathematics and computer \
             science. He taught for six years at the University of Guelph in Canada before joining \
-            SUNYIT in the eighties. His current research interests include modeling of computer \
+            SUNY POLY in the eighties. His current research interests include modeling of computer \
             systems, computer networks, and distributed and real-time systems. During the last \
             five years, his research endeavors have been confined mostly to the following topics: \
             Intrusion-detection, Generalized Resource Reservation Protocol, Autonomous Systems, \
