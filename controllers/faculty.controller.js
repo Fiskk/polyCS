@@ -176,7 +176,7 @@ app.controller('facultyCTRL', function($scope) {
       phone: "792-7327",
       office: "Kunsela C123",
       email: "ron@sunyit.edu",
-      site: "https://sunypoly.edu/apps/directory/?uid=ron&format=bio",
+      site: "http://www.cs.sunyit.edu/~ron",
       school: "SUNY-Binghamton",
       bio: "Ron Sarner has research and teaching interests in comparative programming \
             languages, applications of computing in the social sciences, and instructional \
@@ -221,7 +221,7 @@ app.controller('facultyCTRL', function($scope) {
             teaching assistant. Scott was technical advisor to the computer center and head \
             of programming and analysis at the National Telecommunications Administration in \
             San Salvador, El Salvador. He was also a professor of mathematics and computer \
-            science at the Universidad Centroamericana, Jose Sime�n Ca�as during his three \
+            science at the Universidad Centroamericana, José Simeón Cañas during his three \
             years in El Salvador."
     },
     {
@@ -254,24 +254,6 @@ app.controller('facultyCTRL', function($scope) {
             officer (CIO). He has taught at the United States Naval Academy in Annapolis, MD and \
             the United States Naval Postgraduate School in Newport, RI. "
     },
-    {
-      name: "Roopa Vishwanathan, Assistant Professor",
-      url: "#faculty",
-      img: "img/faculty/roopa.png",
-      phone: "792-7538",
-      office: "Kunsela C227",
-      email: "vishwar@sunyit.edu",
-      site: "http://www.cs.sunyit.edu/~vishwar",
-      school: "",
-      bio: "Before coming to SUNY Poly I was a postdoc at UNC Greensboro from 2011 to \
-            2014. Prior to that, I received my PhD and MS from the University of North \
-            Texas in 2011, and 2006 respectively, and my BE degree from the University of \
-            Bombay (Mumbai) in 2003. My research is mainly in applied cryptography and \
-            theoretical crypto. My work includes hardware-assisted security, cryptographic \
-            protocol design, security in location-based services using cryptographic protocols, \
-            and secure data outsourcing. You can find more info about my work and research \
-            from my publications page."
-    }
     ];
 
 });
