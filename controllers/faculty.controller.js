@@ -109,17 +109,17 @@ app.controller('facultyCTRL', function($scope) {
             Dr. Confer is a former chair of the Academic Affairs Committee and member of the \
             Executive Committee of the Faculty Assembly, and a member of the Graduate Council."
     },
-    {
-      name: "John Marsh, Associate Professor",
-      url: "#faculty",
-      img: "img/faculty/marsh.jpg",
-      phone: "792-7125",
-      office: "Kunsela C119",
-      email: "fjam@sunyit.edu",
-      site: "http://people.sunyit.edu/~fjam/",
-      school: "Carnegie Mellon University",
-      bio: "John Marsh has interests in networking and information theory. "
-    },
+    // {
+    //   name: "John Marsh, Associate Professor",
+    //   url: "#faculty",
+    //   img: "img/faculty/marsh.jpg",
+    //   phone: "792-7125",
+    //   office: "Kunsela C119",
+    //   email: "fjam@sunyit.edu",
+    //   site: "http://people.sunyit.edu/~fjam/",
+    //   school: "Carnegie Mellon University",
+    //   bio: "John Marsh has interests in networking and information theory. "
+    // },
     {
       name: "Rosemary Mullick, Professor",
       url: "#faculty",
@@ -222,17 +222,17 @@ app.controller('facultyCTRL', function($scope) {
             science at the Universidad Centroamericana, José Simeón Cañas during his three \
             years in El Salvador."
     },
-    {
-      name: "Ali Tekeoglu, NCS Faculty",
-      url: "#faculty",
-      img: "img/faculty/tekeoglu.png",
-      phone: "",
-      office: "Kunsela C135",
-      email: "tekeoga@sunyit.edu",
-      site: "http://web.cs.sunyit.edu/~tekeoga/",
-      school: "University of Texas at San Antonio ",
-      bio: "Cyber Vulnerability Analyst & Penetration Tester at Rackspace. Research interests: Secure Multimedia, Internet of Things."
-    },
+    // {
+    //   name: "Ali Tekeoglu, NCS Faculty",
+    //   url: "#faculty",
+    //   img: "img/faculty/tekeoglu.png",
+    //   phone: "",
+    //   office: "Kunsela C135",
+    //   email: "tekeoga@sunyit.edu",
+    //   site: "http://web.cs.sunyit.edu/~tekeoga/",
+    //   school: "University of Texas at San Antonio ",
+    //   bio: "Cyber Vulnerability Analyst & Penetration Tester at Rackspace. Research interests: Secure Multimedia, Internet of Things."
+    // },
     {
       name: "Chris Urban, Lecturer, Dept. Chair",
       url: "#faculty",
