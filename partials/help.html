@@ -22,7 +22,7 @@
           <!-- within each accordion, iterate through arrays of subtopics -->
           <ul ng-repeat="element in topic.acctSubtopics">
             <!-- TODO: figure out why I can access $scope.topics with topic.someproperty -->
-            <li>[{{$index}}]<a href="{{topic.subtopicUrls[$index]}}"><!-- how does $index increment on each loop? -->
+            <li><a href="{{topic.subtopicUrls[$index]}}"><!-- how does $index increment on each loop? -->
             <!-- NOTE: I don't understand why this works without the 's' on topics. -->
               {{ element }}</a>
             </li>

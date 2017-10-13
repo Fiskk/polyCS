@@ -14,27 +14,27 @@ app.controller('listCTRL', function($scope) {
   });
 
   $scope.bsdegrees = [
-    {degree: 'Computer & Information Science', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/"},
-    {degree: 'Computer Information Systems', url: "https://sunypoly.edu/undergraduate/cis/"},
-    {degree: 'Network & Computer Security', url: "https://sunypoly.edu/undergraduate/network-and-computer-security/"},
-    {degree: 'Applied Computing', url: "https://sunypoly.edu/undergraduate/applied-computing/"}
+    {degree: 'Computer & Information Science', url: "https://sunypoly.edu/academics/majors-and-programs/computer-information-science.html"},
+    {degree: 'Computer Information Systems', url: "https://sunypoly.edu/academics/majors-and-programs/computer-information-systems.html"},
+    {degree: 'Network & Computer Security', url: "https://sunypoly.edu/academics/majors-and-programs/network-computer-security.html"},
+    {degree: 'Applied Computing', url: "https://sunypoly.edu/academics/majors-and-programs/applied-computing.html"}
   ];
 
   $scope.xcel = [
-    {combo: 'Computer & Information Science', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/accelerated-bsms/"},
+    {combo: 'Computer & Information Science', url: "https://sunypoly.edu/academics/majors-and-programs/bsms-computer-and-information-science.html"},
     //{combo: 'Network and Computer Security', url: ""}
   ];
 
   $scope.msdegrees = [
-    {subject: 'Computer & Information Science', url: "https://sunypoly.edu/graduate/computer-information-science/"},
-    {subject: 'Network & Computer Security', url: "https://sunypoly.edu/graduate/m-s-network-and-computer-security/"},
+    {subject: 'Computer & Information Science', url: "https://sunypoly.edu/academics/majors-and-programs/ms-computer-information-science.html"},
+    {subject: 'Network & Computer Security', url: "https://sunypoly.edu/academics/majors-and-programs/ms-network-computer-security.html"},
     //{subject: 'Telecommunications', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/"}
   ];
-
-  $scope.minors = [
-    {minor: 'Computer & Information Science', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/minors/computer-and-information-science/"},
-    {minor: 'Computer Information Systems', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/minors/computer-and-information-systems/"},
-    {minor: 'Network & Computer Security', url: "https://sunypoly.edu/undergraduate/network-and-computer-security/minor/"}
-  ]
+  //
+  // $scope.minors = [
+  //   {minor: 'Computer & Information Science', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/minors/computer-and-information-science/"},
+  //   {minor: 'Computer Information Systems', url: "https://sunypoly.edu/undergraduate/computer-and-information-science/minors/computer-and-information-systems/"},
+  //   {minor: 'Network & Computer Security', url: "https://sunypoly.edu/academics/majors-and-programs/network-and-computer-security/network-computer-security-minor.html"}
+  // ]
 
 });
