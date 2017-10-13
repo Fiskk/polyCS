@@ -60,9 +60,7 @@ app.controller('facultyCTRL', function($scope) {
       email: "chiangc@sunyit.edu",
       site: "http://www.cs.sunyit.edu/~chiangc/",
       school: "University of Central Florida",
-      bio: "Dr. Chen-Fu Chiang (first name:振富last name:江) will join the department \
-            of Computer and Information Science at the State University of New York \
-            Polytechnic Institute in Fall 2015. Prior to joining SUNY Poly, he taught \
+      bio: "Prior to joining SUNY Poly, Dr. Chiang taught \
             at the University of Central Missouri. He received his first bachelor's \
             degree from National Taiwan University. He further obtained his Master’s \
             degree in science and engineering from the University of Pennsylvania and \
