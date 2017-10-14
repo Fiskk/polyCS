@@ -131,7 +131,7 @@ app.config(function($routeProvider) {
        controller  : "helpCTRL"
    })
    .when("/mysql", {
-       templateUrl : "partials/help/services/mysql.html",
+       templateUrl : "partials/help/services/mysql.html?v=1.0",
        controller  : "helpCTRL"
    })
    .when("/nfs", {
