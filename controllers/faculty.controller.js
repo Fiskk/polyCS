@@ -250,7 +250,7 @@ app.controller('facultyCTRL', function($scope) {
             Strategic Studies. He is a retired career Naval Officer with significant leadership, \
             management, and project management experience, and he has served as a chief information \
             officer (CIO) and commanding officer. He has taught at the United States Naval Academy, \
-            the Naval Postgraduate School, and Villanova University. "
+            the United States Naval Postgraduate School, and Villanova University. "
     }
   ];
 
