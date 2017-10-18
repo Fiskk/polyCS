@@ -249,9 +249,9 @@ app.controller('facultyCTRL', function($scope) {
             He holds an M.S. in Information Systems and an M.A. in National Security and \
             Strategic Studies. He is a retired career Naval Officer with significant leadership, \
             management, and project management experience, and he has served as a chief information \
-            officer (CIO). He has taught at the United States Naval Academy in Annapolis, MD and \
-            the United States Naval Postgraduate School in Newport, RI. "
-    },
-    ];
+            officer (CIO) and commanding officer. He has taught at the United States Naval Academy \
+            the United States Naval War College, and Villanova University. "
+    }
+  ];
 
 });
