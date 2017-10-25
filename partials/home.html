@@ -1,6 +1,6 @@
 <!-- this file is injected into the div in index.html that has a class of: 'ng-view'
      once a request is made by the user -->
-<!-- <div class="container-fluid alert alert-danger pulse" 
+<!-- <div class="container-fluid alert alert-danger pulse"
      style="padding:0px 3px 3px 3px; margin-bottom: 40px;">
   <h4><span class="glyphicon glyphicon-warning-sign"></span> Important Announcement:</h4>
   <p>
@@ -104,7 +104,7 @@
       The computing and information fields are enabling the ongoing revolutions
       in technology and communications that are reshaping our societies. The ways
       in which businesses, governments, and individuals interact with each other has changed
-      dramatically in recent years and is still changing. 
+      dramatically in recent years and is still changing.
       The value of and demand for the techniques, tools,
       and problem-solving approaches needed for continued innovations is beyond question.
       <p class="hint orangeText">(And the pay is decent. See chart below)</p>
@@ -114,7 +114,7 @@
 </div><!-- end row -->
 
 <br>
-<div class="container-fluid text-center">         
+<div class="container-fluid text-center">
   <div id="curve_chart"></div>
 </div>
 
@@ -124,20 +124,22 @@
 
   function drawChart() {
     var data = google.visualization.arrayToDataTable([
-      ['Year', 'Average', 'Tech'],
-      // ['2008',  41334,      ' '],
-      // ['2009',  40711,      ' '],
-      ['2010',  41673,       79348],
-      ['2011',  42979,      81327],
-      ['2012',  44321,     85619],
-      ['2013',  44888,     87811],
-      ['2014',  46481,      89450],
-      // ['2015',  48098,      ' ']
+      ['Year', 'Computer Systems Analyst', 'Computer Programmer', 'Network Admin'],
+
+      ['2010',  77740,                     71380,                  69160,],
+      ['2011',  78770,                     72630,                  70970,],
+      ['2012',  79690,                     74280,                  72560,],
+      ['2013',  81190,                     76140,                  74000,],
+      ['2014',  82710,                     77550,                  75790,],
+      ['2015',  85800,                     79530,                  77810,],
+      ['2016',  87220,                     79840,                  79700,],
+
     ]);
 
     var options = {
-      title: 'Average U.S. Tech Salaries relative to Average U.S. Wages (not adjusted for inflation) ',
+      title: ' Median U.S. Tech Salaries from the Bureau of Labor Statistics (2010 - 2016) ',
       curveType: 'function',
+      //titlePosition: 'none',
       legend: {position: 'bottom'}
     };
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
